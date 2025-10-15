@@ -359,3 +359,6 @@ scout_mini_nav2_setup.md
 
 
 </details>
+
+## 관련 링크
+https://wiki.hiwonder.com/projects/PuppyPi/en/latest/docs/31.ROS2_SLAM_Mapping_Course.html#slam-mapping-principle

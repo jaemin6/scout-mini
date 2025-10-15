@@ -28,11 +28,11 @@
 
 ## ⚙️ 2. Nav2 띄우기 (기본 명령)
 
-```bash
+bash
 ros2 launch nav2_bringup nav2_bringup_launch.py \
     map:=/home/ubuntu/maps/my_map.yaml \
     use_sim_time:=false \
-    params_file:=/home/ubuntu/nav2_params/nav2_params.yaml
+    params_file:=/home/ubuntu/nav2_params/nav2_params.yaml```
 
 설명
 map: SLAM 결과 YAML 파일 경로
@@ -44,7 +44,8 @@ TF 정상 여부 (ros2 topic echo /tf)
 
 odom, scan 토픽 데이터 정상 유입
 
-amcl_pose가 출력되는지 확인 (ros2 topic echo /amcl_pose)
+amcl_pose가 출력되는지 확인 (ros2 topic echo /amcl_pose)```
+
 
 ## ⚙️ 3. Nav2 파라미터 예시 (nav2_params.yaml)
 
@@ -116,6 +117,7 @@ global_costmap:
 ### 파이썬(rclpy)으로 액션 클라이언트 작성
 
 ## 📁 5-1. ROS2 파이썬 패키지 디렉토리 구조
+```
 scout_nav/
 ├─ package.xml
 ├─ setup.py
@@ -131,10 +133,10 @@ scout_nav/
 ├─ params/
 │  └─ my_nav_params.yaml
 └─ README.md
-
+```
 
 ## 📁 5-2. setup.py 예시
-
+```
 from setuptools import setup
 import os
 from glob import glob
@@ -164,10 +166,10 @@ setup(
         ],
     },
 )
-
+```
 
 ## 🧠 6. send_goal.py (전체 파이썬 코드)
-
+```
 #!/usr/bin/env python3
 import rclpy
 from rclpy.node import Node
@@ -241,6 +243,7 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
+ ```   
 
 
 ## 🧩 7. 동작 흐름 요약

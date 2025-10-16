@@ -706,4 +706,32 @@ ros2 run rviz2 rviz2
 </details>
 
 
+<details>
+  
+<summary> 
+  
+# 🚀 SLAM 실행을 위한 브링업 절차 가이드
+
+## 🧭 목적
+Scout Mini + RPLidar + SLAM Toolbox 환경에서  
+자율주행용 맵핑(SLAM)을 수행하기 위한 기본 런치 순서를 정리 </summary> 
+
+```
+⚙️ 1️⃣ 워크스페이스 환경 설정
+bash
+cd ~/ros2_ws/
+source install/setup.bash
+```
+
+## 실행 순서 요약
+
+| 단계 | 명령어                                                    | 주요 역할                   |
+| -- | ------------------------------------------------------ | ----------------------- |
+| 1  | `ros2 launch scout_base scout_base.launch.py`          | 로봇 본체 (Odometry, TF 발행) |
+| 2  | `ros2 launch rplidar_ros rplidar_a1_launch.py`         | 라이다 데이터 발행              |
+| 3  | `ros2 launch slam_toolbox online_async_launch.py`      | SLAM 실행 (맵 + 위치 추정)     |
+| 4  | `ros2 run teleop_twist_keyboard teleop_twist_keyboard` | 로봇 이동 제어                |
+| 5  | `ros2 run rviz2 rviz2`                                 | 데이터 시각화                 |
+
+</details>
 

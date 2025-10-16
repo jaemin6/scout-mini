@@ -563,3 +563,147 @@ ros2 topic list
 
 </details>
 
+
+
+<details>
+  
+<summary>  
+  
+# 🛠️ scout_base 빌드 오류 해결 가이드 (ROS 2 Humble 대응) 
+
+## 🚨 문제 요약
+
+ROS 2 Humble 버전에서 `declare_parameter()`를 기본값 없이 사용하면 다음과 같은 **CMake 오류** 또는 **rclcpp 파라미터 오류**가 발생
+CMake Error at CMakeLists.txt: ...
+rclcpp::ParameterTypeException: parameter 'port_name' has not been declared
+
+이 문제는 ROS 2 Foxy 이하 버전에서는 허용되던 코드가 Humble 이상에서는 **기본값을 반드시 지정해야 하는 방식으로 변경**되었기 때문입니다.</summary> 
+
+---
+```
+## 📍 원인
+
+`scout_base_ros.cpp` 파일 내 `declare_parameter()` 호출부에 기본값이 누락되어 있습니다.
+
+### 🔴 기존 코드 (오류 발생 예시)
+
+cpp
+this->declare_parameter("port_name");
+this->declare_parameter("odom_frame");
+this->declare_parameter("base_frame");
+this->declare_parameter("odom_topic_name");
+this->declare_parameter("is_scout_mini");
+this->declare_parameter("is_omni_wheel");
+this->declare_parameter("simulated_robot");
+this->declare_parameter("control_rate");
+```
+
+## 해결 방법
+
+1. 파일 열기
+nano ~/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp
+
+2. 코드 수정
+```
+| 줄 번호 | 원래 코드                                         |   타입   | 수정된 코드                                                |
+| :--: | :-------------------------------------------- | :----: | :---------------------------------------------------- |
+|  18  | `this->declare_parameter("port_name");`       | String | `this->declare_parameter("port_name", "can0");`       |
+|  20  | `this->declare_parameter("odom_frame");`      | String | `this->declare_parameter("odom_frame", "odom");`      |
+|  21  | `this->declare_parameter("base_frame");`      | String | `this->declare_parameter("base_frame", "base_link");` |
+|  22  | `this->declare_parameter("odom_topic_name");` | String | `this->declare_parameter("odom_topic_name", "odom");` |
+|  24  | `this->declare_parameter("is_scout_mini");`   |  Bool  | `this->declare_parameter("is_scout_mini", false);`    |
+|  25  | `this->declare_parameter("is_omni_wheel")     |  Bool  | `this->declare_parameter("is_omni_wheel", false);`    |
+|  27  | `this->declare_parameter("simulated_robot")   |  Bool  | `this->declare_parameter("simulated_robot", false);`  |
+|  28  | `this->declare_parameter("control_rate");`    | Double | `this->declare_parameter("control_rate", 50.0);`      |
+```
+
+## 실행 테스트
+ros2 run scout_base scout_base_node --ros-args -p port_name:=can0 -p is_scout_mini:=true
+실행 시 오류가 발생하지 않으면 정상적으로 패치가 완료
+
+
+### 요약
+| 항목    | 내용                                                                               |
+| ----- | ---------------------------------------------------------------------------------    |
+| 오류 원인 | declare_parameter() 기본값 누락                                                   |
+| 발생 버전 | ROS 2 Humble 이상                                                                 |
+| 해결 방법 | 각 파라미터에 타입에 맞는 기본값 추가                                               |
+| 빌드 명령 | `colcon build --packages-select scout_base --symlink-install --cmake-clean-cache` |
+| 결과    | scout_base 노드 실행 성공                                                            |
+
+
+### 요약 2
+
+// 문자열
+this->declare_parameter("param_name", "기본값");
+
+// 숫자
+this->declare_parameter("rate", 10.0);
+
+// 불리언
+this->declare_parameter("enabled", false);
+</details>
+
+
+
+<details>
+  
+<summary>  
+
+# 🛰️ RPLidar Frame ID 불일치 오류 해결 가이드 (SLAM 데이터 미표시 문제)
+
+---
+
+## 🚨 문제 요약
+
+RPLidar를 실행했을 때 `rviz2` 또는 `slam_toolbox`에서 **LaserScan 토픽이 보이지 않거나**,  
+보이더라도 로봇 본체(`/base_link`) 기준으로 좌표가 맞지 않는 문제가 발생함
+
+이 문제는 **RPLidar의 프레임 ID(`frame_id`)가 로봇 본체(`base_link`)와 일치하지 않아서**  
+SLAM 알고리즘이 `/scan` 데이터를 좌표 변환(`tf`) 트리에 연결하지 못하기 때문  </summary>
+
+
+
+## ⚙️ 원인 분석
+
+- RPLidar 드라이버(`rplidar_ros`)는 기본적으로 `frame_id: laser_frame`으로 데이터를 발행합니다.
+- 반면, `scout_base` 노드(로봇 베이스)는 `base_link`를 본체 프레임으로 사용합니다.
+- 두 프레임이 연결되지 않으면 `/tf` 트리 상에서 **laser → base_link** 변환이 없어 SLAM이 라이다 데이터를 무시합니다.
+
+
+
+## ✅ 해결 방법
+
+### 1️⃣ RPLidar 런치 파일 수정
+
+`rplidar_a1_launch.py` (또는 사용하는 모델에 해당하는 런치 파일)을 열고  
+`frame_id` 값을 명시적으로 `"base_link"`로 수정합니다.
+
+#### 🔧 파일 열기
+
+bash
+nano /home/eddy/ros2_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a1_launch.py
+
+### 해결 방법
+| 구분         | 코드 내용                                                                                                                                                                                                                                                                                                                                                                      |
+| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **기존 코드**  | `python<br>Node(<br>    package='rplidar_ros',<br>    executable='rplidar_node',<br>    name='rplidar_node',<br>    output='screen',<br>    parameters=[{<br>        'serial_port': '/dev/ttyUSB0',<br>        'serial_baudrate': 115200,<br>        'inverted': False,<br>        'angle_compensate': True,<br>        # frame_id 누락<br>    }]<br>),`                     |
+| **수정된 코드** | `python<br>Node(<br>    package='rplidar_ros',<br>    executable='rplidar_node',<br>    name='rplidar_node',<br>    output='screen',<br>    parameters=[{<br>        'serial_port': '/dev/ttyUSB0',<br>        'serial_baudrate': 115200,<br>        'frame_id': 'base_link',  # ✅ 추가됨<br>        'inverted': False,<br>        'angle_compensate': True,<br>    }]<br>),` |
+
+### 모든 노드 재 시작
+
+# 1️⃣ 라이다 노드 실행
+ros2 launch rplidar_ros rplidar_a1_launch.py
+
+# 2️⃣ Scout Mini 본체 구동
+ros2 run scout_base scout_base_node --ros-args -p port_name:=can0 -p is_scout_mini:=true
+
+# 3️⃣ SLAM 실행 (예: slam_toolbox)
+ros2 launch slam_toolbox online_async_launch.py use_sim_time:=False
+
+# 4️⃣ RViz2 시각화
+ros2 run rviz2 rviz2
+</details>
+
+
+

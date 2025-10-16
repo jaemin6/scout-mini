@@ -138,6 +138,24 @@ scout_nav/
 │  └─ my_nav_params.yaml
 └─ README.md
 ```
+### 디렉토리 구조 분석
+```
+scout_nav/	패키지 루트	ROS 2 패키지의 최상위 폴더.
+├─ package.xml	패키지 정의	패키지 이름, 버전, 작성자, 빌드 및 실행 의존성 등 메타데이터 정의.
+├─ setup.py	Python 빌드 스크립트	Python 소스 코드(노드)를 빌드하고 설치하는 방법을 정의 (ROS 2 Python 패키지에서 필수).
+├─ setup.cfg	설정 파일 (선택적)	setuptools나 다른 도구에 대한 설정을 포함할 수 있음.
+├─ resource/	리소스/마커 파일	ROS 2가 패키지를 인식하는 데 사용하는 마커 파일 포함.
+│ └─ scout_nav	마커 파일 (내용은 패키지 이름과 동일).	
+├─ scout_nav/	Python 모듈 폴더	실제 Python 코드가 포함된 폴더. setup.py에 의해 Python 모듈로 인식됨.
+│ ├─ __init__.py	Python 모듈 초기화 파일.	
+│ ├─ send_goal.py	Nav2의 목표 지점(Goal)을 전송하는 등의 기능을 하는 Python 노드/스크립트.	
+│ └─ joystick_bridge.py	(선택) 조이스틱 입력을 로봇 제어 명령이나 Nav2 관련 명령으로 변환하는 노드.	
+├─ launch/	실행 파일 (Launch files)	Nav2 스택과 로봇 노드들을 한 번에 실행하기 위한 .launch.py 파일을 포함.
+│ └─ nav_with_py.launch.py	Nav2와 Python 노드들을 실행하는 주요 런치 파일.	
+├─ params/	매개변수 파일 (Parameters)	Nav2 스택(AMCL, Planner, Controller, Costmap 등)의 상세 설정을 위한 YAML 파일 포함.
+│ └─ my_nav_params.yaml	Nav2 관련 매개변수를 담고 있는 설정 파일.	
+└─ README.md	문서	패키지 사용 방법 및 설명을 담은 문서.
+```
 
 ## 📁 5-2. setup.py 예시
 ```

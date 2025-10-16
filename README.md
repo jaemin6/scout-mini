@@ -511,7 +511,7 @@ bring up 실행 시
 source ~/scout_ws/install/setup.bash
 ros2 launch scout_base scout_base.launch.py
 
-정상 동작시 /cmd_vel → /odom, /imu, /battery_state 등 토픽이 반환, 활성화 됨
+정상 동작시 /cmd_vel → /odom, /imu, /battery_state, /tf, /scout_base/feedback, /scan or /lidar/points 등 토픽이 반환, 활성화 됨
 라즈베리파이와 스카우트 본체가 CAN으로 통신 시작
 ```
 

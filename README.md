@@ -815,3 +815,47 @@ source install/setup.bash
 
 </details>
 
+
+<details>
+  
+<summary> 
+
+## ROS2에서 토픽이 공유되는 조건
+### 로컬 pc와 라즈베리 환경 변수 통일 </summary> 
+
+| 항목                     | 설명                                   | 두 환경에서 같아야 함 |
+| ---------------------- | ------------------------------------ | ------------ |
+| **ROS_DOMAIN_ID**      | 같은 도메인 ID여야 DDS 통신 가능                | ✅ 같아야 함      |
+| **ROS_LOCALHOST_ONLY** | 로컬 통신 제한 여부 (`0`이면 네트워크 허용)          | ✅ 둘 다 `0`    |
+| **RMW_IMPLEMENTATION** | DDS 미들웨어 종류 (기본: FastRTPS)           | ✅ 같아야 함      |
+| **네트워크 대역**            | 같은 네트워크 (예: 192.168.0.x)             | ✅ 같아야 함      |
+| **방화벽 / NAT**          | UDP 브로드캐스트 차단되면 안 됨                  | ✅ 오픈되어야 함    |
+| **패키지명 / 토픽명**         | 상관없음 (단, 퍼블리셔/서브스크라이버 토픽명이 일치해야 통신됨) | ⚙️ 코드에 따라 다름 |
+
+
+### 🟢 라즈베리파이
+```
+source /opt/ros/humble/setup.bash
+source ~/ros2_ws/install/setup.bash
+
+export ROS_DOMAIN_ID=30
+export ROS_LOCALHOST_ONLY=0
+export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
+export ROS_HOSTNAME=192.168.x.xxx
+```
+
+### 🟢 로컬 PC (VM)
+```
+source /opt/ros/humble/setup.bash
+source ~/ros2_ws/install/setup.bash
+
+export ROS_DOMAIN_ID=30
+export ROS_LOCALHOST_ONLY=0
+export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
+export ROS_HOSTNAME=192.168.x.xxx
+```
+
+</details>
+
+
+

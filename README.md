@@ -589,13 +589,75 @@ ros2 topic list
   
 # 🛠️ scout_base 빌드 오류 해결 가이드 (ROS 2 Humble 대응) 
 
+# 🧩 오류 해결: scout_base 빌드 실패 (tf2_geometry_msgs 관련)
+
+## 🔍 문제 원인
+`scout_base` 패키지를 `colcon build`로 컴파일할 때  
+`tf2_geometry_msgs` 관련 헤더나 라이브러리를 찾지 못하는 오류가 발생할 수 있습니다.  
+이는 `package.xml` 또는 `CMakeLists.txt`에 해당 패키지 의존성이 선언되어 있지 않기 때문입니다. </summary>
+
+
+
+## ✅ 1. package.xml 확인
+
+```
+📂 경로: `/home/eddy/ros2_ws/src/scout_ros2/scout_base/package.xml`
+
+`tf2_geometry_msgs`가 의존성으로 선언되어 있는지 확인합니다.  
+다음 두 줄 중 하나가 `<depend>`, `<build_depend>`, `<exec_depend>` 태그 내에 반드시 포함되어야 합니다.
+
+xml
+<depend>tf2_geometry_msgs</depend>
+만약 없다면, <build_depend>와 <exec_depend> 섹션에 다음을 추가하세요
+<build_depend>tf2_geometry_msgs</build_depend>
+<exec_depend>tf2_geometry_msgs</exec_depend>
+```
+
+### 2. CMakeLists.txt 확인
+📂 경로: /home/eddy/ros2_ws/src/scout_ros2/scout_base/CMakeLists.txt
+
+tf2_geometry_msgs를 컴파일러에 인식시키려면 다음 세 부분이 모두 존재해야 합니다.
+```
+find_package(tf2_geometry_msgs REQUIRED)
+
+target_include_directories(scout_base_node PRIVATE
+  ...
+  ${tf2_geometry_msgs_INCLUDE_DIRS}  # ✅ 반드시 포함
+)
+
+target_link_libraries(scout_base_node
+  ...
+  ${tf2_geometry_msgs_LIBRARIES}     # ✅ 반드시 포함
+)
+```
+
+
+### 수정이 끝 난 후
+cd ~/ros2_ws
+colcon build --packages-select scout_base
+source install/setup.bash
+
+
+## 요약
+| 파일               | 확인 항목        | 내용                                         |
+| ---------------- | ------------ | ------------------------------------------ |
+| `package.xml`    | 의존성 선언       | `<depend>tf2_geometry_msgs</depend>`       |
+| `CMakeLists.txt` | find_package | `find_package(tf2_geometry_msgs REQUIRED)` |
+| `CMakeLists.txt` | include 디렉토리 | `${tf2_geometry_msgs_INCLUDE_DIRS}`        |
+| `CMakeLists.txt` | 라이브러리 링크     | `${tf2_geometry_msgs_LIBRARIES}`           |
+</details>
+
+
+
+<summary> 
+
 ## 🚨 문제 요약
 
 ROS 2 Humble 버전에서 `declare_parameter()`를 기본값 없이 사용하면 다음과 같은 **CMake 오류** 또는 **rclcpp 파라미터 오류**가 발생
 CMake Error at CMakeLists.txt: ...
 rclcpp::ParameterTypeException: parameter 'port_name' has not been declared
 
-이 문제는 ROS 2 Foxy 이하 버전에서는 허용되던 코드가 Humble 이상에서는 **기본값을 반드시 지정해야 하는 방식으로 변경**되었기 때문입니다.</summary> 
+이 문제는 ROS 2 Foxy 이하 버전에서는 허용되던 코드가 Humble 이상에서는 **기본값을 반드시 지정해야 하는 방식으로 변경**되었기 때문입니다.</summary>
 
 ---
 ```

@@ -968,8 +968,7 @@ export ROS_HOSTNAME=192.168.x.xxx
   
 <summary> 
 
-# 📦 ROS2 패키지 설치 명령어 목적 및 Nav2 관련성 정리 (Humble 기준)  </summary>
-
+# 📦 ROS2 패키지 설치 명령어 목적 및 Nav2 관련성 정리 (Humble 기준)
 
 | 명령어 | 주요 기능 / 목적 | Nav2와의 관련성 | 없어도 되는지 여부 |
 |---------|------------------|------------------|--------------------|
@@ -977,6 +976,8 @@ export ROS_HOSTNAME=192.168.x.xxx
 | **sudo apt install ros-humble-nav2-simple-commander** | Nav2를 **파이썬 코드에서 제어**할 수 있게 해주는 라이브러리.<br>`BasicNavigator` 클래스 등 포함.<br>Python으로 `goToPose()` 등 호출 가능. | 🟢 **강력히 관련 있음 (Nav2 파이썬 제어 핵심)**<br>자율주행, 서빙 로봇 등에서 Python 스크립트로 Nav2를 제어할 때 반드시 필요. | ❌ **필수** (파이썬으로 Nav2 제어 시 반드시 설치) |
 | **sudo apt install ros-humble-tf-transformations** | TF 좌표 변환 관련 유틸리티 제공.<br>예: Euler ↔ Quaternion 변환 함수 등 (`euler_from_quaternion`, `quaternion_from_euler`) | 🔹 **보조적 관련**<br>Nav2 자체는 사용하지 않지만, Pose 계산/변환 시 유용함.<br>특히 파이썬 코드에서 yaw, roll, pitch 계산 시 자주 사용. | ✅ 없어도 됨 (필요 시만 설치) |
 | **sudo apt install python3-transforms3d** | 3D 변환 수학 라이브러리 (순수 Python).<br>TF가 아닌 **독립적인 행렬·쿼터니언 변환**을 지원.<br>ROS 외부 수학 계산용. | 🔹 **보조적 관련**<br>Nav2 자체에는 필요 없음.<br>파이썬 코드에서 쿼터니언·행렬 연산이 많을 때 편리. | ✅ 없어도 됨 (수학 계산이 필요할 때만 설치) |
+| **sudo apt install ros-humble-v4l2-camera** | ROS2용 **카메라 드라이버 패키지**.<br>UVC 웹캠 등 `/dev/video0` 장치를 ROS 노드(`/image_raw`)로 변환하여 발행.<br>RViz나 ArUco 마커 인식, 객체 추적 등 비전 기반 기능에서 사용. | 🟢 **간접적 관련 있음**<br>Nav2 자체에는 필요 없지만,<br>**Aruco 마커 인식 기반 위치 보정** 등 비전 기반 기능을 쓸 때 반드시 필요. | ✅ 없어도 됨 (카메라 비전 기능을 쓰지 않을 경우) |
+
 
 
 ```
@@ -986,6 +987,7 @@ export ROS_HOSTNAME=192.168.x.xxx
 - **결론:**  
   → Nav2를 단순히 실행하거나 RViz에서 제어하는 데는 불필요  
   → Python 코드로 Nav2를 제어하려면 `nav2-simple-commander` **꼭 필요**
+  - **추천:** `v4l2-camera` (카메라 기반 ArUco 등 비전 기능 사용 시)
 ```
 </details>
 

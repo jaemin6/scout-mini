@@ -648,6 +648,7 @@ source install/setup.bash
 </details>
 
 
+<details>
 
 <summary> 
 
@@ -857,5 +858,107 @@ export ROS_HOSTNAME=192.168.x.xxx
 
 </details>
 
+
+<details>
+  
+<summary> 
+
+# 🧭 SLAM 시 RViz2에서 선택해야 할 주요 토픽 가이드 (Scout Mini 기준)  </summary> 
+
+
+---
+
+## ✅ 1️⃣ Fixed Frame
+- **반드시 `map`으로 설정**
+  - RViz 상단 메뉴 → `Fixed Frame` → `map` 선택  
+  - 이 프레임이 RViz 전체의 기준 좌표계가 됩니다.  
+  - `odom`, `base_link`, `laser` 등은 `TF`를 통해 `map`과 연결되어야 합니다.
+
+---
+
+## ✅ 2️⃣ TF (Transform)
+- **추가 방법:** `Add` → `TF`
+- **기능:** 좌표계(`map`, `odom`, `base_link`, `laser`, `camera_link` 등) 간 관계를 시각화  
+- **확인 포인트:**
+  - `map → odom → base_link → laser` 연결이 반드시 이어져야 함  
+  - 연결이 끊기면 로봇 위치가 튀거나 맵이 갱신되지 않음
+
+---
+
+## ✅ 3️⃣ Map
+- **추가 방법:** `Add` → `By topic` → `/map`
+- **기능:** SLAM 노드가 생성한 지도(OccupancyGrid 형태) 시각화  
+- **Tip:** Color Scheme을 `map` 또는 `costmap`으로 두면 가시성이 좋음
+
+---
+
+## ✅ 4️⃣ Odometry
+- **추가 방법:** `Add` → `Odometry` → Topic: `/odom`
+- **기능:** 로봇 이동 궤적 시각화  
+- **옵션:** `Shape: Arrow` 또는 `Line` 설정 가능
+
+---
+
+## ✅ 5️⃣ LaserScan (Lidar)
+- **추가 방법:** `Add` → `LaserScan` → Topic: `/scan` (또는 `/rplidar/scan`, `/lidar/scan`)
+- **기능:** 라이다 센서가 인식한 점 구름(빨간 점 등) 표시  
+- **확인 포인트:**  
+  - 벽, 장애물 등이 제대로 찍히는지 확인  
+  - 점이 뜨지 않으면 라이다 연결 문제
+
+---
+
+## ✅ 6️⃣ RobotModel
+- **추가 방법:** `Add` → `RobotModel`
+- **기능:** `TF`를 기반으로 URDF 로봇 모델을 표시  
+- **확인 포인트:**  
+  - `base_link` 기준으로 로봇 형태가 표시되어야 함
+
+---
+
+## ✅ 7️⃣ Path (선택)
+- **추가 방법:** `Add` → `Path` → Topic: `/path` 또는 `/slam_toolbox/trajectory`
+- **기능:** 로봇이 지나온 경로를 선으로 표시
+
+---
+
+## ✅ 8️⃣ Pose 관련 (버튼)
+- **2D Pose Estimate:**  
+  - 로봇 초기 위치를 수동으로 지정 (Localization 때 필요)
+- **2D Nav Goal:**  
+  - Nav2 실행 시 목표 위치 지정용 (SLAM 단계에서는 비활성화해도 됨)
+
+---
+
+## ⚙️ 필수 확인 포인트
+- `TF` 체인: `map → odom → base_link → laser` 가 모두 연결되어야 함  
+- `/scan` 점들이 표시되지 않으면 라이다 문제  
+- `/map`이 갱신되지 않으면 SLAM 노드가 맵을 발행하지 못한 상태
+
+---
+
+## 💡 추가 팁
+- `slam_toolbox` 또는 `hector_slam`, `gmapping`에 따라 일부 토픽 이름이 다를 수 있습니다.  
+- 원하신다면 RViz2 구성을 자동으로 불러올 수 있는 **`.rviz2 설정 파일`** 도 만들어드릴 수 있습니다.  
+  → 사용 중인 SLAM 패키지 이름(`slam_toolbox`, `gmapping`, 등)을 알려주세요.  
+  → 바로 불러서 `File → Open Config` 로 한 번에 세팅 가능합니다.
+
+---
+
+## 정리 표
+| 구분    | RViz 항목          | 토픽 이름 예시             | 역할           |
+| ----- | ---------------- | -------------------- | ------------ |
+| 좌표계   | Fixed Frame      | map                  | RViz의 기준 좌표  |
+| 좌표 연결 | TF               | /tf, /tf_static      | 좌표 변환 관계 확인  |
+| 지도    | Map              | /map                 | SLAM이 생성한 지도 |
+| 위치 추정 | Odometry         | /odom                | 로봇 이동 경로     |
+| 센서    | LaserScan        | /scan                | 라이다 거리 데이터   |
+| 로봇 모델 | RobotModel       | (TF 기반)              | 로봇 구조 표시     |
+| 경로    | Path             | /trajectory 또는 /path | 이동 궤적 표시     |
+| 위치 지정 | 2D Pose Estimate | (버튼)                 | 초기 위치 지정용    |
+| 목표 지정 | 2D Nav Goal      | (버튼)                 | Nav2 때 사용    |
+
+
+</details>
 
 

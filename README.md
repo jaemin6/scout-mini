@@ -388,12 +388,14 @@ scout_mini_nav2_setup.md
 <summary>
 
 ## 관련 링크 </summary>
+```
+dofbot: https://www.yahboom.net/study/Dofbot-Jetson_nano
 로봇 팔, slam, nav2 : https://wiki.hiwonder.com/projects/PuppyPi/en/latest/docs/31.ROS2_SLAM_Mapping_Course.html#slam-mapping-principle
 ros2 : https://github.com/roasinc/scout_mini_ros2
 매뉴얼 : https://docs.roas.co.kr/scout_mini.html
 scout mini : https://github.com/mattiadutto/scout_navigation
 scout mini : https://github.com/agilexrobotics/scout_ros2
-
+```
  </details>
 
 <details>

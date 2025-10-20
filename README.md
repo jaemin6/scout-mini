@@ -991,4 +991,81 @@ export ROS_HOSTNAME=192.168.x.xxx
 ```
 </details>
 
+<details>
+  
+<summary> 
+
+# 🤖 Realsense + RPLidar + Scout SLAM 통합 실행 정리 </summary> 
+
+
+## 📦 전체 구성 요약
+| 구분 | 실행 환경 | 목적 | 주요 노드 / 센서 |
+|------|-------------|--------|------------------|
+| **1. Base Bringup** | SSH (라즈베리) | 로봇 구동부 활성화 (odom, tf, cmd_vel 등) | `scout_base` |
+| **2. RPLidar** | SSH (라즈베리) | 주변 거리 데이터 수집 | `rplidar_ros` |
+| **3. Realsense 카메라** | SSH (라즈베리) | 영상 + 깊이(Depth) 데이터 수집 | `realsense2_camera` |
+| **4. SLAM Toolbox** | SSH (라즈베리) | 라이다 + odom을 이용해 지도 작성 | `slam_toolbox` |
+| **5. Robot Model** | 로컬 (노트북) | RViz에서 URDF 모델 로딩 | `your_robot_description` |
+| **6. RViz2 시각화** | 로컬 (노트북) | 맵, 라이다, 카메라 등 시각화 | `rviz2` |
+| **7. Teleop Keyboard** | 로컬 (노트북) | 키보드로 로봇 제어 (`cmd_vel` 발행) | `teleop_twist_keyboard` |
+
+---
+
+## ⚙️ 실행 명령어 정리
+
+### 🧩 [라즈베리 SSH 환경]
+> 센서 및 SLAM 노드는 실제 하드웨어가 연결된 라즈베리에서 실행해야 합니다.
+
+| 실행 순서 | 기능 | 명령어 |
+|------------|--------|---------|
+| ① | **로봇 브링업 (Scout Base)** | `ros2 launch scout_base scout_base.launch.py` |
+| ② | **라이다 (RPLidar)** | `ros2 launch rplidar_ros rplidar_a1_launch.py` |
+| ③ | **Realsense 카메라** | `ros2 launch realsense2_camera rs_launch.py` |
+| ④ | **SLAM Toolbox** | `ros2 launch slam_toolbox online_async_launch.py` |
+
+---
+
+### 💻 [로컬 PC 환경]
+> 시각화 및 제어용 노드들은 로컬 PC에서 실행합니다.  
+> 로컬과 라즈베리가 같은 **ROS_DOMAIN_ID**로 연결되어 있어야 합니다.
+
+| 실행 순서 | 기능 | 명령어 |
+|------------|--------|---------|
+| ⑤ | **로봇 모델 표시 (URDF)** | `ros2 launch your_robot_description display.launch.py` |
+| ⑥ | **RViz2 시각화** | `ros2 run rviz2 rviz2` |
+| ⑦ | **텔레옵 키보드** | `ros2 run teleop_twist_keyboard teleop_twist_keyboard` |
+
+---
+
+## 🧠 RViz2에서 추가해야 할 주요 Topic
+
+| RViz2 Display 항목 | 구독할 토픽 이름 | 설명 |
+|---------------------|------------------|------|
+| **LaserScan** | `/scan` | RPLidar 거리 스캔 데이터 |
+| **Map** | `/map` | SLAM Toolbox에서 생성된 지도 |
+| **TF** | `/tf`, `/tf_static` | 좌표 변환 (map, odom, base_link 등) |
+| **Odometry** | `/odom` | 로봇의 위치 및 이동 정보 |
+| **Image (RGB)** | `/camera/color/image_raw` | RealSense 컬러 영상 |
+| **Depth Image** | `/camera/depth/image_rect_raw` | 깊이 영상 |
+| **RobotModel** | - | URDF 모델 표시 |
+| **Path (선택)** | `/slam_toolbox/trajectory` | 로봇의 이동 경로 시각화 |
+| **CmdVel (선택)** | `/cmd_vel` | 키보드 조작 속도 명령 확인용 |
+
+---
+
+## 🚀 실행 순서 예시 (권장 흐름)
+```bash
+# [라즈베리 터미널들]
+ros2 launch scout_base scout_base.launch.py
+ros2 launch rplidar_ros rplidar_a1_launch.py
+ros2 launch realsense2_camera rs_launch.py
+ros2 launch slam_toolbox online_async_launch.py
+
+# [로컬 노트북 터미널들]
+ros2 launch your_robot_description display.launch.py
+ros2 run rviz2 rviz2
+ros2 run teleop_twist_keyboard teleop_twist_keyboard
+```
+</details>
+
 

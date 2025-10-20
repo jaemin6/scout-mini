@@ -1020,7 +1020,7 @@ export ROS_HOSTNAME=192.168.x.xxx
 |------------|--------|---------|
 | ① | **로봇 브링업 (Scout Base)** | `ros2 launch scout_base scout_base.launch.py` |
 | ② | **라이다 (RPLidar)** | `ros2 launch rplidar_ros rplidar_a1_launch.py` |
-| ③ | **Realsense 카메라** | `ros2 launch realsense2_camera rs_launch.py` |
+| ③ | **Realsense 카메라** | `ros2 launch realsense2_camera rs_launch.py` |        ## 생략
 | ④ | **SLAM Toolbox** | `ros2 launch slam_toolbox online_async_launch.py` |
 
 ---
@@ -1031,7 +1031,7 @@ export ROS_HOSTNAME=192.168.x.xxx
 
 | 실행 순서 | 기능 | 명령어 |
 |------------|--------|---------|
-| ⑤ | **로봇 모델 표시 (URDF)** | `ros2 launch your_robot_description display.launch.py` |
+| ⑤ | **로봇 모델 표시 (URDF)** | `ros2 launch scout_description scout_base_description.launch.py` |
 | ⑥ | **RViz2 시각화** | `ros2 run rviz2 rviz2` |
 | ⑦ | **텔레옵 키보드** | `ros2 run teleop_twist_keyboard teleop_twist_keyboard` |
 
@@ -1058,11 +1058,11 @@ export ROS_HOSTNAME=192.168.x.xxx
 # [라즈베리 터미널들]
 ros2 launch scout_base scout_base.launch.py
 ros2 launch rplidar_ros rplidar_a1_launch.py
-ros2 launch realsense2_camera rs_launch.py
+ros2 launch realsense2_camera rs_launch.py       ## 생략
 ros2 launch slam_toolbox online_async_launch.py
 
 # [로컬 노트북 터미널들]
-ros2 launch your_robot_description display.launch.py
+ros2 launch scout_description scout_base_description.launch.py
 ros2 run rviz2 rviz2
 ros2 run teleop_twist_keyboard teleop_twist_keyboard
 ```

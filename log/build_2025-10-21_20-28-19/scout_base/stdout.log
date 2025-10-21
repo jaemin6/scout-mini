@@ -1,0 +1,26 @@
+[35m[1mConsolidate compiler generated dependencies of target scout_base_node[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/scout_base_node.dir/src/scout_base_ros.cpp.o[0m
+[ 66%] [32m[1mLinking CXX executable scout_base_node[0m
+[100%] Built target scout_base_node
+-- Install configuration: ""
+-- Installing: /home/eddy/ros2_ws/install/scout_base/lib/scout_base/scout_base_node
+-- Set runtime path of "/home/eddy/ros2_ws/install/scout_base/lib/scout_base/scout_base_node" to ""
+-- Installing: /home/eddy/ros2_ws/install/scout_base/share/scout_base//launch
+-- Installing: /home/eddy/ros2_ws/install/scout_base/share/scout_base//launch/scout_mini_omni_base.launch.py
+-- Installing: /home/eddy/ros2_ws/install/scout_base/share/scout_base//launch/scout_base.launch.py
+-- Installing: /home/eddy/ros2_ws/install/scout_base/share/scout_base//launch/scout_mini_base.launch.py
+-- Installing: /home/eddy/ros2_ws/install/scout_base/share/ament_index/resource_index/package_run_dependencies/scout_base
+-- Installing: /home/eddy/ros2_ws/install/scout_base/share/ament_index/resource_index/parent_prefix_path/scout_base
+-- Installing: /home/eddy/ros2_ws/install/scout_base/share/scout_base/environment/ament_prefix_path.sh
+-- Installing: /home/eddy/ros2_ws/install/scout_base/share/scout_base/environment/ament_prefix_path.dsv
+-- Installing: /home/eddy/ros2_ws/install/scout_base/share/scout_base/environment/path.sh
+-- Installing: /home/eddy/ros2_ws/install/scout_base/share/scout_base/environment/path.dsv
+-- Installing: /home/eddy/ros2_ws/install/scout_base/share/scout_base/local_setup.bash
+-- Installing: /home/eddy/ros2_ws/install/scout_base/share/scout_base/local_setup.sh
+-- Installing: /home/eddy/ros2_ws/install/scout_base/share/scout_base/local_setup.zsh
+-- Installing: /home/eddy/ros2_ws/install/scout_base/share/scout_base/local_setup.dsv
+-- Installing: /home/eddy/ros2_ws/install/scout_base/share/scout_base/package.dsv
+-- Installing: /home/eddy/ros2_ws/install/scout_base/share/ament_index/resource_index/packages/scout_base
+-- Installing: /home/eddy/ros2_ws/install/scout_base/share/scout_base/cmake/scout_baseConfig.cmake
+-- Installing: /home/eddy/ros2_ws/install/scout_base/share/scout_base/cmake/scout_baseConfig-version.cmake
+-- Installing: /home/eddy/ros2_ws/install/scout_base/share/scout_base/package.xml

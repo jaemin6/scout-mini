@@ -1,0 +1,2 @@
+Invoking command in '/home/eddy/ros2_ws/build/scout_base': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/eddy/ros2_ws/build/scout_base -- -j2 -l2
+Invoked command in '/home/eddy/ros2_ws/build/scout_base' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/eddy/ros2_ws/build/scout_base -- -j2 -l2

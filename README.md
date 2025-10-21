@@ -1106,7 +1106,7 @@ ros2 run teleop_twist_keyboard teleop_twist_keyboard
 ## ✅ 해결 방법
 URDF(또는 Xacro) 파일에 **라이다의 위치와 방향을 명시적으로 설정**해야 합니다.
 
-```xml
+   xml
 <!-- LiDAR 위치 및 방향 설정 예시 -->
 <link name="lidar_link">
   <visual>
@@ -1136,3 +1136,75 @@ URDF(또는 Xacro) 파일에 **라이다의 위치와 방향을 명시적으로 
 
 
 </details>
+
+
+<details>
+  
+<summary> 
+  
+# 🛠️ VMware 스냅샷 생성 방법과 중요성
+스냅샷은 현재 가상 머신(VM)의 **모든 상태 (디스크, 메모리, 설정 등)**를 파일로 저장하는 기능입니다.  
+나중에 문제가 생기면 이 상태로 몇 초 만에 복구할 수 있습니다.  </summary>
+
+---
+
+## 1. VMware 화면 예시
+
+### 🛠️ VMware 부팅 실패 해결책
+
+<img width="1561" height="944" alt="local날림" src="https://github.com/user-attachments/assets/5a45e95b-6f83-4901-89ec-4f5f5527366a" />
+
+- ## 위 이미지는가상 머신의 손상
+- ROS 문제가 아니라 로컬 PC의 우분투 환경 자체가 부팅되지 않고 있는 상태이므로 스냅샷이 없다면 다시 로컬 환경 재구성
+- ubuntu 자체를 다시 받아야 함
+- 스냅샷이 있다면 VMware Workstation에서 VM 상태 확인 및 스냅샷 기능 접근 방법을 보여줍니다.
+- 이미지처럼 VM 이름과 상태를 확인 후 스냅샷 메뉴를 이용합니다.
+
+---
+
+## 2. 왜 스냅샷이 중요한가?
+
+1. **빠른 복구**  
+   - 시스템이 꼬이거나 설정이 잘못되어도 스냅샷으로 몇 초 만에 이전 안정 상태로 돌아갈 수 있습니다.
+
+2. **실험/개발 안전 확보**  
+   - ROS2 빌드, SLAM, Nav2, 드라이버 설치 등 중요한 실습 전에 스냅샷을 찍으면 실패해도 안전하게 복구 가능.
+
+3. **환경 공유 및 백업**  
+   - 팀원이나 다른 기기에서 동일 환경을 재현할 수 있고, VM 전체 백업 역할을 합니다.
+
+---
+
+## 3. 스냅샷 생성 방법
+
+### 3-1. 가상 머신 정지 또는 일시 중지 (권장)
+
+- **권장**: VM 내부에서 **시스템 종료(Shutdown)**  
+- **빠른 방법**: VM 일시 중지(Suspend)  
+- 🚨 스냅샷 중에는 VM을 사용하지 않음
+
+### 3-2. 스냅샷 메뉴 접근
+
+| VMware 버전 | 메뉴 경로 |
+|------------|-----------|
+| Workstation | VM 메뉴 → Snapshot → Take Snapshot |
+| Player     | Player 메뉴 → Manage → Take Snapshot |
+
+### 3-3. 스냅샷 정보 입력
+
+- **Name (이름)**: ROS2_Humble_Scout_Build_Complete 등 상태를 명확히 나타내는 이름  
+- **Description (설명)**: scout_base 빌드, Nav2/SLAM 설치 완료, Git 설정 완료 등
+
+**Take Snapshot** 버튼 클릭 → 저장 완료
+
+---
+
+## 4. 스냅샷 확인 및 복구
+
+| 기능 | 설명 |
+|------|------|
+| Snapshot Manager (관리) | VM 메뉴 → Snapshot → Snapshot Manager에서 확인/관리 |
+| Go to Snapshot (복구) | 원하는 스냅샷 선택 후 **Go to** 클릭 → 즉시 선택 시점 복구 |
+
+</details>
+

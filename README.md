@@ -1208,3 +1208,126 @@ URDF(또는 Xacro) 파일에 **라이다의 위치와 방향을 명시적으로 
 
 </details>
 
+<details>
+  
+<summary> 
+
+# 🤖 ROS2 SLAM → Nav2 자율주행 통합 실행 가이드 (ScoutMini + RPLidar) </summary> 
+
+---
+
+## 🗺️ 1️⃣ SLAM (지도 생성 및 저장)
+
+### ⚙️ 단계별 설명
+
+SLAM은 라이다 센서 데이터를 이용해 로봇이 주행하는 공간의 지도를 실시간으로 작성하는 과정입니다.  
+ScoutMini + RPLidar를 사용하는 경우 다음 순서로 진행합니다.
+
+---
+
+### 🧩 (로컬 PC) 로봇 모델 및 시각화 실행
+```bash
+ros2 launch scout_description scout_base_description.launch.py
+- RViz에서 로봇의 모델이 나타나는지 확인합니다. (TF, base_link 등 확인) -
+```
+### 🌐 (SSH - 라즈베리파이) RPLidar 실행
+```
+ros2 launch rplidar_ros rplidar.launch.py
+LiDAR 센서가 /scan 토픽을 정상적으로 발행하는지 확인합니다.
+확인은 다음 명령어로 가능
+ros2 topic echo /scan
+```
+### 🧭 (SSH - 라즈베리파이) SLAM Toolbox 실행
+```
+ros2 launch slam_toolbox online_async_launch.py use_sim_time:=False
+이제 로봇을 주행시켜 주변 환경을 스캔, RViz에서 실시간으로 지도(Map)가 생성되는지 확인
+```
+### 💾 (SSH - 라즈베리파이) 맵 저장
+```
+ros2 service call /slam_toolbox/save_map slam_toolbox/srv/SaveMap "{name: \"/home/eddy/ros2_ws/maps/slamdunk\"}"
+정상적으로 저장되면 /home/eddy/ros2_ws/maps/ 경로에 다음 파일이 생성
+slamdunk_map.yaml
+slamdunk_map.pgm
+```
+image: slamdunk.pgm
+mode: trinary
+resolution: 0.05
+origin: [-6.06, -2.34, 0]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.25
+</details>
+
+<details>
+  
+<summary> 
+  
+# 🚗 2️⃣ Nav2 자율주행 실행 </summary> 
+## 이제 생성한 맵(slamdunk_map.yaml, slamdunk_map.pgm)을 사용하여 자율주행을 수행합니다.
+
+### 🌐 (SSH - 라즈베리파이) 라이다 재실행
+```
+ros2 launch rplidar_ros rplidar.launch.py
+```
+### 🔧 (SSH - 라즈베리파이) 로봇 Bringup 실행
+```
+ros2 launch scout_bringup base_bringup.launch.py
+만약 scout_bringup 패키지가 없으면, 로봇 기본 TF와 odom을 담당하는 launch 파일을 대신 실행해야 
+```
+### 🧭 (SSH - 라즈베리파이) Nav2 실행
+```
+패키지가 있을 경우
+ros2 launch scout_navigation2 navigation2.launch.py map:=maps/slamdunk_map.yaml
+패키지가 없을 경우, 기본 Nav2 Bringup을 실행
+ros2 launch nav2_bringup navigation_launch.py use_sim_time:=False map:=/home/eddy/ros2_ws/maps/slamdunk_map.yaml
+```
+### 💡 (선택) 초기 시작 좌표 설정
+Nav2 실행 시 로봇의 시작 좌표를 지정하려면 다음 인자를 추가, RViz에서 수동으로 2D Pose Estimate 버튼을 눌러 시작 위치를 지정할 수도 있음
+```
+ros2 launch nav2_bringup navigation_launch.py \
+  use_sim_time:=False \
+  map:=/home/eddy/ros2_ws/maps/slamdunk_map.yaml \
+  initial_pose_x:=0.0 initial_pose_y:=0.0 initial_pose_a:=0.0
+```
+### 🧭 (로컬 PC) 로봇 모델 및 RViz 실행
+```
+ros2 launch scout_description scout_base_description.launch.py
+ros2 run rviz2 rviz2
+```
+
+## 📋 실행 전체 요약 순서
+| 순서 | 실행 위치 | 명령어                                                                   | 설명            |
+| -- | ----- | --------------------------------------------------------------------- | ------------- |
+| 1  | Local | `ros2 launch scout_description scout_base_description.launch.py`      | 로봇 모델 표시      |
+| 2  | SSH   | `ros2 launch rplidar_ros rplidar.launch.py`                           | 라이다 실행        |
+| 3  | SSH   | `ros2 launch slam_toolbox online_async_launch.py use_sim_time:=False` | SLAM 수행       |
+| 4  | SSH   | `ros2 service call /slam_toolbox/save_map ...`                        | 맵 저장          |
+| 5  | SSH   | `ros2 launch scout_bringup base_bringup.launch.py`                    | 로봇 bringup 실행 |
+| 6  | SSH   | `ros2 launch nav2_bringup navigation_launch.py ...`                   | Nav2 실행       |
+| 7  | Local | `ros2 run rviz2 rviz2`                                                | 자율주행 시각화      |
+
+
+### 📦 맵 파일 예시 (slamdunk.yaml)
+```
+image: slamdunk.pgm
+mode: trinary
+resolution: 0.05
+origin: [-1.0, -2.0, 0.0]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.25
+```
+
+</details>
+
+
+
+
+
+
+
+
+
+
+
+

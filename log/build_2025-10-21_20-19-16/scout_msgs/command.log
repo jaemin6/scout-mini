@@ -1,6 +1,0 @@
-Invoking command in '/home/eddy/ros2_ws/build/scout_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/eddy/ros2_ws/src/scout_ros2/scout_msgs -DCMAKE_INSTALL_PREFIX=/home/eddy/ros2_ws/install/scout_msgs
-Invoked command in '/home/eddy/ros2_ws/build/scout_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/eddy/ros2_ws/src/scout_ros2/scout_msgs -DCMAKE_INSTALL_PREFIX=/home/eddy/ros2_ws/install/scout_msgs
-Invoking command in '/home/eddy/ros2_ws/build/scout_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eddy/ros2_ws/build/scout_msgs -- -j2 -l2
-Invoked command in '/home/eddy/ros2_ws/build/scout_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eddy/ros2_ws/build/scout_msgs -- -j2 -l2
-Invoking command in '/home/eddy/ros2_ws/build/scout_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eddy/ros2_ws/build/scout_msgs
-Invoked command in '/home/eddy/ros2_ws/build/scout_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eddy/ros2_ws/build/scout_msgs

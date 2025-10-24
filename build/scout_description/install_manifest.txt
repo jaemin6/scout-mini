@@ -1,4 +1,5 @@
 /home/eddy/ros2_ws/install/scout_description/share/scout_description//launch/scout_base_description.launch.py
+/home/eddy/ros2_ws/install/scout_description/share/scout_description//launch/robot_bringup.launch.py
 /home/eddy/ros2_ws/install/scout_description/share/scout_description//urdf/scout_v2.urdf
 /home/eddy/ros2_ws/install/scout_description/share/scout_description//urdf/scout_v2.xacro
 /home/eddy/ros2_ws/install/scout_description/share/scout_description//urdf/scout_wheel_type1.xacro

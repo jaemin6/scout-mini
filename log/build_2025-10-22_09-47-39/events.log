@@ -1,0 +1,8 @@
+[0.000000] (-) TimerEvent: {}
+[0.000177] (-) JobUnselected: {'identifier': 'my-test-package'}
+[0.000224] (-) JobUnselected: {'identifier': 'scout_base'}
+[0.000260] (-) JobUnselected: {'identifier': 'scout_description'}
+[0.000310] (-) JobUnselected: {'identifier': 'scout_msgs'}
+[0.000344] (-) JobUnselected: {'identifier': 'scout_navigation2'}
+[0.000358] (-) JobUnselected: {'identifier': 'ugv_sdk'}
+[0.000692] (-) EventReactorShutdown: {}

@@ -1321,6 +1321,70 @@ free_thresh: 0.25
 </details>
 
 
+<details>
+  
+<summary> 
+
+# Webcam 연결 시 환경 셋팅 </summary> 
+
+## 필요 패키지 설치
+```
+sudo apt install ros-humble-v4l2-camera     # 기본 webcam 패키지
+sudo apt install ros-humble-rqt-image-view  # rqt 이미지 확인을 위해 설치
+sudo apt install ros-humble-image-transport-plugins  # 토픽 변환 플러그인 설치
+```
+## 실행 방법
+```
+ros2 run v4l2_camera v4l2_camera_node 실행 
+ros2 topil list 확인
+/image_raw, /camera_info  반환갑이 나오면 성공
+
+rqt_image_view  실행
+좌측 상단의 드롭다운 메뉴에서 발행되고 있는 이미지 토픽인 **/image_raw 선택
+ros2 run rviz2 rviz2
+좌측 하단 add image_raw 선택
+
+디렉토리 찾지 못할 시 
+export PATH=$PATH:/opt/ros/humble/lib/rqt_image_view
+```
+</details>
+
+
+<details>
+  
+<summary> 
+
+
+# Nav2 까지의 최종 실행 순서 </summary> 
+
+## 1. can 통신 확인
+```
+켄통신 활성화
+sudo ip link set can0 type can bitrate 500000
+sudo ip link set up can0
+
+켄통신 활성화 확인
+ifconfig can0
+```
+
+## 2. 브링업 시작 노드 실행
+```
+ssh-raspberry pi 환경
+1. ros2 launch scout_base scout_base.launch.py
+2. ros2 launch rplidar_ros rplidar_a1_launch.py
+3. ros2 launch slam_toolbox online_async_launch.py # 슬램 진행 이후면 제외
+4. ros2 run v4l2_camera v4l2_camera_node 웹캠
+4-1. ros2 run v4l2_camera v4l2_camera_node --ros-args -p image_size:="[640, 480]" 웹캠 해상도 고정
+5. ros2 run teleop_twist_keyboard teleop_twist_keyboard # 슬램 진행 이후면 생략
+6. ros2 launch nav2_bringup bringup_launch.py     map:=/home/eddy/ros2_ws/maps/slamdunk.yaml     autostart:=true     use_sim_time:=false    # slam map 불러오기
+local 환경
+1. ros2 launch scout_description scout_base_description.launch.py
+2. ros2 run rviz2 rviz2  # image topic 추
+3. rqt_image_view   # webcam 확인
+
+</details>
+
+
 
 
 

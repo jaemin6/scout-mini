@@ -1,0 +1,517 @@
+[0.000000] (-) TimerEvent: {}
+[0.000313] (scout_description) JobQueued: {'identifier': 'scout_description', 'dependencies': OrderedDict()}
+[0.000341] (scout_msgs) JobQueued: {'identifier': 'scout_msgs', 'dependencies': OrderedDict()}
+[0.000397] (ugv_sdk) JobQueued: {'identifier': 'ugv_sdk', 'dependencies': OrderedDict()}
+[0.000437] (scout_base) JobQueued: {'identifier': 'scout_base', 'dependencies': OrderedDict([('scout_msgs', '/home/eddy/ros2_ws/install/scout_msgs'), ('ugv_sdk', '/home/eddy/ros2_ws/install/ugv_sdk')])}
+[0.000474] (scout_msgs) JobStarted: {'identifier': 'scout_msgs'}
+[0.006079] (ugv_sdk) JobStarted: {'identifier': 'ugv_sdk'}
+[0.010672] (scout_msgs) JobProgress: {'identifier': 'scout_msgs', 'progress': 'cmake'}
+[0.011680] (scout_msgs) JobProgress: {'identifier': 'scout_msgs', 'progress': 'build'}
+[0.011732] (scout_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/eddy/ros2_ws/build/scout_msgs', '--', '-j2', '-l2'], 'cwd': '/home/eddy/ros2_ws/build/scout_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'eddy'), ('LC_TIME', 'ko_KR.UTF-8'), ('ROS_PACKAGE_PATH', '/home/eddy/ros2_ws/install/ugv_sdk/share'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/eddy/ros2_ws/install/scout_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eddy'), ('OLDPWD', '/home/eddy/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '1596'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/eddy/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'eddy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/eddy/ros2_ws/install/ugv_sdk/lib/x86_64-linux-gnu/pkgconfig:/home/eddy/ros2_ws/install/ugv_sdk/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eddy'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/eddy-jam:@/tmp/.ICE-unix/1570,unix/eddy-jam:/tmp/.ICE-unix/1570'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/63096ea5_79c6_4501_ab73_8a915338c420'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.11IJE3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/eddy/ros2_ws/install/scout_msgs:/home/eddy/ros2_ws/install/scout_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eddy/ros2_ws/build/scout_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble:/home/eddy/ros2_ws/install/ugv_sdk:/home/eddy/ros2_ws/install/scout_msgs:/home/eddy/ros2_ws/install/scout_description')]), 'shell': False}
+[0.019413] (ugv_sdk) JobProgress: {'identifier': 'ugv_sdk', 'progress': 'cmake'}
+[0.019595] (ugv_sdk) JobProgress: {'identifier': 'ugv_sdk', 'progress': 'build'}
+[0.019625] (ugv_sdk) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/eddy/ros2_ws/build/ugv_sdk', '--', '-j2', '-l2'], 'cwd': '/home/eddy/ros2_ws/build/ugv_sdk', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'eddy'), ('LC_TIME', 'ko_KR.UTF-8'), ('ROS_PACKAGE_PATH', '/home/eddy/ros2_ws/install/ugv_sdk/share'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/eddy/ros2_ws/install/scout_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eddy'), ('OLDPWD', '/home/eddy/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '1596'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/eddy/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'eddy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/eddy/ros2_ws/install/ugv_sdk/lib/x86_64-linux-gnu/pkgconfig:/home/eddy/ros2_ws/install/ugv_sdk/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eddy'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/eddy-jam:@/tmp/.ICE-unix/1570,unix/eddy-jam:/tmp/.ICE-unix/1570'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/63096ea5_79c6_4501_ab73_8a915338c420'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.11IJE3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/eddy/ros2_ws/install/scout_msgs:/home/eddy/ros2_ws/install/scout_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eddy/ros2_ws/build/ugv_sdk'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/eddy/ros2_ws/install/ugv_sdk:/home/eddy/ros2_ws/install/scout_msgs:/home/eddy/ros2_ws/install/scout_description')]), 'shell': False}
+[0.074364] (scout_msgs) StdoutLine: {'line': b'[ 11%] Built target scout_msgs__rosidl_generator_c\n'}
+[0.076106] (scout_msgs) StdoutLine: {'line': b'[ 12%] Built target scout_msgs__cpp\n'}
+[0.088369] (ugv_sdk) StdoutLine: {'line': b'[ 44%] Built target ugv_sdk\n'}
+[0.100254] (-) TimerEvent: {}
+[0.102970] (scout_msgs) StdoutLine: {'line': b'[ 23%] Built target scout_msgs__rosidl_typesupport_cpp\n'}
+[0.112342] (scout_msgs) StdoutLine: {'line': b'[ 23%] Built target ament_cmake_python_copy_scout_msgs\n'}
+[0.136285] (ugv_sdk) StdoutLine: {'line': b'[ 51%] Built target demo_scout_mini_omni_robot\n'}
+[0.138122] (ugv_sdk) StdoutLine: {'line': b'[ 58%] Built target demo_scout_robot\n'}
+[0.143036] (scout_msgs) StdoutLine: {'line': b'[ 34%] Built target scout_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[0.165133] (scout_msgs) StdoutLine: {'line': b'[ 46%] Built target scout_msgs__rosidl_typesupport_fastrtps_c\n'}
+[0.165645] (scout_msgs) StdoutLine: {'line': b'[ 57%] Built target scout_msgs__rosidl_typesupport_introspection_c\n'}
+[0.177254] (ugv_sdk) StdoutLine: {'line': b'[ 65%] Built target demo_tracer_robot\n'}
+[0.186377] (ugv_sdk) StdoutLine: {'line': b'[ 72%] Built target demo_ranger_robot\n'}
+[0.194947] (scout_msgs) StdoutLine: {'line': b'[ 68%] Built target scout_msgs__rosidl_typesupport_c\n'}
+[0.203735] (-) TimerEvent: {}
+[0.206068] (scout_msgs) StdoutLine: {'line': b'[ 79%] Built target scout_msgs__rosidl_typesupport_introspection_cpp\n'}
+[0.210453] (ugv_sdk) StdoutLine: {'line': b'[ 79%] Built target demo_bunker_robot\n'}
+[0.234164] (scout_msgs) StdoutLine: {'line': b'[ 79%] Built target scout_msgs\n'}
+[0.234305] (ugv_sdk) StdoutLine: {'line': b'[ 86%] Built target demo_hunter_robot\n'}
+[0.262690] (ugv_sdk) StdoutLine: {'line': b'[ 93%] Built target demo_protocol_detector\n'}
+[0.267596] (scout_msgs) StdoutLine: {'line': b'[ 80%] Built target scout_msgs__py\n'}
+[0.286829] (ugv_sdk) StdoutLine: {'line': b'[100%] Built target demo_robot_version\n'}
+[0.288041] (scout_msgs) StdoutLine: {'line': b'[ 90%] Built target scout_msgs__rosidl_generator_py\n'}
+[0.302301] (ugv_sdk) CommandEnded: {'returncode': 0}
+[0.304591] (-) TimerEvent: {}
+[0.306644] (ugv_sdk) JobProgress: {'identifier': 'ugv_sdk', 'progress': 'install'}
+[0.308198] (scout_msgs) StdoutLine: {'line': b'[ 93%] Built target scout_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.319929] (ugv_sdk) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/eddy/ros2_ws/build/ugv_sdk'], 'cwd': '/home/eddy/ros2_ws/build/ugv_sdk', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'eddy'), ('LC_TIME', 'ko_KR.UTF-8'), ('ROS_PACKAGE_PATH', '/home/eddy/ros2_ws/install/ugv_sdk/share'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/eddy/ros2_ws/install/scout_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eddy'), ('OLDPWD', '/home/eddy/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '1596'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/eddy/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'eddy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/eddy/ros2_ws/install/ugv_sdk/lib/x86_64-linux-gnu/pkgconfig:/home/eddy/ros2_ws/install/ugv_sdk/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eddy'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/eddy-jam:@/tmp/.ICE-unix/1570,unix/eddy-jam:/tmp/.ICE-unix/1570'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/63096ea5_79c6_4501_ab73_8a915338c420'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.11IJE3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/eddy/ros2_ws/install/scout_msgs:/home/eddy/ros2_ws/install/scout_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eddy/ros2_ws/build/ugv_sdk'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/eddy/ros2_ws/install/ugv_sdk:/home/eddy/ros2_ws/install/scout_msgs:/home/eddy/ros2_ws/install/scout_description')]), 'shell': False}
+[0.327330] (scout_msgs) StdoutLine: {'line': b'[ 96%] Built target scout_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[0.331478] (ugv_sdk) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[0.331724] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/lib/libugv_sdk.a\n'}
+[0.331877] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk\n'}
+[0.332032] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/mobile_robot\n'}
+[0.332191] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/mobile_robot/titan_robot.hpp\n'}
+[0.332307] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/mobile_robot/ranger_robot.hpp\n'}
+[0.332418] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/mobile_robot/hunter_robot.hpp\n'}
+[0.332535] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/mobile_robot/tracer_robot.hpp\n'}
+[0.334276] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/mobile_robot/scout_robot.hpp\n'}
+[0.334421] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/mobile_robot/bunker_robot.hpp\n'}
+[0.334474] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/utilities\n'}
+[0.334967] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/utilities/protocol_detector.hpp\n'}
+[0.335043] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details\n'}
+[0.335091] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/interface\n'}
+[0.335135] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/interface/robot_common_interface.hpp\n'}
+[0.335178] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/interface/bunker_interface.hpp\n'}
+[0.335221] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/interface/ranger_interface.hpp\n'}
+[0.335263] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/interface/titan_interface.hpp\n'}
+[0.335315] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/interface/scout_interface.hpp\n'}
+[0.335357] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/interface/agilex_message.h\n'}
+[0.335919] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/interface/tracer_interface.hpp\n'}
+[0.336010] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/interface/hunter_interface.hpp\n'}
+[0.336060] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/interface/agilex_types.h\n'}
+[0.336106] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/robot_base\n'}
+[0.338412] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/robot_base/tracer_base.hpp\n'}
+[0.338628] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/robot_base/ranger_base.hpp\n'}
+[0.338762] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/robot_base/titan_base.hpp\n'}
+[0.341161] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/robot_base/bunker_base.hpp\n'}
+[0.341295] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/robot_base/hunter_base.hpp\n'}
+[0.341406] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/robot_base/agilex_base.hpp\n'}
+[0.341514] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/robot_base/scout_base.hpp\n'}
+[0.341650] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/protocol_v2\n'}
+[0.341759] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/protocol_v2/protocol_v2_parser.hpp\n'}
+[0.342027] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/async_port\n'}
+[0.342142] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/async_port/ring_buffer.hpp\n'}
+[0.342250] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/async_port/async_serial.hpp\n'}
+[0.342341] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/async_port/async_can.hpp\n'}
+[0.342420] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/parser_base.hpp\n'}
+[0.342465] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/protocol_v1\n'}
+[0.342507] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/protocol_v1/protocol_v1_parser.hpp\n'}
+[0.345954] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/protocol_v1/robot_limits.hpp\n'}
+[0.346060] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/protocol_v1/agilex_msg_parser_v1.h\n'}
+[0.346113] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/lib/cmake/ugv_sdk/ugv_sdkTargets.cmake\n'}
+[0.346159] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/lib/cmake/ugv_sdk/ugv_sdkTargets-release.cmake\n'}
+[0.346203] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/lib/cmake/ugv_sdk/ugv_sdkConfig.cmake\n'}
+[0.346247] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/lib/cmake/ugv_sdk/ugv_sdkConfigVersion.cmake\n'}
+[0.346295] (ugv_sdk) CommandEnded: {'returncode': 0}
+[0.362123] (scout_msgs) StdoutLine: {'line': b'[100%] Built target scout_msgs__rosidl_typesupport_c__pyext\n'}
+[0.370076] (ugv_sdk) JobEnded: {'identifier': 'ugv_sdk', 'rc': 0}
+[0.370635] (scout_description) JobStarted: {'identifier': 'scout_description'}
+[0.375607] (scout_description) JobProgress: {'identifier': 'scout_description', 'progress': 'cmake'}
+[0.377135] (scout_description) JobProgress: {'identifier': 'scout_description', 'progress': 'build'}
+[0.377175] (scout_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/eddy/ros2_ws/build/scout_description', '--', '-j2', '-l2'], 'cwd': '/home/eddy/ros2_ws/build/scout_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'eddy'), ('LC_TIME', 'ko_KR.UTF-8'), ('ROS_PACKAGE_PATH', '/home/eddy/ros2_ws/install/ugv_sdk/share'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/eddy/ros2_ws/install/scout_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eddy'), ('OLDPWD', '/home/eddy/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '1596'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/eddy/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'eddy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/eddy/ros2_ws/install/ugv_sdk/lib/x86_64-linux-gnu/pkgconfig:/home/eddy/ros2_ws/install/ugv_sdk/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eddy'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/eddy-jam:@/tmp/.ICE-unix/1570,unix/eddy-jam:/tmp/.ICE-unix/1570'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/63096ea5_79c6_4501_ab73_8a915338c420'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.11IJE3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/eddy/ros2_ws/install/scout_msgs:/home/eddy/ros2_ws/install/scout_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eddy/ros2_ws/build/scout_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble:/home/eddy/ros2_ws/install/ugv_sdk:/home/eddy/ros2_ws/install/scout_msgs:/home/eddy/ros2_ws/install/scout_description')]), 'shell': False}
+[0.407319] (-) TimerEvent: {}
+[0.412071] (scout_description) CommandEnded: {'returncode': 0}
+[0.412788] (scout_description) JobProgress: {'identifier': 'scout_description', 'progress': 'install'}
+[0.412999] (scout_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/eddy/ros2_ws/build/scout_description'], 'cwd': '/home/eddy/ros2_ws/build/scout_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'eddy'), ('LC_TIME', 'ko_KR.UTF-8'), ('ROS_PACKAGE_PATH', '/home/eddy/ros2_ws/install/ugv_sdk/share'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/eddy/ros2_ws/install/scout_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eddy'), ('OLDPWD', '/home/eddy/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '1596'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/eddy/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'eddy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/eddy/ros2_ws/install/ugv_sdk/lib/x86_64-linux-gnu/pkgconfig:/home/eddy/ros2_ws/install/ugv_sdk/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eddy'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/eddy-jam:@/tmp/.ICE-unix/1570,unix/eddy-jam:/tmp/.ICE-unix/1570'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/63096ea5_79c6_4501_ab73_8a915338c420'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.11IJE3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/eddy/ros2_ws/install/scout_msgs:/home/eddy/ros2_ws/install/scout_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eddy/ros2_ws/build/scout_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble:/home/eddy/ros2_ws/install/ugv_sdk:/home/eddy/ros2_ws/install/scout_msgs:/home/eddy/ros2_ws/install/scout_description')]), 'shell': False}
+[0.420329] (scout_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.420586] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description//launch\n'}
+[0.420772] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description//launch/scout_base_description.launch.py\n'}
+[0.420835] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description//urdf\n'}
+[0.421129] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description//urdf/scout_v2.urdf\n'}
+[0.421197] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description//urdf/scout_v2.xacro\n'}
+[0.421348] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description//urdf/scout_wheel_type1.xacro\n'}
+[0.421406] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description//urdf/scout_wheel_type2.xacro\n'}
+[0.422671] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description//urdf/generate_urdf.sh\n'}
+[0.422753] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description//meshes\n'}
+[0.422803] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description//meshes/hokuyo.dae\n'}
+[0.422857] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description//meshes/base_link.dae\n'}
+[0.422901] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description//meshes/wheel_type2.dae\n'}
+[0.422944] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description//meshes/wheel_type1.dae\n'}
+[0.422987] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description//meshes/base_link_full.dae\n'}
+[0.423030] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/ament_index/resource_index/package_run_dependencies/scout_description\n'}
+[0.423073] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/ament_index/resource_index/parent_prefix_path/scout_description\n'}
+[0.423117] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description/environment/ament_prefix_path.sh\n'}
+[0.423159] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description/environment/ament_prefix_path.dsv\n'}
+[0.423201] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description/environment/path.sh\n'}
+[0.423244] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description/environment/path.dsv\n'}
+[0.423286] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description/local_setup.bash\n'}
+[0.423328] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description/local_setup.sh\n'}
+[0.423370] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description/local_setup.zsh\n'}
+[0.423411] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description/local_setup.dsv\n'}
+[0.423453] (scout_description) StdoutLine: {'line': b'-- Installing: /home/eddy/ros2_ws/install/scout_description/share/scout_description/package.dsv\n'}
+[0.423495] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/ament_index/resource_index/packages/scout_description\n'}
+[0.423537] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description/cmake/scout_descriptionConfig.cmake\n'}
+[0.423579] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description/cmake/scout_descriptionConfig-version.cmake\n'}
+[0.423621] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description/package.xml\n'}
+[0.426271] (scout_description) CommandEnded: {'returncode': 0}
+[0.438322] (scout_description) JobEnded: {'identifier': 'scout_description', 'rc': 0}
+[0.507914] (-) TimerEvent: {}
+[0.508163] (scout_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[0.508636] (scout_msgs) StdoutLine: {'line': b'writing scout_msgs.egg-info/PKG-INFO\n'}
+[0.509074] (scout_msgs) StdoutLine: {'line': b'writing dependency_links to scout_msgs.egg-info/dependency_links.txt\n'}
+[0.509281] (scout_msgs) StdoutLine: {'line': b'writing top-level names to scout_msgs.egg-info/top_level.txt\n'}
+[0.511300] (scout_msgs) StdoutLine: {'line': b"reading manifest file 'scout_msgs.egg-info/SOURCES.txt'\n"}
+[0.511828] (scout_msgs) StdoutLine: {'line': b"writing manifest file 'scout_msgs.egg-info/SOURCES.txt'\n"}
+[0.537268] (scout_msgs) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_scout_msgs_egg\n'}
+[0.549540] (scout_msgs) CommandEnded: {'returncode': 0}
+[0.551301] (scout_msgs) JobProgress: {'identifier': 'scout_msgs', 'progress': 'install'}
+[0.551354] (scout_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/eddy/ros2_ws/build/scout_msgs'], 'cwd': '/home/eddy/ros2_ws/build/scout_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'eddy'), ('LC_TIME', 'ko_KR.UTF-8'), ('ROS_PACKAGE_PATH', '/home/eddy/ros2_ws/install/ugv_sdk/share'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/eddy/ros2_ws/install/scout_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eddy'), ('OLDPWD', '/home/eddy/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '1596'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/eddy/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'eddy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/eddy/ros2_ws/install/ugv_sdk/lib/x86_64-linux-gnu/pkgconfig:/home/eddy/ros2_ws/install/ugv_sdk/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eddy'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/eddy-jam:@/tmp/.ICE-unix/1570,unix/eddy-jam:/tmp/.ICE-unix/1570'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/63096ea5_79c6_4501_ab73_8a915338c420'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.11IJE3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/eddy/ros2_ws/install/scout_msgs:/home/eddy/ros2_ws/install/scout_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eddy/ros2_ws/build/scout_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble:/home/eddy/ros2_ws/install/ugv_sdk:/home/eddy/ros2_ws/install/scout_msgs:/home/eddy/ros2_ws/install/scout_description')]), 'shell': False}
+[0.559153] (scout_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.559268] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/ament_index/resource_index/rosidl_interfaces/scout_msgs\n'}
+[0.559322] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs\n'}
+[0.559370] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg\n'}
+[0.559417] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.559462] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/scout_status.h\n'}
+[0.559506] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/scout_light_state.h\n'}
+[0.559550] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/scout_rc_state.h\n'}
+[0.559594] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/scout_light_cmd.h\n'}
+[0.559636] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail\n'}
+[0.559679] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_cmd__struct.h\n'}
+[0.559737] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_state__struct.h\n'}
+[0.559800] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_status__functions.h\n'}
+[0.559869] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_rc_state__functions.c\n'}
+[0.559910] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_cmd__functions.c\n'}
+[0.559951] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_state__functions.h\n'}
+[0.559992] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_status__struct.h\n'}
+[0.560033] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_status__type_support.h\n'}
+[0.560074] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_rc_state__struct.h\n'}
+[0.560124] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_rc_state__type_support.h\n'}
+[0.560170] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_actuator_state__type_support.h\n'}
+[0.560212] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_cmd__type_support.h\n'}
+[0.560253] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_state__functions.c\n'}
+[0.560293] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_status__functions.c\n'}
+[0.560334] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_state__type_support.h\n'}
+[0.560375] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_actuator_state__struct.h\n'}
+[0.560423] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_actuator_state__functions.h\n'}
+[0.560465] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_rc_state__functions.h\n'}
+[0.560506] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_cmd__functions.h\n'}
+[0.560546] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_actuator_state__functions.c\n'}
+[0.560587] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/scout_actuator_state.h\n'}
+[0.561189] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/environment/library_path.sh\n'}
+[0.561281] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/environment/library_path.dsv\n'}
+[0.561333] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/lib/libscout_msgs__rosidl_generator_c.so\n'}
+[0.561380] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs\n'}
+[0.561430] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg\n'}
+[0.561514] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail\n'}
+[0.561646] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_state__rosidl_typesupport_fastrtps_c.h\n'}
+[0.561849] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_cmd__rosidl_typesupport_fastrtps_c.h\n'}
+[0.562085] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_rc_state__rosidl_typesupport_fastrtps_c.h\n'}
+[0.562275] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_actuator_state__rosidl_typesupport_fastrtps_c.h\n'}
+[0.562412] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_status__rosidl_typesupport_fastrtps_c.h\n'}
+[0.562480] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.562528] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/lib/libscout_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[0.562580] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs\n'}
+[0.562625] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg\n'}
+[0.562669] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[0.562713] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail\n'}
+[0.562757] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_cmd__type_support.hpp\n'}
+[0.562800] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_cmd__traits.hpp\n'}
+[0.562844] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_status__builder.hpp\n'}
+[0.562891] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_actuator_state__builder.hpp\n'}
+[0.562935] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_rc_state__builder.hpp\n'}
+[0.562983] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_status__traits.hpp\n'}
+[0.563027] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_rc_state__type_support.hpp\n'}
+[0.563070] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_actuator_state__type_support.hpp\n'}
+[0.563113] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_state__type_support.hpp\n'}
+[0.563156] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_rc_state__struct.hpp\n'}
+[0.563199] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_state__struct.hpp\n'}
+[0.563241] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_cmd__builder.hpp\n'}
+[0.563283] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_status__type_support.hpp\n'}
+[0.563333] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_status__struct.hpp\n'}
+[0.563376] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_rc_state__traits.hpp\n'}
+[0.563420] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_actuator_state__struct.hpp\n'}
+[0.563467] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_cmd__struct.hpp\n'}
+[0.563511] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_state__traits.hpp\n'}
+[0.563554] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_state__builder.hpp\n'}
+[0.563597] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_actuator_state__traits.hpp\n'}
+[0.563645] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/scout_actuator_state.hpp\n'}
+[0.563688] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/scout_rc_state.hpp\n'}
+[0.563731] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/scout_light_state.hpp\n'}
+[0.563910] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/scout_status.hpp\n'}
+[0.564025] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/scout_light_cmd.hpp\n'}
+[0.564077] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs\n'}
+[0.564286] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg\n'}
+[0.564338] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.564407] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail\n'}
+[0.564500] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_cmd__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.564573] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_rc_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.564666] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.564713] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/dds_fastrtps\n'}
+[0.564846] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_actuator_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.565087] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_status__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.565291] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/lib/libscout_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.565400] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs\n'}
+[0.565453] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg\n'}
+[0.565499] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail\n'}
+[0.565543] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_state__rosidl_typesupport_introspection_c.h\n'}
+[0.565587] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_status__rosidl_typesupport_introspection_c.h\n'}
+[0.565631] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_actuator_state__rosidl_typesupport_introspection_c.h\n'}
+[0.565674] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_cmd__rosidl_typesupport_introspection_c.h\n'}
+[0.565716] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_status__type_support.c\n'}
+[0.565765] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_actuator_state__type_support.c\n'}
+[0.565831] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_rc_state__rosidl_typesupport_introspection_c.h\n'}
+[0.565875] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_rc_state__type_support.c\n'}
+[0.565959] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_cmd__type_support.c\n'}
+[0.566004] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_state__type_support.c\n'}
+[0.566048] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.566091] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/lib/libscout_msgs__rosidl_typesupport_introspection_c.so\n'}
+[0.566134] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/lib/libscout_msgs__rosidl_typesupport_c.so\n'}
+[0.566176] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs\n'}
+[0.566218] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg\n'}
+[0.566261] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail\n'}
+[0.566303] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_cmd__type_support.cpp\n'}
+[0.566346] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_status__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.566388] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_state__type_support.cpp\n'}
+[0.566431] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_actuator_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.566477] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_status__type_support.cpp\n'}
+[0.566520] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_rc_state__type_support.cpp\n'}
+[0.566563] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.566605] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_rc_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.566647] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_actuator_state__type_support.cpp\n'}
+[0.566689] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_cmd__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.566735] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/lib/libscout_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[0.566778] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/lib/libscout_msgs__rosidl_typesupport_cpp.so\n'}
+[0.566824] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/environment/pythonpath.sh\n'}
+[0.566867] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/environment/pythonpath.dsv\n'}
+[0.566909] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs-0.1.0-py3.10.egg-info\n'}
+[0.566954] (scout_msgs) StdoutLine: {'line': b'-- Installing: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs-0.1.0-py3.10.egg-info/PKG-INFO\n'}
+[0.566998] (scout_msgs) StdoutLine: {'line': b'-- Installing: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs-0.1.0-py3.10.egg-info/dependency_links.txt\n'}
+[0.567041] (scout_msgs) StdoutLine: {'line': b'-- Installing: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs-0.1.0-py3.10.egg-info/top_level.txt\n'}
+[0.567084] (scout_msgs) StdoutLine: {'line': b'-- Installing: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs-0.1.0-py3.10.egg-info/SOURCES.txt\n'}
+[0.567126] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs\n'}
+[0.567169] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/_scout_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[0.567212] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/msg\n'}
+[0.567255] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/msg/_scout_status.py\n'}
+[0.567298] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/msg/_scout_light_cmd_s.c\n'}
+[0.567341] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/msg/_scout_rc_state.py\n'}
+[0.567420] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/msg/_scout_status_s.c\n'}
+[0.567468] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/msg/_scout_light_state.py\n'}
+[0.567513] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/msg/_scout_actuator_state.py\n'}
+[0.567556] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/msg/_scout_actuator_state_s.c\n'}
+[0.567599] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/msg/_scout_rc_state_s.c\n'}
+[0.567642] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/msg/__init__.py\n'}
+[0.567684] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/msg/_scout_light_state_s.c\n'}
+[0.567727] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/msg/_scout_light_cmd.py\n'}
+[0.567769] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/_scout_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.567850] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/scout_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.567903] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/libscout_msgs__rosidl_generator_py.so\n'}
+[0.567947] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/_scout_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[0.567994] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/scout_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.568038] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/__init__.py\n'}
+[0.568081] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/scout_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.594124] (scout_msgs) StdoutLine: {'line': b"Listing '/home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs'...\n"}
+[0.594290] (scout_msgs) StdoutLine: {'line': b"Listing '/home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/msg'...\n"}
+[0.596297] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/scout_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.596450] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/scout_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.596709] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/scout_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.596869] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/lib/libscout_msgs__rosidl_generator_py.so\n'}
+[0.597081] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/msg/ScoutActuatorState.idl\n'}
+[0.597175] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/msg/ScoutLightCmd.idl\n'}
+[0.597227] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/msg/ScoutLightState.idl\n'}
+[0.597341] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/msg/ScoutRCState.idl\n'}
+[0.597524] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/msg/ScoutStatus.idl\n'}
+[0.597654] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/msg/ScoutActuatorState.msg\n'}
+[0.597844] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/msg/ScoutLightCmd.msg\n'}
+[0.597903] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/msg/ScoutLightState.msg\n'}
+[0.597948] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/msg/ScoutRCState.msg\n'}
+[0.598000] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/msg/ScoutStatus.msg\n'}
+[0.598044] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/ament_index/resource_index/package_run_dependencies/scout_msgs\n'}
+[0.598088] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/ament_index/resource_index/parent_prefix_path/scout_msgs\n'}
+[0.598143] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/environment/ament_prefix_path.sh\n'}
+[0.598191] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/environment/ament_prefix_path.dsv\n'}
+[0.598234] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/environment/path.sh\n'}
+[0.598278] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/environment/path.dsv\n'}
+[0.598321] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/local_setup.bash\n'}
+[0.598363] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/local_setup.sh\n'}
+[0.598479] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/local_setup.zsh\n'}
+[0.598576] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/local_setup.dsv\n'}
+[0.598705] (scout_msgs) StdoutLine: {'line': b'-- Installing: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/package.dsv\n'}
+[0.598817] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/ament_index/resource_index/packages/scout_msgs\n'}
+[0.598964] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/export_scout_msgs__rosidl_generator_cExport.cmake\n'}
+[0.599097] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/export_scout_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.599249] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/export_scout_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[0.599419] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/export_scout_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[0.599559] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/export_scout_msgs__rosidl_generator_cppExport.cmake\n'}
+[0.599694] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/export_scout_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[0.599768] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/export_scout_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[0.599814] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/scout_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.599906] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/scout_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.599954] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/scout_msgs__rosidl_typesupport_cExport.cmake\n'}
+[0.599998] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/scout_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.600041] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/scout_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.600085] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/scout_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.600128] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/scout_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[0.600233] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/scout_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.600289] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/export_scout_msgs__rosidl_generator_pyExport.cmake\n'}
+[0.600339] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/export_scout_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[0.600382] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[0.600430] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.600474] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.600518] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.600562] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.600606] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.600649] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.600692] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/scout_msgsConfig.cmake\n'}
+[0.600744] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/scout_msgsConfig-version.cmake\n'}
+[0.600788] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/package.xml\n'}
+[0.602221] (scout_msgs) CommandEnded: {'returncode': 0}
+[0.608291] (-) TimerEvent: {}
+[0.618104] (scout_msgs) JobEnded: {'identifier': 'scout_msgs', 'rc': 0}
+[0.619203] (scout_base) JobStarted: {'identifier': 'scout_base'}
+[0.628065] (scout_base) JobProgress: {'identifier': 'scout_base', 'progress': 'cmake'}
+[0.628452] (scout_base) JobProgress: {'identifier': 'scout_base', 'progress': 'build'}
+[0.628672] (scout_base) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/eddy/ros2_ws/build/scout_base', '--', '-j2', '-l2'], 'cwd': '/home/eddy/ros2_ws/build/scout_base', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'eddy'), ('LC_TIME', 'ko_KR.UTF-8'), ('ROS_PACKAGE_PATH', '/home/eddy/ros2_ws/install/ugv_sdk/share'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/eddy/ros2_ws/install/scout_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eddy'), ('OLDPWD', '/home/eddy/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '1596'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/eddy/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'eddy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/eddy/ros2_ws/install/ugv_sdk/lib/x86_64-linux-gnu/pkgconfig:/home/eddy/ros2_ws/install/ugv_sdk/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eddy'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/eddy-jam:@/tmp/.ICE-unix/1570,unix/eddy-jam:/tmp/.ICE-unix/1570'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/63096ea5_79c6_4501_ab73_8a915338c420'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.11IJE3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/eddy/ros2_ws/install/scout_msgs:/home/eddy/ros2_ws/install/scout_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eddy/ros2_ws/build/scout_base'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble:/home/eddy/ros2_ws/install/ugv_sdk:/home/eddy/ros2_ws/install/scout_msgs:/home/eddy/ros2_ws/install/scout_description')]), 'shell': False}
+[0.672613] (scout_base) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target scout_base_node\x1b[0m\n'}
+[0.692230] (scout_base) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/scout_base_node.dir/src/scout_base_ros.cpp.o\x1b[0m\n'}
+[0.709519] (-) TimerEvent: {}
+[0.812013] (-) TimerEvent: {}
+[0.909087] (scout_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/include/scout_base/scout_messenger.hpp:21\x1b[m\x1b[K,\n'}
+[0.909248] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:12\x1b[m\x1b[K:\n'}
+[0.909301] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp\x07-Wcpp\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[0.909356] (scout_base) StderrLine: {'line': b'   35 | #\x1b[01;35m\x1b[Kwarning\x1b[m\x1b[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead\n'}
+[0.909401] (scout_base) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[0.913019] (-) TimerEvent: {}
+[1.014897] (-) TimerEvent: {}
+[1.116949] (-) TimerEvent: {}
+[1.217615] (-) TimerEvent: {}
+[1.318186] (-) TimerEvent: {}
+[1.418782] (-) TimerEvent: {}
+[1.521117] (-) TimerEvent: {}
+[1.622015] (-) TimerEvent: {}
+[1.722619] (-) TimerEvent: {}
+[1.823230] (-) TimerEvent: {}
+[1.923817] (-) TimerEvent: {}
+[2.024237] (-) TimerEvent: {}
+[2.125072] (-) TimerEvent: {}
+[2.227712] (-) TimerEvent: {}
+[2.328315] (-) TimerEvent: {}
+[2.428905] (-) TimerEvent: {}
+[2.529252] (-) TimerEvent: {}
+[2.629615] (-) TimerEvent: {}
+[2.731735] (-) TimerEvent: {}
+[2.833572] (-) TimerEvent: {}
+[2.934645] (-) TimerEvent: {}
+[3.037279] (-) TimerEvent: {}
+[3.137902] (-) TimerEvent: {}
+[3.238512] (-) TimerEvent: {}
+[3.338853] (-) TimerEvent: {}
+[3.439462] (-) TimerEvent: {}
+[3.540067] (-) TimerEvent: {}
+[3.640656] (-) TimerEvent: {}
+[3.743277] (-) TimerEvent: {}
+[3.843924] (-) TimerEvent: {}
+[3.944454] (-) TimerEvent: {}
+[4.045146] (-) TimerEvent: {}
+[4.145716] (-) TimerEvent: {}
+[4.246383] (-) TimerEvent: {}
+[4.346866] (-) TimerEvent: {}
+[4.448447] (-) TimerEvent: {}
+[4.548960] (-) TimerEvent: {}
+[4.649423] (-) TimerEvent: {}
+[4.749899] (-) TimerEvent: {}
+[4.850487] (-) TimerEvent: {}
+[4.951168] (-) TimerEvent: {}
+[5.051789] (-) TimerEvent: {}
+[5.153266] (-) TimerEvent: {}
+[5.253895] (-) TimerEvent: {}
+[5.354385] (-) TimerEvent: {}
+[5.454853] (-) TimerEvent: {}
+[5.555455] (-) TimerEvent: {}
+[5.655960] (-) TimerEvent: {}
+[5.756623] (-) TimerEvent: {}
+[5.857054] (-) TimerEvent: {}
+[5.957625] (-) TimerEvent: {}
+[6.058156] (-) TimerEvent: {}
+[6.158691] (-) TimerEvent: {}
+[6.259252] (-) TimerEvent: {}
+[6.359676] (-) TimerEvent: {}
+[6.460384] (-) TimerEvent: {}
+[6.560840] (-) TimerEvent: {}
+[6.661382] (-) TimerEvent: {}
+[6.761941] (-) TimerEvent: {}
+[6.862826] (-) TimerEvent: {}
+[6.963392] (-) TimerEvent: {}
+[7.063787] (-) TimerEvent: {}
+[7.164505] (-) TimerEvent: {}
+[7.266303] (-) TimerEvent: {}
+[7.367092] (-) TimerEvent: {}
+[7.467930] (-) TimerEvent: {}
+[7.568588] (-) TimerEvent: {}
+[7.669464] (-) TimerEvent: {}
+[7.770261] (-) TimerEvent: {}
+[7.870810] (-) TimerEvent: {}
+[7.971284] (-) TimerEvent: {}
+[8.071856] (-) TimerEvent: {}
+[8.172405] (-) TimerEvent: {}
+[8.272859] (-) TimerEvent: {}
+[8.373665] (-) TimerEvent: {}
+[8.474468] (-) TimerEvent: {}
+[8.575264] (-) TimerEvent: {}
+[8.675801] (-) TimerEvent: {}
+[8.776483] (-) TimerEvent: {}
+[8.877270] (-) TimerEvent: {}
+[8.977871] (-) TimerEvent: {}
+[9.078301] (-) TimerEvent: {}
+[9.178748] (-) TimerEvent: {}
+[9.279553] (-) TimerEvent: {}
+[9.380482] (-) TimerEvent: {}
+[9.481283] (-) TimerEvent: {}
+[9.582165] (-) TimerEvent: {}
+[9.682801] (-) TimerEvent: {}
+[9.783294] (-) TimerEvent: {}
+[9.883781] (-) TimerEvent: {}
+[9.984277] (-) TimerEvent: {}
+[10.084784] (-) TimerEvent: {}
+[10.185275] (-) TimerEvent: {}
+[10.285767] (-) TimerEvent: {}
+[10.386481] (-) TimerEvent: {}
+[10.486857] (-) TimerEvent: {}
+[10.587312] (-) TimerEvent: {}
+[10.687866] (-) TimerEvent: {}
+[10.788579] (-) TimerEvent: {}
+[10.889349] (-) TimerEvent: {}
+[10.989726] (-) TimerEvent: {}
+[11.090024] (-) TimerEvent: {}
+[11.190828] (-) TimerEvent: {}
+[11.291519] (-) TimerEvent: {}
+[11.391998] (-) TimerEvent: {}
+[11.492397] (-) TimerEvent: {}
+[11.593185] (-) TimerEvent: {}
+[11.693622] (-) TimerEvent: {}
+[11.794377] (-) TimerEvent: {}
+[11.894775] (-) TimerEvent: {}
+[11.995376] (-) TimerEvent: {}
+[12.096240] (-) TimerEvent: {}
+[12.197049] (-) TimerEvent: {}
+[12.297349] (-) TimerEvent: {}
+[12.398162] (-) TimerEvent: {}
+[12.500324] (-) TimerEvent: {}
+[12.600931] (-) TimerEvent: {}
+[12.701550] (-) TimerEvent: {}
+[12.802146] (-) TimerEvent: {}
+[12.902765] (-) TimerEvent: {}
+[13.003645] (-) TimerEvent: {}
+[13.104455] (-) TimerEvent: {}
+[13.205388] (-) TimerEvent: {}
+[13.207390] (scout_base) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX executable scout_base_node\x1b[0m\n'}
+[13.306273] (-) TimerEvent: {}
+[13.407021] (-) TimerEvent: {}
+[13.507462] (-) TimerEvent: {}
+[13.607882] (-) TimerEvent: {}
+[13.708809] (-) TimerEvent: {}
+[13.809223] (-) TimerEvent: {}
+[13.910000] (-) TimerEvent: {}
+[14.010815] (-) TimerEvent: {}
+[14.061099] (scout_base) StdoutLine: {'line': b'[100%] Built target scout_base_node\n'}
+[14.073567] (scout_base) CommandEnded: {'returncode': 0}
+[14.074431] (scout_base) JobProgress: {'identifier': 'scout_base', 'progress': 'install'}
+[14.075014] (scout_base) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/eddy/ros2_ws/build/scout_base'], 'cwd': '/home/eddy/ros2_ws/build/scout_base', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'eddy'), ('LC_TIME', 'ko_KR.UTF-8'), ('ROS_PACKAGE_PATH', '/home/eddy/ros2_ws/install/ugv_sdk/share'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/eddy/ros2_ws/install/scout_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eddy'), ('OLDPWD', '/home/eddy/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '1596'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/eddy/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'eddy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/eddy/ros2_ws/install/ugv_sdk/lib/x86_64-linux-gnu/pkgconfig:/home/eddy/ros2_ws/install/ugv_sdk/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eddy'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/eddy-jam:@/tmp/.ICE-unix/1570,unix/eddy-jam:/tmp/.ICE-unix/1570'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/63096ea5_79c6_4501_ab73_8a915338c420'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.11IJE3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/eddy/ros2_ws/install/scout_msgs:/home/eddy/ros2_ws/install/scout_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eddy/ros2_ws/build/scout_base'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble:/home/eddy/ros2_ws/install/ugv_sdk:/home/eddy/ros2_ws/install/scout_msgs:/home/eddy/ros2_ws/install/scout_description')]), 'shell': False}
+[14.084420] (scout_base) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[14.085203] (scout_base) StdoutLine: {'line': b'-- Installing: /home/eddy/ros2_ws/install/scout_base/lib/scout_base/scout_base_node\n'}
+[14.090129] (scout_base) StdoutLine: {'line': b'-- Set runtime path of "/home/eddy/ros2_ws/install/scout_base/lib/scout_base/scout_base_node" to ""\n'}
+[14.090286] (scout_base) StdoutLine: {'line': b'-- Installing: /home/eddy/ros2_ws/install/scout_base/share/scout_base//launch\n'}
+[14.090378] (scout_base) StdoutLine: {'line': b'-- Installing: /home/eddy/ros2_ws/install/scout_base/share/scout_base//launch/scout_mini_omni_base.launch.py\n'}
+[14.090596] (scout_base) StdoutLine: {'line': b'-- Installing: /home/eddy/ros2_ws/install/scout_base/share/scout_base//launch/scout_base.launch.py\n'}
+[14.090895] (scout_base) StdoutLine: {'line': b'-- Installing: /home/eddy/ros2_ws/install/scout_base/share/scout_base//launch/scout_mini_base.launch.py\n'}
+[14.091201] (scout_base) StdoutLine: {'line': b'-- Installing: /home/eddy/ros2_ws/install/scout_base/share/ament_index/resource_index/package_run_dependencies/scout_base\n'}
+[14.091552] (scout_base) StdoutLine: {'line': b'-- Installing: /home/eddy/ros2_ws/install/scout_base/share/ament_index/resource_index/parent_prefix_path/scout_base\n'}
+[14.091630] (scout_base) StdoutLine: {'line': b'-- Installing: /home/eddy/ros2_ws/install/scout_base/share/scout_base/environment/ament_prefix_path.sh\n'}
+[14.091783] (scout_base) StdoutLine: {'line': b'-- Installing: /home/eddy/ros2_ws/install/scout_base/share/scout_base/environment/ament_prefix_path.dsv\n'}
+[14.091918] (scout_base) StdoutLine: {'line': b'-- Installing: /home/eddy/ros2_ws/install/scout_base/share/scout_base/environment/path.sh\n'}
+[14.092204] (scout_base) StdoutLine: {'line': b'-- Installing: /home/eddy/ros2_ws/install/scout_base/share/scout_base/environment/path.dsv\n'}
+[14.092282] (scout_base) StdoutLine: {'line': b'-- Installing: /home/eddy/ros2_ws/install/scout_base/share/scout_base/local_setup.bash\n'}
+[14.092588] (scout_base) StdoutLine: {'line': b'-- Installing: /home/eddy/ros2_ws/install/scout_base/share/scout_base/local_setup.sh\n'}
+[14.092682] (scout_base) StdoutLine: {'line': b'-- Installing: /home/eddy/ros2_ws/install/scout_base/share/scout_base/local_setup.zsh\n'}
+[14.092824] (scout_base) StdoutLine: {'line': b'-- Installing: /home/eddy/ros2_ws/install/scout_base/share/scout_base/local_setup.dsv\n'}
+[14.093130] (scout_base) StdoutLine: {'line': b'-- Installing: /home/eddy/ros2_ws/install/scout_base/share/scout_base/package.dsv\n'}
+[14.093217] (scout_base) StdoutLine: {'line': b'-- Installing: /home/eddy/ros2_ws/install/scout_base/share/ament_index/resource_index/packages/scout_base\n'}
+[14.093363] (scout_base) StdoutLine: {'line': b'-- Installing: /home/eddy/ros2_ws/install/scout_base/share/scout_base/cmake/scout_baseConfig.cmake\n'}
+[14.093571] (scout_base) StdoutLine: {'line': b'-- Installing: /home/eddy/ros2_ws/install/scout_base/share/scout_base/cmake/scout_baseConfig-version.cmake\n'}
+[14.094833] (scout_base) StdoutLine: {'line': b'-- Installing: /home/eddy/ros2_ws/install/scout_base/share/scout_base/package.xml\n'}
+[14.096101] (scout_base) CommandEnded: {'returncode': 0}
+[14.107199] (scout_base) JobEnded: {'identifier': 'scout_base', 'rc': 0}
+[14.108165] (-) EventReactorShutdown: {}

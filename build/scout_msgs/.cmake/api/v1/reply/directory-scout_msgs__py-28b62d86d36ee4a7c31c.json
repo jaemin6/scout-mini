@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "scout_msgs__py",
+		"source" : "/home/eddy/ros2_ws/build/scout_msgs/scout_msgs__py"
+	}
+}

@@ -1,4 +1,4 @@
-flowchart TD
+graph TD
     A[Scout Mini 시스템] --> B[하드웨어 인터페이스]
     A --> C[내비게이션 스택]
     A --> D[인지 및 서비스]

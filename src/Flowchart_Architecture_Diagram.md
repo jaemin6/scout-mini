@@ -35,7 +35,7 @@ flowchart TD
         E3["Parameter Events<br>/parameter_events"]
   end
  subgraph F["음성 출력 시스템"]
-        F1["음성 출력 노드<br>/tts_command → 블루투스 스피커"]
+        F1["음성 출력 노드<br>/speaker_command → 블루투스 스피커"]
         F2["블루투스 스피커<br>상태 안내 음성 출력"]
         F3["음성 명령 리스트<br>도착안내/배달시작/완료안내 등"]
   end

@@ -1,0 +1,6 @@
+Invoking command in '/home/eddy/ros2_ws/build/image_view': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/eddy/ros2_ws/src/image_pipeline/image_view -DCMAKE_INSTALL_PREFIX=/home/eddy/ros2_ws/install/image_view
+Invoked command in '/home/eddy/ros2_ws/build/image_view' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/eddy/ros2_ws/src/image_pipeline/image_view -DCMAKE_INSTALL_PREFIX=/home/eddy/ros2_ws/install/image_view
+Invoking command in '/home/eddy/ros2_ws/build/image_view': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eddy/ros2_ws/build/image_view -- -j2 -l2
+Invoked command in '/home/eddy/ros2_ws/build/image_view' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eddy/ros2_ws/build/image_view -- -j2 -l2
+Invoking command in '/home/eddy/ros2_ws/build/image_view': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eddy/ros2_ws/build/image_view
+Invoked command in '/home/eddy/ros2_ws/build/image_view' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eddy/ros2_ws/build/image_view

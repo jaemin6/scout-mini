@@ -1,0 +1,22 @@
+[0.998s] Invoking command in '/home/eddy/ros2_ws/src/image_pipeline/camera_calibration': PYTHONPATH=/home/eddy/ros2_ws/build/camera_calibration/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eddy/ros2_ws/install/camera_calibration/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/camera_calibration build --build-base /home/eddy/ros2_ws/build/camera_calibration/build install --record /home/eddy/ros2_ws/build/camera_calibration/install.log --single-version-externally-managed install_data
+[1.452s] running egg_info
+[1.453s] writing ../../../build/camera_calibration/camera_calibration.egg-info/PKG-INFO
+[1.453s] writing dependency_links to ../../../build/camera_calibration/camera_calibration.egg-info/dependency_links.txt
+[1.453s] writing entry points to ../../../build/camera_calibration/camera_calibration.egg-info/entry_points.txt
+[1.453s] writing requirements to ../../../build/camera_calibration/camera_calibration.egg-info/requires.txt
+[1.454s] writing top-level names to ../../../build/camera_calibration/camera_calibration.egg-info/top_level.txt
+[1.458s] reading manifest file '../../../build/camera_calibration/camera_calibration.egg-info/SOURCES.txt'
+[1.460s] writing manifest file '../../../build/camera_calibration/camera_calibration.egg-info/SOURCES.txt'
+[1.460s] running build
+[1.460s] running build_py
+[1.461s] running install
+[1.463s] running install_lib
+[1.466s] running install_data
+[1.466s] running install_egg_info
+[1.469s] removing '/home/eddy/ros2_ws/install/camera_calibration/lib/python3.10/site-packages/camera_calibration-3.0.8-py3.10.egg-info' (and everything under it)
+[1.474s] Copying ../../../build/camera_calibration/camera_calibration.egg-info to /home/eddy/ros2_ws/install/camera_calibration/lib/python3.10/site-packages/camera_calibration-3.0.8-py3.10.egg-info
+[1.474s] running install_scripts
+[1.523s] Installing cameracalibrator script to /home/eddy/ros2_ws/install/camera_calibration/lib/camera_calibration
+[1.523s] Installing cameracheck script to /home/eddy/ros2_ws/install/camera_calibration/lib/camera_calibration
+[1.524s] writing list of installed files to '/home/eddy/ros2_ws/build/camera_calibration/install.log'
+[1.562s] Invoked command in '/home/eddy/ros2_ws/src/image_pipeline/camera_calibration' returned '0': PYTHONPATH=/home/eddy/ros2_ws/build/camera_calibration/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eddy/ros2_ws/install/camera_calibration/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/camera_calibration build --build-base /home/eddy/ros2_ws/build/camera_calibration/build install --record /home/eddy/ros2_ws/build/camera_calibration/install.log --single-version-externally-managed install_data

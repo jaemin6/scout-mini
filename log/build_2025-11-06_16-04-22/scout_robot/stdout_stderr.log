@@ -1,0 +1,28 @@
+running develop
+running egg_info
+creating scout_robot.egg-info
+writing scout_robot.egg-info/PKG-INFO
+writing dependency_links to scout_robot.egg-info/dependency_links.txt
+writing entry points to scout_robot.egg-info/entry_points.txt
+writing requirements to scout_robot.egg-info/requires.txt
+writing top-level names to scout_robot.egg-info/top_level.txt
+writing manifest file 'scout_robot.egg-info/SOURCES.txt'
+reading manifest file 'scout_robot.egg-info/SOURCES.txt'
+writing manifest file 'scout_robot.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/eddy/ros2_ws/install/scout_robot/lib/python3.10/site-packages/scout-robot.egg-link (link to .)
+Installing aruco_detector script to /home/eddy/ros2_ws/install/scout_robot/lib/scout_robot
+Installing assign_order_node script to /home/eddy/ros2_ws/install/scout_robot/lib/scout_robot
+Installing nav2_commander script to /home/eddy/ros2_ws/install/scout_robot/lib/scout_robot
+Installing qr_detector script to /home/eddy/ros2_ws/install/scout_robot/lib/scout_robot
+
+Installed /home/eddy/ros2_ws/build/scout_robot
+running symlink_data
+creating /home/eddy/ros2_ws/install/scout_robot/share/ament_index
+creating /home/eddy/ros2_ws/install/scout_robot/share/ament_index/resource_index
+creating /home/eddy/ros2_ws/install/scout_robot/share/ament_index/resource_index/packages
+symbolically linking /home/eddy/ros2_ws/build/scout_robot/resource/scout_robot -> /home/eddy/ros2_ws/install/scout_robot/share/ament_index/resource_index/packages
+symbolically linking /home/eddy/ros2_ws/build/scout_robot/package.xml -> /home/eddy/ros2_ws/install/scout_robot/share/scout_robot
+symbolically linking /home/eddy/ros2_ws/build/scout_robot/rooms.yaml -> /home/eddy/ros2_ws/install/scout_robot/share/scout_robot
+creating /home/eddy/ros2_ws/install/scout_robot/share/scout_robot/launch
+symbolically linking /home/eddy/ros2_ws/build/scout_robot/launch/scout_main_launch.py -> /home/eddy/ros2_ws/install/scout_robot/share/scout_robot/launch

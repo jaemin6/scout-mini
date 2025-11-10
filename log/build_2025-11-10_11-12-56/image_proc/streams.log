@@ -1,0 +1,63 @@
+[0.016s] Invoking command in '/home/eddy/ros2_ws/build/image_proc': CMAKE_PREFIX_PATH=/home/eddy/ros2_ws/install/tracetools_image_pipeline:/home/eddy/ros2_ws/install/scout_base:/home/eddy/ros2_ws/install/scout_robot:/home/eddy/ros2_ws/install/scout_navigation2:/home/eddy/ros2_ws/install/rfid_serial_node:/home/eddy/ros2_ws/install/my_nav2_controller:/home/eddy/ros2_ws/install/camera_calibration:/opt/ros/humble:/home/eddy/ros2_ws/install/ugv_sdk:/home/eddy/ros2_ws/install/image_pipeline:/home/eddy/ros2_ws/install/stereo_image_proc:/home/eddy/ros2_ws/install/image_proc:/home/eddy/ros2_ws/install/scout_msgs:/home/eddy/ros2_ws/install/scout_description:/home/eddy/ros2_ws/install/rplidar_ros:/home/eddy/ros2_ws/install/image_view:/home/eddy/ros2_ws/install/image_rotate:/home/eddy/ros2_ws/install/image_publisher:/home/eddy/ros2_ws/install/depth_image_proc LD_LIBRARY_PATH=/home/eddy/ros2_ws/install/tracetools_image_pipeline/lib:/home/eddy/ros2_ws/install/stereo_image_proc/lib:/home/eddy/ros2_ws/install/image_proc/lib:/home/eddy/ros2_ws/install/scout_msgs/lib:/home/eddy/ros2_ws/install/rplidar_ros/lib:/home/eddy/ros2_ws/install/image_view/lib:/home/eddy/ros2_ws/install/image_rotate/lib:/home/eddy/ros2_ws/install/image_publisher/lib:/home/eddy/ros2_ws/install/depth_image_proc/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib VIRTUAL_ENV_PROMPT=(myvenv) /usr/bin/cmake --build /home/eddy/ros2_ws/build/image_proc -- -j2 -l2
+[0.202s] [  8%] Built target image_proc
+[0.203s] [ 16%] Built target rectify_node
+[0.266s] [ 24%] Built target debayer_node
+[0.277s] [ 32%] Built target resize_node
+[0.340s] [ 40%] Built target crop_decimate_node
+[0.359s] [ 48%] Built target crop_non_zero_node
+[0.382s] [ 56%] Built target rectify
+[0.445s] [ 68%] Built target debayer
+[0.481s] [ 76%] Built target resize
+[0.519s] [ 84%] Built target crop_decimate
+[0.564s] [ 92%] Built target crop_non_zero
+[0.608s] [100%] Built target image_proc_exe
+[0.635s] Invoked command in '/home/eddy/ros2_ws/build/image_proc' returned '0': CMAKE_PREFIX_PATH=/home/eddy/ros2_ws/install/tracetools_image_pipeline:/home/eddy/ros2_ws/install/scout_base:/home/eddy/ros2_ws/install/scout_robot:/home/eddy/ros2_ws/install/scout_navigation2:/home/eddy/ros2_ws/install/rfid_serial_node:/home/eddy/ros2_ws/install/my_nav2_controller:/home/eddy/ros2_ws/install/camera_calibration:/opt/ros/humble:/home/eddy/ros2_ws/install/ugv_sdk:/home/eddy/ros2_ws/install/image_pipeline:/home/eddy/ros2_ws/install/stereo_image_proc:/home/eddy/ros2_ws/install/image_proc:/home/eddy/ros2_ws/install/scout_msgs:/home/eddy/ros2_ws/install/scout_description:/home/eddy/ros2_ws/install/rplidar_ros:/home/eddy/ros2_ws/install/image_view:/home/eddy/ros2_ws/install/image_rotate:/home/eddy/ros2_ws/install/image_publisher:/home/eddy/ros2_ws/install/depth_image_proc LD_LIBRARY_PATH=/home/eddy/ros2_ws/install/tracetools_image_pipeline/lib:/home/eddy/ros2_ws/install/stereo_image_proc/lib:/home/eddy/ros2_ws/install/image_proc/lib:/home/eddy/ros2_ws/install/scout_msgs/lib:/home/eddy/ros2_ws/install/rplidar_ros/lib:/home/eddy/ros2_ws/install/image_view/lib:/home/eddy/ros2_ws/install/image_rotate/lib:/home/eddy/ros2_ws/install/image_publisher/lib:/home/eddy/ros2_ws/install/depth_image_proc/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib VIRTUAL_ENV_PROMPT=(myvenv) /usr/bin/cmake --build /home/eddy/ros2_ws/build/image_proc -- -j2 -l2
+[0.640s] Invoking command in '/home/eddy/ros2_ws/build/image_proc': CMAKE_PREFIX_PATH=/home/eddy/ros2_ws/install/tracetools_image_pipeline:/home/eddy/ros2_ws/install/scout_base:/home/eddy/ros2_ws/install/scout_robot:/home/eddy/ros2_ws/install/scout_navigation2:/home/eddy/ros2_ws/install/rfid_serial_node:/home/eddy/ros2_ws/install/my_nav2_controller:/home/eddy/ros2_ws/install/camera_calibration:/opt/ros/humble:/home/eddy/ros2_ws/install/ugv_sdk:/home/eddy/ros2_ws/install/image_pipeline:/home/eddy/ros2_ws/install/stereo_image_proc:/home/eddy/ros2_ws/install/image_proc:/home/eddy/ros2_ws/install/scout_msgs:/home/eddy/ros2_ws/install/scout_description:/home/eddy/ros2_ws/install/rplidar_ros:/home/eddy/ros2_ws/install/image_view:/home/eddy/ros2_ws/install/image_rotate:/home/eddy/ros2_ws/install/image_publisher:/home/eddy/ros2_ws/install/depth_image_proc LD_LIBRARY_PATH=/home/eddy/ros2_ws/install/tracetools_image_pipeline/lib:/home/eddy/ros2_ws/install/stereo_image_proc/lib:/home/eddy/ros2_ws/install/image_proc/lib:/home/eddy/ros2_ws/install/scout_msgs/lib:/home/eddy/ros2_ws/install/rplidar_ros/lib:/home/eddy/ros2_ws/install/image_view/lib:/home/eddy/ros2_ws/install/image_rotate/lib:/home/eddy/ros2_ws/install/image_publisher/lib:/home/eddy/ros2_ws/install/depth_image_proc/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib VIRTUAL_ENV_PROMPT=(myvenv) /usr/bin/cmake --install /home/eddy/ros2_ws/build/image_proc
+[0.651s] -- Install configuration: ""
+[0.651s] -- Up-to-date: /home/eddy/ros2_ws/install/image_proc/lib/image_proc/rectify_node
+[0.652s] -- Up-to-date: /home/eddy/ros2_ws/install/image_proc/lib/image_proc/debayer_node
+[0.653s] -- Up-to-date: /home/eddy/ros2_ws/install/image_proc/lib/image_proc/resize_node
+[0.653s] -- Up-to-date: /home/eddy/ros2_ws/install/image_proc/lib/image_proc/crop_decimate_node
+[0.654s] -- Up-to-date: /home/eddy/ros2_ws/install/image_proc/lib/image_proc/crop_non_zero_node
+[0.655s] -- Up-to-date: /home/eddy/ros2_ws/install/image_proc/bin/image_proc
+[0.655s] -- Up-to-date: /home/eddy/ros2_ws/install/image_proc/include
+[0.656s] -- Up-to-date: /home/eddy/ros2_ws/install/image_proc/include/image_proc
+[0.656s] -- Up-to-date: /home/eddy/ros2_ws/install/image_proc/include/image_proc/crop_non_zero.hpp
+[0.656s] -- Up-to-date: /home/eddy/ros2_ws/install/image_proc/include/image_proc/processor.hpp
+[0.656s] -- Up-to-date: /home/eddy/ros2_ws/install/image_proc/include/image_proc/debayer.hpp
+[0.656s] -- Up-to-date: /home/eddy/ros2_ws/install/image_proc/include/image_proc/resize.hpp
+[0.656s] -- Up-to-date: /home/eddy/ros2_ws/install/image_proc/include/image_proc/utils.hpp
+[0.656s] -- Up-to-date: /home/eddy/ros2_ws/install/image_proc/include/image_proc/crop_decimate.hpp
+[0.657s] -- Up-to-date: /home/eddy/ros2_ws/install/image_proc/include/image_proc/edge_aware.hpp
+[0.657s] -- Up-to-date: /home/eddy/ros2_ws/install/image_proc/include/image_proc/rectify.hpp
+[0.657s] -- Up-to-date: /home/eddy/ros2_ws/install/image_proc/share/image_proc/environment/library_path.sh
+[0.657s] -- Up-to-date: /home/eddy/ros2_ws/install/image_proc/share/image_proc/environment/library_path.dsv
+[0.657s] -- Up-to-date: /home/eddy/ros2_ws/install/image_proc/lib/libimage_proc.so
+[0.657s] -- Up-to-date: /home/eddy/ros2_ws/install/image_proc/lib/librectify.so
+[0.658s] -- Up-to-date: /home/eddy/ros2_ws/install/image_proc/lib/libdebayer.so
+[0.658s] -- Up-to-date: /home/eddy/ros2_ws/install/image_proc/lib/libresize.so
+[0.659s] -- Up-to-date: /home/eddy/ros2_ws/install/image_proc/lib/libcrop_decimate.so
+[0.660s] -- Up-to-date: /home/eddy/ros2_ws/install/image_proc/lib/libcrop_non_zero.so
+[0.660s] -- Up-to-date: /home/eddy/ros2_ws/install/image_proc/lib/image_proc/image_proc
+[0.660s] -- Up-to-date: /home/eddy/ros2_ws/install/image_proc/share/image_proc/launch
+[0.661s] -- Up-to-date: /home/eddy/ros2_ws/install/image_proc/share/image_proc/launch/image_proc.launch.py
+[0.661s] -- Up-to-date: /home/eddy/ros2_ws/install/image_proc/share/ament_index/resource_index/package_run_dependencies/image_proc
+[0.664s] -- Up-to-date: /home/eddy/ros2_ws/install/image_proc/share/ament_index/resource_index/parent_prefix_path/image_proc
+[0.664s] -- Up-to-date: /home/eddy/ros2_ws/install/image_proc/share/image_proc/environment/ament_prefix_path.sh
+[0.664s] -- Up-to-date: /home/eddy/ros2_ws/install/image_proc/share/image_proc/environment/ament_prefix_path.dsv
+[0.664s] -- Up-to-date: /home/eddy/ros2_ws/install/image_proc/share/image_proc/environment/path.sh
+[0.664s] -- Up-to-date: /home/eddy/ros2_ws/install/image_proc/share/image_proc/environment/path.dsv
+[0.664s] -- Up-to-date: /home/eddy/ros2_ws/install/image_proc/share/image_proc/local_setup.bash
+[0.664s] -- Up-to-date: /home/eddy/ros2_ws/install/image_proc/share/image_proc/local_setup.sh
+[0.664s] -- Up-to-date: /home/eddy/ros2_ws/install/image_proc/share/image_proc/local_setup.zsh
+[0.665s] -- Up-to-date: /home/eddy/ros2_ws/install/image_proc/share/image_proc/local_setup.dsv
+[0.665s] -- Installing: /home/eddy/ros2_ws/install/image_proc/share/image_proc/package.dsv
+[0.665s] -- Up-to-date: /home/eddy/ros2_ws/install/image_proc/share/ament_index/resource_index/packages/image_proc
+[0.665s] -- Up-to-date: /home/eddy/ros2_ws/install/image_proc/share/ament_index/resource_index/rclcpp_components/image_proc
+[0.665s] -- Up-to-date: /home/eddy/ros2_ws/install/image_proc/share/image_proc/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.665s] -- Up-to-date: /home/eddy/ros2_ws/install/image_proc/share/image_proc/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.665s] -- Up-to-date: /home/eddy/ros2_ws/install/image_proc/share/image_proc/cmake/ament_cmake_export_libraries-extras.cmake
+[0.665s] -- Up-to-date: /home/eddy/ros2_ws/install/image_proc/share/image_proc/cmake/image_procConfig.cmake
+[0.666s] -- Up-to-date: /home/eddy/ros2_ws/install/image_proc/share/image_proc/cmake/image_procConfig-version.cmake
+[0.666s] -- Up-to-date: /home/eddy/ros2_ws/install/image_proc/share/image_proc/package.xml
+[0.669s] Invoked command in '/home/eddy/ros2_ws/build/image_proc' returned '0': CMAKE_PREFIX_PATH=/home/eddy/ros2_ws/install/tracetools_image_pipeline:/home/eddy/ros2_ws/install/scout_base:/home/eddy/ros2_ws/install/scout_robot:/home/eddy/ros2_ws/install/scout_navigation2:/home/eddy/ros2_ws/install/rfid_serial_node:/home/eddy/ros2_ws/install/my_nav2_controller:/home/eddy/ros2_ws/install/camera_calibration:/opt/ros/humble:/home/eddy/ros2_ws/install/ugv_sdk:/home/eddy/ros2_ws/install/image_pipeline:/home/eddy/ros2_ws/install/stereo_image_proc:/home/eddy/ros2_ws/install/image_proc:/home/eddy/ros2_ws/install/scout_msgs:/home/eddy/ros2_ws/install/scout_description:/home/eddy/ros2_ws/install/rplidar_ros:/home/eddy/ros2_ws/install/image_view:/home/eddy/ros2_ws/install/image_rotate:/home/eddy/ros2_ws/install/image_publisher:/home/eddy/ros2_ws/install/depth_image_proc LD_LIBRARY_PATH=/home/eddy/ros2_ws/install/tracetools_image_pipeline/lib:/home/eddy/ros2_ws/install/stereo_image_proc/lib:/home/eddy/ros2_ws/install/image_proc/lib:/home/eddy/ros2_ws/install/scout_msgs/lib:/home/eddy/ros2_ws/install/rplidar_ros/lib:/home/eddy/ros2_ws/install/image_view/lib:/home/eddy/ros2_ws/install/image_rotate/lib:/home/eddy/ros2_ws/install/image_publisher/lib:/home/eddy/ros2_ws/install/depth_image_proc/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib VIRTUAL_ENV_PROMPT=(myvenv) /usr/bin/cmake --install /home/eddy/ros2_ws/build/image_proc

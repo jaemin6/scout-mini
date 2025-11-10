@@ -1,0 +1,22 @@
+[1.261s] Invoking command in '/home/eddy/ros2_ws/src/my_nav2_controller': PYTHONPATH=/home/eddy/ros2_ws/build/my_nav2_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eddy/ros2_ws/install/my_nav2_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_nav2_controller build --build-base /home/eddy/ros2_ws/build/my_nav2_controller/build install --record /home/eddy/ros2_ws/build/my_nav2_controller/install.log --single-version-externally-managed install_data
+[1.595s] running egg_info
+[1.596s] writing ../../build/my_nav2_controller/my_nav2_controller.egg-info/PKG-INFO
+[1.597s] writing dependency_links to ../../build/my_nav2_controller/my_nav2_controller.egg-info/dependency_links.txt
+[1.598s] writing entry points to ../../build/my_nav2_controller/my_nav2_controller.egg-info/entry_points.txt
+[1.598s] writing requirements to ../../build/my_nav2_controller/my_nav2_controller.egg-info/requires.txt
+[1.598s] writing top-level names to ../../build/my_nav2_controller/my_nav2_controller.egg-info/top_level.txt
+[1.601s] reading manifest file '../../build/my_nav2_controller/my_nav2_controller.egg-info/SOURCES.txt'
+[1.607s] writing manifest file '../../build/my_nav2_controller/my_nav2_controller.egg-info/SOURCES.txt'
+[1.607s] running build
+[1.608s] running build_py
+[1.608s] running install
+[1.609s] running install_lib
+[1.611s] running install_data
+[1.611s] copying package.xml -> /home/eddy/ros2_ws/install/my_nav2_controller/share/my_nav2_controller
+[1.611s] running install_egg_info
+[1.613s] removing '/home/eddy/ros2_ws/install/my_nav2_controller/lib/python3.10/site-packages/my_nav2_controller-0.0.0-py3.10.egg-info' (and everything under it)
+[1.614s] Copying ../../build/my_nav2_controller/my_nav2_controller.egg-info to /home/eddy/ros2_ws/install/my_nav2_controller/lib/python3.10/site-packages/my_nav2_controller-0.0.0-py3.10.egg-info
+[1.615s] running install_scripts
+[1.640s] Installing go_forward script to /home/eddy/ros2_ws/install/my_nav2_controller/lib/my_nav2_controller
+[1.640s] writing list of installed files to '/home/eddy/ros2_ws/build/my_nav2_controller/install.log'
+[1.666s] Invoked command in '/home/eddy/ros2_ws/src/my_nav2_controller' returned '0': PYTHONPATH=/home/eddy/ros2_ws/build/my_nav2_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eddy/ros2_ws/install/my_nav2_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_nav2_controller build --build-base /home/eddy/ros2_ws/build/my_nav2_controller/build install --record /home/eddy/ros2_ws/build/my_nav2_controller/install.log --single-version-externally-managed install_data

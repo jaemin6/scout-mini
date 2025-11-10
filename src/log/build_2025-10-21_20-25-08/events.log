@@ -1,0 +1,812 @@
+[0.000000] (-) TimerEvent: {}
+[0.000445] (scout_description) JobQueued: {'identifier': 'scout_description', 'dependencies': OrderedDict()}
+[0.000491] (scout_msgs) JobQueued: {'identifier': 'scout_msgs', 'dependencies': OrderedDict()}
+[0.000534] (ugv_sdk) JobQueued: {'identifier': 'ugv_sdk', 'dependencies': OrderedDict()}
+[0.000568] (scout_base) JobQueued: {'identifier': 'scout_base', 'dependencies': OrderedDict([('scout_msgs', '/home/eddy/ros2_ws/install/scout_msgs'), ('ugv_sdk', '/home/eddy/ros2_ws/install/ugv_sdk')])}
+[0.000604] (scout_msgs) JobStarted: {'identifier': 'scout_msgs'}
+[0.006632] (ugv_sdk) JobStarted: {'identifier': 'ugv_sdk'}
+[0.015660] (scout_msgs) JobProgress: {'identifier': 'scout_msgs', 'progress': 'cmake'}
+[0.015808] (scout_msgs) JobProgress: {'identifier': 'scout_msgs', 'progress': 'build'}
+[0.015858] (scout_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/eddy/ros2_ws/build/scout_msgs', '--', '-j2', '-l2'], 'cwd': '/home/eddy/ros2_ws/build/scout_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'eddy'), ('LC_TIME', 'ko_KR.UTF-8'), ('ROS_PACKAGE_PATH', '/home/eddy/ros2_ws/install/ugv_sdk/share'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/eddy/ros2_ws/install/scout_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eddy'), ('OLDPWD', '/home/eddy/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '1596'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/eddy/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'eddy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/eddy/ros2_ws/install/ugv_sdk/lib/x86_64-linux-gnu/pkgconfig:/home/eddy/ros2_ws/install/ugv_sdk/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eddy'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/eddy-jam:@/tmp/.ICE-unix/1570,unix/eddy-jam:/tmp/.ICE-unix/1570'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/63096ea5_79c6_4501_ab73_8a915338c420'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.11IJE3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/eddy/ros2_ws/install/scout_msgs:/home/eddy/ros2_ws/install/scout_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eddy/ros2_ws/build/scout_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble:/home/eddy/ros2_ws/install/ugv_sdk:/home/eddy/ros2_ws/install/scout_msgs:/home/eddy/ros2_ws/install/scout_description')]), 'shell': False}
+[0.022296] (ugv_sdk) JobProgress: {'identifier': 'ugv_sdk', 'progress': 'cmake'}
+[0.022348] (ugv_sdk) JobProgress: {'identifier': 'ugv_sdk', 'progress': 'build'}
+[0.022367] (ugv_sdk) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/eddy/ros2_ws/build/ugv_sdk', '--', '-j2', '-l2'], 'cwd': '/home/eddy/ros2_ws/build/ugv_sdk', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'eddy'), ('LC_TIME', 'ko_KR.UTF-8'), ('ROS_PACKAGE_PATH', '/home/eddy/ros2_ws/install/ugv_sdk/share'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/eddy/ros2_ws/install/scout_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eddy'), ('OLDPWD', '/home/eddy/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '1596'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/eddy/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'eddy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/eddy/ros2_ws/install/ugv_sdk/lib/x86_64-linux-gnu/pkgconfig:/home/eddy/ros2_ws/install/ugv_sdk/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eddy'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/eddy-jam:@/tmp/.ICE-unix/1570,unix/eddy-jam:/tmp/.ICE-unix/1570'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/63096ea5_79c6_4501_ab73_8a915338c420'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.11IJE3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/eddy/ros2_ws/install/scout_msgs:/home/eddy/ros2_ws/install/scout_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eddy/ros2_ws/build/ugv_sdk'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/eddy/ros2_ws/install/ugv_sdk:/home/eddy/ros2_ws/install/scout_msgs:/home/eddy/ros2_ws/install/scout_description')]), 'shell': False}
+[0.057466] (scout_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target scout_msgs__rosidl_generator_c\x1b[0m\n'}
+[0.069971] (scout_msgs) StdoutLine: {'line': b'[ 11%] Built target scout_msgs__rosidl_generator_c\n'}
+[0.071132] (ugv_sdk) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ugv_sdk\x1b[0m\n'}
+[0.074086] (scout_msgs) StdoutLine: {'line': b'[ 12%] Built target scout_msgs__cpp\n'}
+[0.093805] (scout_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target scout_msgs__rosidl_typesupport_cpp\x1b[0m\n'}
+[0.100894] (scout_msgs) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_scout_msgs\n'}
+[0.101089] (-) TimerEvent: {}
+[0.107293] (scout_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target scout_msgs__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[0.110785] (scout_msgs) StdoutLine: {'line': b'[ 23%] Built target scout_msgs__rosidl_typesupport_cpp\n'}
+[0.124965] (ugv_sdk) StdoutLine: {'line': b'[ 44%] Built target ugv_sdk\n'}
+[0.126721] (scout_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target scout_msgs__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[0.132644] (scout_msgs) StdoutLine: {'line': b'[ 34%] Built target scout_msgs__rosidl_typesupport_fastrtps_c\n'}
+[0.143869] (ugv_sdk) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target demo_scout_robot\x1b[0m\n'}
+[0.149853] (scout_msgs) StdoutLine: {'line': b'[ 46%] Built target scout_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[0.150904] (ugv_sdk) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target demo_scout_mini_omni_robot\x1b[0m\n'}
+[0.154045] (scout_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target scout_msgs__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[0.166363] (scout_msgs) StdoutLine: {'line': b'[ 57%] Built target scout_msgs__rosidl_typesupport_introspection_c\n'}
+[0.174927] (scout_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target scout_msgs__rosidl_typesupport_c\x1b[0m\n'}
+[0.175566] (scout_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target scout_msgs__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[0.178872] (ugv_sdk) StdoutLine: {'line': b'[ 51%] Built target demo_scout_robot\n'}
+[0.179424] (ugv_sdk) StdoutLine: {'line': b'[ 58%] Built target demo_scout_mini_omni_robot\n'}
+[0.191714] (ugv_sdk) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target demo_tracer_robot\x1b[0m\n'}
+[0.195083] (scout_msgs) StdoutLine: {'line': b'[ 68%] Built target scout_msgs__rosidl_typesupport_c\n'}
+[0.198733] (ugv_sdk) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target demo_ranger_robot\x1b[0m\n'}
+[0.201224] (-) TimerEvent: {}
+[0.201437] (scout_msgs) StdoutLine: {'line': b'[ 79%] Built target scout_msgs__rosidl_typesupport_introspection_cpp\n'}
+[0.214050] (ugv_sdk) StdoutLine: {'line': b'[ 65%] Built target demo_tracer_robot\n'}
+[0.227177] (ugv_sdk) StdoutLine: {'line': b'[ 72%] Built target demo_ranger_robot\n'}
+[0.227325] (ugv_sdk) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target demo_bunker_robot\x1b[0m\n'}
+[0.239860] (scout_msgs) StdoutLine: {'line': b'[ 79%] Built target scout_msgs\n'}
+[0.246828] (ugv_sdk) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target demo_hunter_robot\x1b[0m\n'}
+[0.249784] (ugv_sdk) StdoutLine: {'line': b'[ 79%] Built target demo_bunker_robot\n'}
+[0.263392] (ugv_sdk) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target demo_protocol_detector\x1b[0m\n'}
+[0.271713] (ugv_sdk) StdoutLine: {'line': b'[ 86%] Built target demo_hunter_robot\n'}
+[0.275054] (scout_msgs) StdoutLine: {'line': b'[ 80%] Built target scout_msgs__py\n'}
+[0.292604] (ugv_sdk) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target demo_robot_version\x1b[0m\n'}
+[0.292736] (ugv_sdk) StdoutLine: {'line': b'[ 93%] Built target demo_protocol_detector\n'}
+[0.293003] (scout_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target scout_msgs__rosidl_generator_py\x1b[0m\n'}
+[0.302991] (-) TimerEvent: {}
+[0.308055] (ugv_sdk) StdoutLine: {'line': b'[100%] Built target demo_robot_version\n'}
+[0.319140] (scout_msgs) StdoutLine: {'line': b'[ 90%] Built target scout_msgs__rosidl_generator_py\n'}
+[0.324043] (ugv_sdk) CommandEnded: {'returncode': 0}
+[0.325891] (ugv_sdk) JobProgress: {'identifier': 'ugv_sdk', 'progress': 'install'}
+[0.340154] (scout_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target scout_msgs__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[0.341235] (ugv_sdk) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/eddy/ros2_ws/build/ugv_sdk'], 'cwd': '/home/eddy/ros2_ws/build/ugv_sdk', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'eddy'), ('LC_TIME', 'ko_KR.UTF-8'), ('ROS_PACKAGE_PATH', '/home/eddy/ros2_ws/install/ugv_sdk/share'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/eddy/ros2_ws/install/scout_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eddy'), ('OLDPWD', '/home/eddy/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '1596'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/eddy/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'eddy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/eddy/ros2_ws/install/ugv_sdk/lib/x86_64-linux-gnu/pkgconfig:/home/eddy/ros2_ws/install/ugv_sdk/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eddy'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/eddy-jam:@/tmp/.ICE-unix/1570,unix/eddy-jam:/tmp/.ICE-unix/1570'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/63096ea5_79c6_4501_ab73_8a915338c420'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.11IJE3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/eddy/ros2_ws/install/scout_msgs:/home/eddy/ros2_ws/install/scout_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eddy/ros2_ws/build/ugv_sdk'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/eddy/ros2_ws/install/ugv_sdk:/home/eddy/ros2_ws/install/scout_msgs:/home/eddy/ros2_ws/install/scout_description')]), 'shell': False}
+[0.355376] (ugv_sdk) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[0.355509] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/lib/libugv_sdk.a\n'}
+[0.355561] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk\n'}
+[0.355606] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/mobile_robot\n'}
+[0.355651] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/mobile_robot/titan_robot.hpp\n'}
+[0.355695] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/mobile_robot/ranger_robot.hpp\n'}
+[0.355769] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/mobile_robot/hunter_robot.hpp\n'}
+[0.355811] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/mobile_robot/tracer_robot.hpp\n'}
+[0.355853] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/mobile_robot/scout_robot.hpp\n'}
+[0.355913] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/mobile_robot/bunker_robot.hpp\n'}
+[0.356169] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/utilities\n'}
+[0.356218] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/utilities/protocol_detector.hpp\n'}
+[0.356261] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details\n'}
+[0.356303] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/interface\n'}
+[0.356345] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/interface/robot_common_interface.hpp\n'}
+[0.356387] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/interface/bunker_interface.hpp\n'}
+[0.356428] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/interface/ranger_interface.hpp\n'}
+[0.356470] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/interface/titan_interface.hpp\n'}
+[0.356511] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/interface/scout_interface.hpp\n'}
+[0.356552] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/interface/agilex_message.h\n'}
+[0.356593] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/interface/tracer_interface.hpp\n'}
+[0.356634] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/interface/hunter_interface.hpp\n'}
+[0.356674] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/interface/agilex_types.h\n'}
+[0.356715] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/robot_base\n'}
+[0.356757] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/robot_base/tracer_base.hpp\n'}
+[0.356810] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/robot_base/ranger_base.hpp\n'}
+[0.356853] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/robot_base/titan_base.hpp\n'}
+[0.356894] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/robot_base/bunker_base.hpp\n'}
+[0.356939] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/robot_base/hunter_base.hpp\n'}
+[0.356980] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/robot_base/agilex_base.hpp\n'}
+[0.357052] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/robot_base/scout_base.hpp\n'}
+[0.357093] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/protocol_v2\n'}
+[0.357134] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/protocol_v2/protocol_v2_parser.hpp\n'}
+[0.357182] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/async_port\n'}
+[0.357224] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/async_port/ring_buffer.hpp\n'}
+[0.359398] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/async_port/async_serial.hpp\n'}
+[0.359593] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/async_port/async_can.hpp\n'}
+[0.359715] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/parser_base.hpp\n'}
+[0.359831] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/protocol_v1\n'}
+[0.359944] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/protocol_v1/protocol_v1_parser.hpp\n'}
+[0.360057] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/protocol_v1/robot_limits.hpp\n'}
+[0.360166] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/protocol_v1/agilex_msg_parser_v1.h\n'}
+[0.360276] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/lib/cmake/ugv_sdk/ugv_sdkTargets.cmake\n'}
+[0.360386] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/lib/cmake/ugv_sdk/ugv_sdkTargets-release.cmake\n'}
+[0.360497] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/lib/cmake/ugv_sdk/ugv_sdkConfig.cmake\n'}
+[0.360732] (ugv_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/ugv_sdk/lib/cmake/ugv_sdk/ugv_sdkConfigVersion.cmake\n'}
+[0.362514] (scout_msgs) StdoutLine: {'line': b'[ 93%] Built target scout_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.364025] (ugv_sdk) CommandEnded: {'returncode': 0}
+[0.376423] (scout_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target scout_msgs__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[0.396335] (scout_msgs) StdoutLine: {'line': b'[ 96%] Built target scout_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[0.403236] (-) TimerEvent: {}
+[0.404295] (ugv_sdk) JobEnded: {'identifier': 'ugv_sdk', 'rc': 0}
+[0.404669] (scout_description) JobStarted: {'identifier': 'scout_description'}
+[0.411611] (scout_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target scout_msgs__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[0.416322] (scout_description) JobProgress: {'identifier': 'scout_description', 'progress': 'cmake'}
+[0.419788] (scout_description) JobProgress: {'identifier': 'scout_description', 'progress': 'build'}
+[0.423661] (scout_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/eddy/ros2_ws/build/scout_description', '--', '-j2', '-l2'], 'cwd': '/home/eddy/ros2_ws/build/scout_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'eddy'), ('LC_TIME', 'ko_KR.UTF-8'), ('ROS_PACKAGE_PATH', '/home/eddy/ros2_ws/install/ugv_sdk/share'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/eddy/ros2_ws/install/scout_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eddy'), ('OLDPWD', '/home/eddy/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '1596'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/eddy/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'eddy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/eddy/ros2_ws/install/ugv_sdk/lib/x86_64-linux-gnu/pkgconfig:/home/eddy/ros2_ws/install/ugv_sdk/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eddy'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/eddy-jam:@/tmp/.ICE-unix/1570,unix/eddy-jam:/tmp/.ICE-unix/1570'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/63096ea5_79c6_4501_ab73_8a915338c420'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.11IJE3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/eddy/ros2_ws/install/scout_msgs:/home/eddy/ros2_ws/install/scout_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eddy/ros2_ws/build/scout_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble:/home/eddy/ros2_ws/install/ugv_sdk:/home/eddy/ros2_ws/install/scout_msgs:/home/eddy/ros2_ws/install/scout_description')]), 'shell': False}
+[0.424883] (scout_msgs) StdoutLine: {'line': b'[100%] Built target scout_msgs__rosidl_typesupport_c__pyext\n'}
+[0.459297] (scout_description) CommandEnded: {'returncode': 0}
+[0.460883] (scout_description) JobProgress: {'identifier': 'scout_description', 'progress': 'install'}
+[0.460923] (scout_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/eddy/ros2_ws/build/scout_description'], 'cwd': '/home/eddy/ros2_ws/build/scout_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'eddy'), ('LC_TIME', 'ko_KR.UTF-8'), ('ROS_PACKAGE_PATH', '/home/eddy/ros2_ws/install/ugv_sdk/share'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/eddy/ros2_ws/install/scout_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eddy'), ('OLDPWD', '/home/eddy/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '1596'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/eddy/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'eddy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/eddy/ros2_ws/install/ugv_sdk/lib/x86_64-linux-gnu/pkgconfig:/home/eddy/ros2_ws/install/ugv_sdk/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eddy'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/eddy-jam:@/tmp/.ICE-unix/1570,unix/eddy-jam:/tmp/.ICE-unix/1570'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/63096ea5_79c6_4501_ab73_8a915338c420'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.11IJE3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/eddy/ros2_ws/install/scout_msgs:/home/eddy/ros2_ws/install/scout_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eddy/ros2_ws/build/scout_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble:/home/eddy/ros2_ws/install/ugv_sdk:/home/eddy/ros2_ws/install/scout_msgs:/home/eddy/ros2_ws/install/scout_description')]), 'shell': False}
+[0.467537] (scout_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.467823] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description//launch\n'}
+[0.467999] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description//launch/scout_base_description.launch.py\n'}
+[0.468116] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description//urdf\n'}
+[0.468251] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description//urdf/scout_v2.urdf\n'}
+[0.468394] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description//urdf/scout_v2.xacro\n'}
+[0.468497] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description//urdf/scout_wheel_type1.xacro\n'}
+[0.468597] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description//urdf/scout_wheel_type2.xacro\n'}
+[0.468695] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description//urdf/generate_urdf.sh\n'}
+[0.468843] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description//meshes\n'}
+[0.468954] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description//meshes/hokuyo.dae\n'}
+[0.469106] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description//meshes/base_link.dae\n'}
+[0.469159] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description//meshes/wheel_type2.dae\n'}
+[0.469202] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description//meshes/wheel_type1.dae\n'}
+[0.469464] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description//meshes/base_link_full.dae\n'}
+[0.469524] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/ament_index/resource_index/package_run_dependencies/scout_description\n'}
+[0.469570] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/ament_index/resource_index/parent_prefix_path/scout_description\n'}
+[0.469799] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description/environment/ament_prefix_path.sh\n'}
+[0.469866] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description/environment/ament_prefix_path.dsv\n'}
+[0.470197] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description/environment/path.sh\n'}
+[0.470278] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description/environment/path.dsv\n'}
+[0.470325] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description/local_setup.bash\n'}
+[0.470367] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description/local_setup.sh\n'}
+[0.470408] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description/local_setup.zsh\n'}
+[0.470836] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description/local_setup.dsv\n'}
+[0.470908] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description/package.dsv\n'}
+[0.470954] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/ament_index/resource_index/packages/scout_description\n'}
+[0.470997] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description/cmake/scout_descriptionConfig.cmake\n'}
+[0.471039] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description/cmake/scout_descriptionConfig-version.cmake\n'}
+[0.471560] (scout_description) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_description/share/scout_description/package.xml\n'}
+[0.473012] (scout_description) CommandEnded: {'returncode': 0}
+[0.485139] (scout_description) JobEnded: {'identifier': 'scout_description', 'rc': 0}
+[0.498296] (scout_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[0.498915] (scout_msgs) StdoutLine: {'line': b'writing scout_msgs.egg-info/PKG-INFO\n'}
+[0.499332] (scout_msgs) StdoutLine: {'line': b'writing dependency_links to scout_msgs.egg-info/dependency_links.txt\n'}
+[0.500214] (scout_msgs) StdoutLine: {'line': b'writing top-level names to scout_msgs.egg-info/top_level.txt\n'}
+[0.502460] (scout_msgs) StdoutLine: {'line': b"reading manifest file 'scout_msgs.egg-info/SOURCES.txt'\n"}
+[0.503457] (scout_msgs) StdoutLine: {'line': b"writing manifest file 'scout_msgs.egg-info/SOURCES.txt'\n"}
+[0.503746] (-) TimerEvent: {}
+[0.531594] (scout_msgs) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_scout_msgs_egg\n'}
+[0.541818] (scout_msgs) CommandEnded: {'returncode': 0}
+[0.542224] (scout_msgs) JobProgress: {'identifier': 'scout_msgs', 'progress': 'install'}
+[0.543457] (scout_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/eddy/ros2_ws/build/scout_msgs'], 'cwd': '/home/eddy/ros2_ws/build/scout_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'eddy'), ('LC_TIME', 'ko_KR.UTF-8'), ('ROS_PACKAGE_PATH', '/home/eddy/ros2_ws/install/ugv_sdk/share'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/eddy/ros2_ws/install/scout_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eddy'), ('OLDPWD', '/home/eddy/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '1596'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/eddy/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'eddy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/eddy/ros2_ws/install/ugv_sdk/lib/x86_64-linux-gnu/pkgconfig:/home/eddy/ros2_ws/install/ugv_sdk/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eddy'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/eddy-jam:@/tmp/.ICE-unix/1570,unix/eddy-jam:/tmp/.ICE-unix/1570'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/63096ea5_79c6_4501_ab73_8a915338c420'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.11IJE3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/eddy/ros2_ws/install/scout_msgs:/home/eddy/ros2_ws/install/scout_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eddy/ros2_ws/build/scout_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble:/home/eddy/ros2_ws/install/ugv_sdk:/home/eddy/ros2_ws/install/scout_msgs:/home/eddy/ros2_ws/install/scout_description')]), 'shell': False}
+[0.550514] (scout_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.550682] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/ament_index/resource_index/rosidl_interfaces/scout_msgs\n'}
+[0.550734] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs\n'}
+[0.550845] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg\n'}
+[0.551126] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.551272] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/scout_status.h\n'}
+[0.551384] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/scout_light_state.h\n'}
+[0.551444] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/scout_rc_state.h\n'}
+[0.551531] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/scout_light_cmd.h\n'}
+[0.551585] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail\n'}
+[0.551669] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_cmd__struct.h\n'}
+[0.551713] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_state__struct.h\n'}
+[0.551755] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_status__functions.h\n'}
+[0.551797] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_rc_state__functions.c\n'}
+[0.551839] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_cmd__functions.c\n'}
+[0.551881] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_state__functions.h\n'}
+[0.551922] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_status__struct.h\n'}
+[0.551994] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_status__type_support.h\n'}
+[0.552037] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_rc_state__struct.h\n'}
+[0.552079] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_rc_state__type_support.h\n'}
+[0.552120] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_actuator_state__type_support.h\n'}
+[0.552162] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_cmd__type_support.h\n'}
+[0.552203] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_state__functions.c\n'}
+[0.552244] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_status__functions.c\n'}
+[0.552285] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_state__type_support.h\n'}
+[0.552330] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_actuator_state__struct.h\n'}
+[0.552372] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_actuator_state__functions.h\n'}
+[0.552413] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_rc_state__functions.h\n'}
+[0.552476] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_cmd__functions.h\n'}
+[0.552519] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_actuator_state__functions.c\n'}
+[0.552561] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/scout_actuator_state.h\n'}
+[0.552603] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/environment/library_path.sh\n'}
+[0.552644] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/environment/library_path.dsv\n'}
+[0.552689] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/lib/libscout_msgs__rosidl_generator_c.so\n'}
+[0.552840] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs\n'}
+[0.553029] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg\n'}
+[0.553079] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail\n'}
+[0.553172] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_state__rosidl_typesupport_fastrtps_c.h\n'}
+[0.553219] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_cmd__rosidl_typesupport_fastrtps_c.h\n'}
+[0.553262] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_rc_state__rosidl_typesupport_fastrtps_c.h\n'}
+[0.553437] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_actuator_state__rosidl_typesupport_fastrtps_c.h\n'}
+[0.553671] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_status__rosidl_typesupport_fastrtps_c.h\n'}
+[0.553741] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.553832] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/lib/libscout_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[0.553878] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs\n'}
+[0.553937] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg\n'}
+[0.554033] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[0.554079] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail\n'}
+[0.554276] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_cmd__type_support.hpp\n'}
+[0.554466] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_cmd__traits.hpp\n'}
+[0.554523] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_status__builder.hpp\n'}
+[0.554634] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_actuator_state__builder.hpp\n'}
+[0.554682] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_rc_state__builder.hpp\n'}
+[0.554725] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_status__traits.hpp\n'}
+[0.554803] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_rc_state__type_support.hpp\n'}
+[0.554853] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_actuator_state__type_support.hpp\n'}
+[0.554965] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_state__type_support.hpp\n'}
+[0.555098] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_rc_state__struct.hpp\n'}
+[0.555144] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_state__struct.hpp\n'}
+[0.555236] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_cmd__builder.hpp\n'}
+[0.555325] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_status__type_support.hpp\n'}
+[0.555394] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_status__struct.hpp\n'}
+[0.555479] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_rc_state__traits.hpp\n'}
+[0.555597] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_actuator_state__struct.hpp\n'}
+[0.555741] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_cmd__struct.hpp\n'}
+[0.555958] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_state__traits.hpp\n'}
+[0.556088] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_state__builder.hpp\n'}
+[0.556137] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_actuator_state__traits.hpp\n'}
+[0.556182] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/scout_actuator_state.hpp\n'}
+[0.556225] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/scout_rc_state.hpp\n'}
+[0.556268] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/scout_light_state.hpp\n'}
+[0.556310] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/scout_status.hpp\n'}
+[0.556352] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/scout_light_cmd.hpp\n'}
+[0.556415] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs\n'}
+[0.556470] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg\n'}
+[0.556512] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.556555] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail\n'}
+[0.556597] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_cmd__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.556639] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_rc_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.556681] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.556728] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/dds_fastrtps\n'}
+[0.556771] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_actuator_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.556814] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_status__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.556856] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/lib/libscout_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.556922] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs\n'}
+[0.556980] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg\n'}
+[0.557023] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail\n'}
+[0.557066] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_state__rosidl_typesupport_introspection_c.h\n'}
+[0.557109] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_status__rosidl_typesupport_introspection_c.h\n'}
+[0.557151] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_actuator_state__rosidl_typesupport_introspection_c.h\n'}
+[0.557193] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_cmd__rosidl_typesupport_introspection_c.h\n'}
+[0.557236] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_status__type_support.c\n'}
+[0.557278] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_actuator_state__type_support.c\n'}
+[0.557320] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_rc_state__rosidl_typesupport_introspection_c.h\n'}
+[0.557363] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_rc_state__type_support.c\n'}
+[0.557428] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_cmd__type_support.c\n'}
+[0.557472] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_state__type_support.c\n'}
+[0.557520] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.557563] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/lib/libscout_msgs__rosidl_typesupport_introspection_c.so\n'}
+[0.557606] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/lib/libscout_msgs__rosidl_typesupport_c.so\n'}
+[0.557648] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs\n'}
+[0.557691] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg\n'}
+[0.557733] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail\n'}
+[0.557775] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_cmd__type_support.cpp\n'}
+[0.557821] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_status__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.557864] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_state__type_support.cpp\n'}
+[0.557950] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_actuator_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.557998] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_status__type_support.cpp\n'}
+[0.558041] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_rc_state__type_support.cpp\n'}
+[0.558082] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.558124] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_rc_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.558166] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_actuator_state__type_support.cpp\n'}
+[0.558208] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/include/scout_msgs/scout_msgs/msg/detail/scout_light_cmd__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.558250] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/lib/libscout_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[0.558292] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/lib/libscout_msgs__rosidl_typesupport_cpp.so\n'}
+[0.558333] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/environment/pythonpath.sh\n'}
+[0.558375] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/environment/pythonpath.dsv\n'}
+[0.558439] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs-0.1.0-py3.10.egg-info\n'}
+[0.558489] (scout_msgs) StdoutLine: {'line': b'-- Installing: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs-0.1.0-py3.10.egg-info/PKG-INFO\n'}
+[0.558531] (scout_msgs) StdoutLine: {'line': b'-- Installing: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs-0.1.0-py3.10.egg-info/dependency_links.txt\n'}
+[0.558573] (scout_msgs) StdoutLine: {'line': b'-- Installing: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs-0.1.0-py3.10.egg-info/top_level.txt\n'}
+[0.558618] (scout_msgs) StdoutLine: {'line': b'-- Installing: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs-0.1.0-py3.10.egg-info/SOURCES.txt\n'}
+[0.558660] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs\n'}
+[0.558701] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/_scout_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[0.558750] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/msg\n'}
+[0.558792] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/msg/_scout_status.py\n'}
+[0.558834] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/msg/_scout_light_cmd_s.c\n'}
+[0.558924] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/msg/_scout_rc_state.py\n'}
+[0.558976] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/msg/_scout_status_s.c\n'}
+[0.559018] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/msg/_scout_light_state.py\n'}
+[0.559061] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/msg/_scout_actuator_state.py\n'}
+[0.559102] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/msg/_scout_actuator_state_s.c\n'}
+[0.559144] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/msg/_scout_rc_state_s.c\n'}
+[0.559186] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/msg/__init__.py\n'}
+[0.559227] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/msg/_scout_light_state_s.c\n'}
+[0.559274] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/msg/_scout_light_cmd.py\n'}
+[0.559318] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/_scout_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.559360] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/scout_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.559425] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/libscout_msgs__rosidl_generator_py.so\n'}
+[0.559468] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/_scout_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[0.559510] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/scout_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.559552] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/__init__.py\n'}
+[0.559593] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/scout_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.582652] (scout_msgs) StdoutLine: {'line': b"Listing '/home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs'...\n"}
+[0.582813] (scout_msgs) StdoutLine: {'line': b"Listing '/home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/msg'...\n"}
+[0.586501] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/scout_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.586694] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/scout_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.586880] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages/scout_msgs/scout_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.587146] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/lib/libscout_msgs__rosidl_generator_py.so\n'}
+[0.587300] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/msg/ScoutActuatorState.idl\n'}
+[0.587431] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/msg/ScoutLightCmd.idl\n'}
+[0.587599] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/msg/ScoutLightState.idl\n'}
+[0.587653] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/msg/ScoutRCState.idl\n'}
+[0.587697] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/msg/ScoutStatus.idl\n'}
+[0.587739] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/msg/ScoutActuatorState.msg\n'}
+[0.587781] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/msg/ScoutLightCmd.msg\n'}
+[0.587823] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/msg/ScoutLightState.msg\n'}
+[0.587905] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/msg/ScoutRCState.msg\n'}
+[0.587954] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/msg/ScoutStatus.msg\n'}
+[0.588019] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/ament_index/resource_index/package_run_dependencies/scout_msgs\n'}
+[0.588062] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/ament_index/resource_index/parent_prefix_path/scout_msgs\n'}
+[0.588104] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/environment/ament_prefix_path.sh\n'}
+[0.588146] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/environment/ament_prefix_path.dsv\n'}
+[0.588870] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/environment/path.sh\n'}
+[0.588948] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/environment/path.dsv\n'}
+[0.588997] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/local_setup.bash\n'}
+[0.589042] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/local_setup.sh\n'}
+[0.589093] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/local_setup.zsh\n'}
+[0.589136] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/local_setup.dsv\n'}
+[0.589182] (scout_msgs) StdoutLine: {'line': b'-- Installing: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/package.dsv\n'}
+[0.589246] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/ament_index/resource_index/packages/scout_msgs\n'}
+[0.589290] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/export_scout_msgs__rosidl_generator_cExport.cmake\n'}
+[0.589331] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/export_scout_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.589372] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/export_scout_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[0.589413] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/export_scout_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[0.589454] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/export_scout_msgs__rosidl_generator_cppExport.cmake\n'}
+[0.589514] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/export_scout_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[0.589602] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/export_scout_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[0.589659] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/scout_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.589700] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/scout_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.589764] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/scout_msgs__rosidl_typesupport_cExport.cmake\n'}
+[0.589806] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/scout_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.589847] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/scout_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.589888] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/scout_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.589929] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/scout_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[0.589971] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/scout_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.590069] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/export_scout_msgs__rosidl_generator_pyExport.cmake\n'}
+[0.590117] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/export_scout_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[0.590160] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[0.590216] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.590266] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.590308] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.590354] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.590395] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.590436] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.590477] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/scout_msgsConfig.cmake\n'}
+[0.590519] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/scout_msgsConfig-version.cmake\n'}
+[0.590559] (scout_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/package.xml\n'}
+[0.591871] (scout_msgs) CommandEnded: {'returncode': 0}
+[0.603863] (-) TimerEvent: {}
+[0.607647] (scout_msgs) JobEnded: {'identifier': 'scout_msgs', 'rc': 0}
+[0.608736] (scout_base) JobStarted: {'identifier': 'scout_base'}
+[0.619085] (scout_base) JobProgress: {'identifier': 'scout_base', 'progress': 'cmake'}
+[0.619133] (scout_base) JobProgress: {'identifier': 'scout_base', 'progress': 'build'}
+[0.619165] (scout_base) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/eddy/ros2_ws/build/scout_base', '--', '-j2', '-l2'], 'cwd': '/home/eddy/ros2_ws/build/scout_base', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'eddy'), ('LC_TIME', 'ko_KR.UTF-8'), ('ROS_PACKAGE_PATH', '/home/eddy/ros2_ws/install/ugv_sdk/share'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/eddy/ros2_ws/install/scout_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eddy'), ('OLDPWD', '/home/eddy/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '1596'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/eddy/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'eddy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/eddy/ros2_ws/install/ugv_sdk/lib/x86_64-linux-gnu/pkgconfig:/home/eddy/ros2_ws/install/ugv_sdk/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eddy'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/eddy-jam:@/tmp/.ICE-unix/1570,unix/eddy-jam:/tmp/.ICE-unix/1570'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/63096ea5_79c6_4501_ab73_8a915338c420'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.11IJE3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/eddy/ros2_ws/install/scout_msgs:/home/eddy/ros2_ws/install/scout_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eddy/ros2_ws/build/scout_base'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/eddy/ros2_ws/install/scout_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble:/home/eddy/ros2_ws/install/ugv_sdk:/home/eddy/ros2_ws/install/scout_msgs:/home/eddy/ros2_ws/install/scout_description')]), 'shell': False}
+[0.644278] (scout_base) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.705734] (-) TimerEvent: {}
+[0.756391] (scout_base) StdoutLine: {'line': b'-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.781026] (scout_base) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.783136] (scout_base) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.787925] (scout_base) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.795927] (scout_base) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.805835] (-) TimerEvent: {}
+[0.806051] (scout_base) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.832493] (scout_base) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.834773] (scout_base) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.906658] (-) TimerEvent: {}
+[0.916017] (scout_base) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.959946] (scout_base) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.970400] (scout_base) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[0.984376] (scout_base) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.998488] (scout_base) StdoutLine: {'line': b'-- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)\n'}
+[1.001595] (scout_base) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[1.007057] (-) TimerEvent: {}
+[1.069884] (scout_base) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[1.080056] (scout_base) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[1.081100] (scout_base) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[1.081204] (scout_base) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[1.082330] (scout_base) StdoutLine: {'line': b'-- Found scout_msgs: 0.1.0 (/home/eddy/ros2_ws/install/scout_msgs/share/scout_msgs/cmake)\n'}
+[1.097563] (scout_base) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.108641] (-) TimerEvent: {}
+[1.160125] (scout_base) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[1.160921] (scout_base) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.161003] (scout_base) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/eddy/ros2_ws/src/scout_ros2/scout_base/include\n'}
+[1.161053] (scout_base) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.162696] (scout_base) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[1.162777] (scout_base) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[1.162827] (scout_base) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.162872] (scout_base) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.162915] (scout_base) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.162988] (scout_base) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.163036] (scout_base) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.163164] (scout_base) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.163775] (scout_base) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.187820] (scout_base) StdoutLine: {'line': b'-- Generating done\n'}
+[1.192597] (scout_base) StdoutLine: {'line': b'-- Build files have been written to: /home/eddy/ros2_ws/build/scout_base\n'}
+[1.209001] (-) TimerEvent: {}
+[1.218627] (scout_base) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target scout_base_node\x1b[0m\n'}
+[1.230459] (scout_base) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/scout_base_node.dir/src/scout_base_ros.cpp.o\x1b[0m\n'}
+[1.232078] (scout_base) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/scout_base_node.dir/src/scout_base_node.cpp.o\x1b[0m\n'}
+[1.309172] (-) TimerEvent: {}
+[1.409667] (-) TimerEvent: {}
+[1.460956] (scout_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/include/scout_base/scout_messenger.hpp:21\x1b[m\x1b[K,\n'}
+[1.461125] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:12\x1b[m\x1b[K:\n'}
+[1.461178] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp\x07-Wcpp\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.461226] (scout_base) StderrLine: {'line': b'   35 | #\x1b[01;35m\x1b[Kwarning\x1b[m\x1b[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead\n'}
+[1.461274] (scout_base) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.509914] (-) TimerEvent: {}
+[1.610331] (-) TimerEvent: {}
+[1.712180] (-) TimerEvent: {}
+[1.812855] (-) TimerEvent: {}
+[1.913522] (-) TimerEvent: {}
+[2.014205] (-) TimerEvent: {}
+[2.116880] (-) TimerEvent: {}
+[2.217550] (-) TimerEvent: {}
+[2.318674] (-) TimerEvent: {}
+[2.419288] (-) TimerEvent: {}
+[2.519651] (-) TimerEvent: {}
+[2.620286] (-) TimerEvent: {}
+[2.722866] (-) TimerEvent: {}
+[2.823215] (-) TimerEvent: {}
+[2.925580] (-) TimerEvent: {}
+[3.026465] (-) TimerEvent: {}
+[3.127197] (-) TimerEvent: {}
+[3.227845] (-) TimerEvent: {}
+[3.328241] (-) TimerEvent: {}
+[3.429017] (-) TimerEvent: {}
+[3.530596] (-) TimerEvent: {}
+[3.633008] (-) TimerEvent: {}
+[3.733309] (-) TimerEvent: {}
+[3.833930] (-) TimerEvent: {}
+[3.934555] (-) TimerEvent: {}
+[4.034937] (-) TimerEvent: {}
+[4.135560] (-) TimerEvent: {}
+[4.236181] (-) TimerEvent: {}
+[4.336762] (-) TimerEvent: {}
+[4.401262] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Kwestonrobot::ScoutBaseRos::ScoutBaseRos(std::string)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.401625] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:18:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kwestonrobot::ScoutBaseRos::declare_parameter(const char [10])\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.401684] (scout_base) StderrLine: {'line': b'   18 |   \x1b[01;31m\x1b[Kthis->declare_parameter("port_name")\x1b[m\x1b[K;\n'}
+[4.401730] (scout_base) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.401773] (scout_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[4.401827] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[4.401871] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[4.401915] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/include/scout_base/scout_base_ros.hpp:16\x1b[m\x1b[K,\n'}
+[4.401957] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:10\x1b[m\x1b[K:\n'}
+[4.401999] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.402042] (scout_base) StderrLine: {'line': b'  421 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(\n'}
+[4.402084] (scout_base) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.402125] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.402431] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:18:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 4 arguments, 1 provided\n'}
+[4.402563] (scout_base) StderrLine: {'line': b'   18 |   \x1b[01;36m\x1b[Kthis->declare_parameter("port_name")\x1b[m\x1b[K;\n'}
+[4.402637] (scout_base) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.402686] (scout_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[4.402930] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[4.402986] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[4.403029] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/include/scout_base/scout_base_ros.hpp:16\x1b[m\x1b[K,\n'}
+[4.403092] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:10\x1b[m\x1b[K:\n'}
+[4.403136] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.403180] (scout_base) StderrLine: {'line': b'  434 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(\n'}
+[4.403221] (scout_base) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.403262] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.403303] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:18:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[KParameterT\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.403346] (scout_base) StderrLine: {'line': b'   18 |   \x1b[01;36m\x1b[Kthis->declare_parameter("port_name")\x1b[m\x1b[K;\n'}
+[4.403387] (scout_base) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.403433] (scout_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[4.403474] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[4.403515] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[4.403563] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/include/scout_base/scout_base_ros.hpp:16\x1b[m\x1b[K,\n'}
+[4.403605] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:10\x1b[m\x1b[K:\n'}
+[4.403646] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.403692] (scout_base) StderrLine: {'line': b'  366 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(\n'}
+[4.403734] (scout_base) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.403775] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 4 arguments, 1 provided\n'}
+[4.403816] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.403858] (scout_base) StderrLine: {'line': b'  391 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(\n'}
+[4.403902] (scout_base) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.404484] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 4 arguments, 1 provided\n'}
+[4.404573] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:20:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kwestonrobot::ScoutBaseRos::declare_parameter(const char [11])\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.404630] (scout_base) StderrLine: {'line': b'   20 |   \x1b[01;31m\x1b[Kthis->declare_parameter("odom_frame")\x1b[m\x1b[K;\n'}
+[4.404675] (scout_base) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.404717] (scout_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[4.404758] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[4.404800] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[4.404841] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/include/scout_base/scout_base_ros.hpp:16\x1b[m\x1b[K,\n'}
+[4.404882] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:10\x1b[m\x1b[K:\n'}
+[4.404923] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.404966] (scout_base) StderrLine: {'line': b'  421 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(\n'}
+[4.405006] (scout_base) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.405047] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.405090] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:20:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 4 arguments, 1 provided\n'}
+[4.405135] (scout_base) StderrLine: {'line': b'   20 |   \x1b[01;36m\x1b[Kthis->declare_parameter("odom_frame")\x1b[m\x1b[K;\n'}
+[4.405175] (scout_base) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.405216] (scout_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[4.405256] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[4.405296] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[4.405337] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/include/scout_base/scout_base_ros.hpp:16\x1b[m\x1b[K,\n'}
+[4.405378] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:10\x1b[m\x1b[K:\n'}
+[4.405418] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.405466] (scout_base) StderrLine: {'line': b'  434 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(\n'}
+[4.405572] (scout_base) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.405652] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.405763] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:20:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[KParameterT\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.405875] (scout_base) StderrLine: {'line': b'   20 |   \x1b[01;36m\x1b[Kthis->declare_parameter("odom_frame")\x1b[m\x1b[K;\n'}
+[4.405955] (scout_base) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.406066] (scout_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[4.406138] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[4.406232] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[4.406633] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/include/scout_base/scout_base_ros.hpp:16\x1b[m\x1b[K,\n'}
+[4.406881] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:10\x1b[m\x1b[K:\n'}
+[4.406937] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.406985] (scout_base) StderrLine: {'line': b'  366 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(\n'}
+[4.407028] (scout_base) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.407069] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 4 arguments, 1 provided\n'}
+[4.407111] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.407161] (scout_base) StderrLine: {'line': b'  391 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(\n'}
+[4.407203] (scout_base) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.407244] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 4 arguments, 1 provided\n'}
+[4.407286] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:21:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kwestonrobot::ScoutBaseRos::declare_parameter(const char [11])\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.407329] (scout_base) StderrLine: {'line': b'   21 |   \x1b[01;31m\x1b[Kthis->declare_parameter("base_frame")\x1b[m\x1b[K;\n'}
+[4.407373] (scout_base) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.407414] (scout_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[4.407455] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[4.407530] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[4.407574] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/include/scout_base/scout_base_ros.hpp:16\x1b[m\x1b[K,\n'}
+[4.407617] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:10\x1b[m\x1b[K:\n'}
+[4.407658] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.407701] (scout_base) StderrLine: {'line': b'  421 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(\n'}
+[4.407742] (scout_base) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.407782] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.407823] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:21:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 4 arguments, 1 provided\n'}
+[4.407864] (scout_base) StderrLine: {'line': b'   21 |   \x1b[01;36m\x1b[Kthis->declare_parameter("base_frame")\x1b[m\x1b[K;\n'}
+[4.407904] (scout_base) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.407945] (scout_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[4.407985] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[4.408032] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[4.408074] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/include/scout_base/scout_base_ros.hpp:16\x1b[m\x1b[K,\n'}
+[4.408115] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:10\x1b[m\x1b[K:\n'}
+[4.408155] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.408202] (scout_base) StderrLine: {'line': b'  434 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(\n'}
+[4.408248] (scout_base) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.408289] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.408330] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:21:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[KParameterT\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.408374] (scout_base) StderrLine: {'line': b'   21 |   \x1b[01;36m\x1b[Kthis->declare_parameter("base_frame")\x1b[m\x1b[K;\n'}
+[4.408414] (scout_base) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.408453] (scout_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[4.408493] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[4.408533] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[4.408573] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/include/scout_base/scout_base_ros.hpp:16\x1b[m\x1b[K,\n'}
+[4.408613] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:10\x1b[m\x1b[K:\n'}
+[4.408653] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.408699] (scout_base) StderrLine: {'line': b'  366 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(\n'}
+[4.408739] (scout_base) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.408778] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 4 arguments, 1 provided\n'}
+[4.408818] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.408859] (scout_base) StderrLine: {'line': b'  391 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(\n'}
+[4.408899] (scout_base) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.408938] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 4 arguments, 1 provided\n'}
+[4.408978] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:22:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kwestonrobot::ScoutBaseRos::declare_parameter(const char [16])\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.409019] (scout_base) StderrLine: {'line': b'   22 |   \x1b[01;31m\x1b[Kthis->declare_parameter("odom_topic_name")\x1b[m\x1b[K;\n'}
+[4.409059] (scout_base) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.409099] (scout_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[4.409140] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[4.409179] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[4.409219] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/include/scout_base/scout_base_ros.hpp:16\x1b[m\x1b[K,\n'}
+[4.409260] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:10\x1b[m\x1b[K:\n'}
+[4.409304] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.409345] (scout_base) StderrLine: {'line': b'  421 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(\n'}
+[4.409386] (scout_base) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.409426] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.409466] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:22:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 4 arguments, 1 provided\n'}
+[4.409540] (scout_base) StderrLine: {'line': b'   22 |   \x1b[01;36m\x1b[Kthis->declare_parameter("odom_topic_name")\x1b[m\x1b[K;\n'}
+[4.409588] (scout_base) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.409630] (scout_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[4.409671] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[4.409711] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[4.409751] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/include/scout_base/scout_base_ros.hpp:16\x1b[m\x1b[K,\n'}
+[4.409795] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:10\x1b[m\x1b[K:\n'}
+[4.409836] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.409878] (scout_base) StderrLine: {'line': b'  434 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(\n'}
+[4.409918] (scout_base) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.409958] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.409998] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:22:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[KParameterT\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.410759] (scout_base) StderrLine: {'line': b'   22 |   \x1b[01;36m\x1b[Kthis->declare_parameter("odom_topic_name")\x1b[m\x1b[K;\n'}
+[4.410819] (scout_base) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.410865] (scout_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[4.410908] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[4.410951] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[4.410992] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/include/scout_base/scout_base_ros.hpp:16\x1b[m\x1b[K,\n'}
+[4.411044] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:10\x1b[m\x1b[K:\n'}
+[4.411085] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.411128] (scout_base) StderrLine: {'line': b'  366 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(\n'}
+[4.411170] (scout_base) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.411227] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 4 arguments, 1 provided\n'}
+[4.411278] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.411321] (scout_base) StderrLine: {'line': b'  391 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(\n'}
+[4.411363] (scout_base) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.411403] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 4 arguments, 1 provided\n'}
+[4.411445] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:24:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kwestonrobot::ScoutBaseRos::declare_parameter(const char [14])\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.411487] (scout_base) StderrLine: {'line': b'   24 |   \x1b[01;31m\x1b[Kthis->declare_parameter("is_scout_mini")\x1b[m\x1b[K;\n'}
+[4.411528] (scout_base) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.411569] (scout_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[4.411609] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[4.411650] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[4.411691] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/include/scout_base/scout_base_ros.hpp:16\x1b[m\x1b[K,\n'}
+[4.411733] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:10\x1b[m\x1b[K:\n'}
+[4.411778] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.411822] (scout_base) StderrLine: {'line': b'  421 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(\n'}
+[4.411863] (scout_base) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.411903] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.411948] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:24:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 4 arguments, 1 provided\n'}
+[4.411989] (scout_base) StderrLine: {'line': b'   24 |   \x1b[01;36m\x1b[Kthis->declare_parameter("is_scout_mini")\x1b[m\x1b[K;\n'}
+[4.412030] (scout_base) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.412081] (scout_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[4.412123] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[4.412164] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[4.412204] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/include/scout_base/scout_base_ros.hpp:16\x1b[m\x1b[K,\n'}
+[4.412245] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:10\x1b[m\x1b[K:\n'}
+[4.412285] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.412327] (scout_base) StderrLine: {'line': b'  434 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(\n'}
+[4.412367] (scout_base) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.412406] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.412447] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:24:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[KParameterT\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.412487] (scout_base) StderrLine: {'line': b'   24 |   \x1b[01;36m\x1b[Kthis->declare_parameter("is_scout_mini")\x1b[m\x1b[K;\n'}
+[4.412528] (scout_base) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.412572] (scout_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[4.412612] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[4.412652] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[4.412692] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/include/scout_base/scout_base_ros.hpp:16\x1b[m\x1b[K,\n'}
+[4.412732] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:10\x1b[m\x1b[K:\n'}
+[4.412772] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.412813] (scout_base) StderrLine: {'line': b'  366 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(\n'}
+[4.412854] (scout_base) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.412898] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 4 arguments, 1 provided\n'}
+[4.412939] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.412981] (scout_base) StderrLine: {'line': b'  391 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(\n'}
+[4.413021] (scout_base) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.413062] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 4 arguments, 1 provided\n'}
+[4.413103] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:25:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kwestonrobot::ScoutBaseRos::declare_parameter(const char [14])\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.413148] (scout_base) StderrLine: {'line': b'   25 |   \x1b[01;31m\x1b[Kthis->declare_parameter("is_omni_wheel")\x1b[m\x1b[K;\n'}
+[4.413190] (scout_base) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.413263] (scout_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[4.413311] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[4.413352] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[4.413393] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/include/scout_base/scout_base_ros.hpp:16\x1b[m\x1b[K,\n'}
+[4.413434] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:10\x1b[m\x1b[K:\n'}
+[4.413475] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.413518] (scout_base) StderrLine: {'line': b'  421 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(\n'}
+[4.413558] (scout_base) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.413598] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.413645] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:25:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 4 arguments, 1 provided\n'}
+[4.413686] (scout_base) StderrLine: {'line': b'   25 |   \x1b[01;36m\x1b[Kthis->declare_parameter("is_omni_wheel")\x1b[m\x1b[K;\n'}
+[4.413727] (scout_base) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.413767] (scout_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[4.413807] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[4.413853] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[4.413894] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/include/scout_base/scout_base_ros.hpp:16\x1b[m\x1b[K,\n'}
+[4.413934] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:10\x1b[m\x1b[K:\n'}
+[4.413974] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.414016] (scout_base) StderrLine: {'line': b'  434 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(\n'}
+[4.414061] (scout_base) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.414103] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.414147] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:25:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[KParameterT\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.414189] (scout_base) StderrLine: {'line': b'   25 |   \x1b[01;36m\x1b[Kthis->declare_parameter("is_omni_wheel")\x1b[m\x1b[K;\n'}
+[4.414229] (scout_base) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.414270] (scout_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[4.414310] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[4.414351] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[4.414391] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/include/scout_base/scout_base_ros.hpp:16\x1b[m\x1b[K,\n'}
+[4.414432] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:10\x1b[m\x1b[K:\n'}
+[4.414473] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.414515] (scout_base) StderrLine: {'line': b'  366 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(\n'}
+[4.414555] (scout_base) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.414596] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 4 arguments, 1 provided\n'}
+[4.414640] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.414682] (scout_base) StderrLine: {'line': b'  391 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(\n'}
+[4.414723] (scout_base) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.414764] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 4 arguments, 1 provided\n'}
+[4.414809] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:27:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kwestonrobot::ScoutBaseRos::declare_parameter(const char [16])\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.414851] (scout_base) StderrLine: {'line': b'   27 |   \x1b[01;31m\x1b[Kthis->declare_parameter("simulated_robot")\x1b[m\x1b[K;\n'}
+[4.414892] (scout_base) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.414932] (scout_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[4.414973] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[4.415014] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[4.415054] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/include/scout_base/scout_base_ros.hpp:16\x1b[m\x1b[K,\n'}
+[4.415095] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:10\x1b[m\x1b[K:\n'}
+[4.415139] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.415181] (scout_base) StderrLine: {'line': b'  421 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(\n'}
+[4.415221] (scout_base) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.415296] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.415340] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:27:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 4 arguments, 1 provided\n'}
+[4.415381] (scout_base) StderrLine: {'line': b'   27 |   \x1b[01;36m\x1b[Kthis->declare_parameter("simulated_robot")\x1b[m\x1b[K;\n'}
+[4.415421] (scout_base) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.415462] (scout_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[4.415502] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[4.415542] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[4.415583] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/include/scout_base/scout_base_ros.hpp:16\x1b[m\x1b[K,\n'}
+[4.415623] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:10\x1b[m\x1b[K:\n'}
+[4.415668] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.415714] (scout_base) StderrLine: {'line': b'  434 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(\n'}
+[4.415754] (scout_base) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.415793] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.415834] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:27:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[KParameterT\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.415876] (scout_base) StderrLine: {'line': b'   27 |   \x1b[01;36m\x1b[Kthis->declare_parameter("simulated_robot")\x1b[m\x1b[K;\n'}
+[4.415916] (scout_base) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.415957] (scout_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[4.415998] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[4.416038] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[4.416087] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/include/scout_base/scout_base_ros.hpp:16\x1b[m\x1b[K,\n'}
+[4.416131] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:10\x1b[m\x1b[K:\n'}
+[4.416172] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.416214] (scout_base) StderrLine: {'line': b'  366 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(\n'}
+[4.416268] (scout_base) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.416308] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 4 arguments, 1 provided\n'}
+[4.416348] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.416390] (scout_base) StderrLine: {'line': b'  391 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(\n'}
+[4.416429] (scout_base) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.416469] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 4 arguments, 1 provided\n'}
+[4.416509] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:28:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kwestonrobot::ScoutBaseRos::declare_parameter(const char [13])\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.416550] (scout_base) StderrLine: {'line': b'   28 |   \x1b[01;31m\x1b[Kthis->declare_parameter("control_rate")\x1b[m\x1b[K;\n'}
+[4.416590] (scout_base) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.416630] (scout_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[4.416676] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[4.416717] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[4.416757] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/include/scout_base/scout_base_ros.hpp:16\x1b[m\x1b[K,\n'}
+[4.416796] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:10\x1b[m\x1b[K:\n'}
+[4.416836] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.416877] (scout_base) StderrLine: {'line': b'  421 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(\n'}
+[4.416916] (scout_base) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.416955] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.416995] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:28:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 4 arguments, 1 provided\n'}
+[4.417035] (scout_base) StderrLine: {'line': b'   28 |   \x1b[01;36m\x1b[Kthis->declare_parameter("control_rate")\x1b[m\x1b[K;\n'}
+[4.417074] (scout_base) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.417113] (scout_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[4.417157] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[4.417197] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[4.417276] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/include/scout_base/scout_base_ros.hpp:16\x1b[m\x1b[K,\n'}
+[4.417330] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:10\x1b[m\x1b[K:\n'}
+[4.417371] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.417413] (scout_base) StderrLine: {'line': b'  434 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(\n'}
+[4.417453] (scout_base) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.417493] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.417539] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:28:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[KParameterT\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.417581] (scout_base) StderrLine: {'line': b'   28 |   \x1b[01;36m\x1b[Kthis->declare_parameter("control_rate")\x1b[m\x1b[K;\n'}
+[4.417625] (scout_base) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.417665] (scout_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[4.417705] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[4.417745] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[4.417785] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/include/scout_base/scout_base_ros.hpp:16\x1b[m\x1b[K,\n'}
+[4.417826] (scout_base) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/eddy/ros2_ws/src/scout_ros2/scout_base/src/scout_base_ros.cpp:10\x1b[m\x1b[K:\n'}
+[4.417866] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.417909] (scout_base) StderrLine: {'line': b'  366 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(\n'}
+[4.417949] (scout_base) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.417989] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 4 arguments, 1 provided\n'}
+[4.418031] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.418075] (scout_base) StderrLine: {'line': b'  391 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(\n'}
+[4.418120] (scout_base) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.418161] (scout_base) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 4 arguments, 1 provided\n'}
+[4.436950] (-) TimerEvent: {}
+[4.537463] (-) TimerEvent: {}
+[4.638242] (-) TimerEvent: {}
+[4.738797] (-) TimerEvent: {}
+[4.839206] (-) TimerEvent: {}
+[4.940265] (-) TimerEvent: {}
+[5.041092] (-) TimerEvent: {}
+[5.141734] (-) TimerEvent: {}
+[5.242631] (-) TimerEvent: {}
+[5.343487] (-) TimerEvent: {}
+[5.444021] (-) TimerEvent: {}
+[5.544437] (-) TimerEvent: {}
+[5.645073] (-) TimerEvent: {}
+[5.746384] (-) TimerEvent: {}
+[5.847137] (-) TimerEvent: {}
+[5.947464] (-) TimerEvent: {}
+[6.048073] (-) TimerEvent: {}
+[6.148519] (-) TimerEvent: {}
+[6.249283] (-) TimerEvent: {}
+[6.350231] (-) TimerEvent: {}
+[6.450890] (-) TimerEvent: {}
+[6.551274] (-) TimerEvent: {}
+[6.652005] (-) TimerEvent: {}
+[6.752357] (-) TimerEvent: {}
+[6.853306] (-) TimerEvent: {}
+[6.953685] (-) TimerEvent: {}
+[7.054472] (-) TimerEvent: {}
+[7.155076] (-) TimerEvent: {}
+[7.255570] (-) TimerEvent: {}
+[7.356066] (-) TimerEvent: {}
+[7.456468] (-) TimerEvent: {}
+[7.557170] (-) TimerEvent: {}
+[7.657741] (-) TimerEvent: {}
+[7.758536] (-) TimerEvent: {}
+[7.859079] (-) TimerEvent: {}
+[7.959732] (-) TimerEvent: {}
+[8.057537] (scout_base) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/scout_base_node.dir/build.make:76: CMakeFiles/scout_base_node.dir/src/scout_base_ros.cpp.o] Error 1\n'}
+[8.057854] (scout_base) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/scout_base_node.dir/all] Error 2\n'}
+[8.058305] (scout_base) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[8.059811] (-) TimerEvent: {}
+[8.061630] (scout_base) CommandEnded: {'returncode': 2}
+[8.066002] (scout_base) JobEnded: {'identifier': 'scout_base', 'rc': 2}
+[8.077226] (-) EventReactorShutdown: {}

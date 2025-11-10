@@ -1,0 +1,20 @@
+[0.985s] Invoking command in '/home/eddy/ros2_ws/src/scout_navigation2': PYTHONPATH=/home/eddy/ros2_ws/build/scout_navigation2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eddy/ros2_ws/install/scout_navigation2/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(myvenv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/scout_navigation2 build --build-base /home/eddy/ros2_ws/build/scout_navigation2/build install --record /home/eddy/ros2_ws/build/scout_navigation2/install.log --single-version-externally-managed install_data
+[1.433s] running egg_info
+[1.437s] writing ../../build/scout_navigation2/scout_navigation2.egg-info/PKG-INFO
+[1.439s] writing dependency_links to ../../build/scout_navigation2/scout_navigation2.egg-info/dependency_links.txt
+[1.441s] writing entry points to ../../build/scout_navigation2/scout_navigation2.egg-info/entry_points.txt
+[1.442s] writing requirements to ../../build/scout_navigation2/scout_navigation2.egg-info/requires.txt
+[1.443s] writing top-level names to ../../build/scout_navigation2/scout_navigation2.egg-info/top_level.txt
+[1.450s] reading manifest file '../../build/scout_navigation2/scout_navigation2.egg-info/SOURCES.txt'
+[1.462s] writing manifest file '../../build/scout_navigation2/scout_navigation2.egg-info/SOURCES.txt'
+[1.464s] running build
+[1.464s] running build_py
+[1.467s] running install
+[1.467s] running install_lib
+[1.469s] running install_data
+[1.470s] running install_egg_info
+[1.473s] removing '/home/eddy/ros2_ws/install/scout_navigation2/lib/python3.10/site-packages/scout_navigation2-0.0.0-py3.10.egg-info' (and everything under it)
+[1.478s] Copying ../../build/scout_navigation2/scout_navigation2.egg-info to /home/eddy/ros2_ws/install/scout_navigation2/lib/python3.10/site-packages/scout_navigation2-0.0.0-py3.10.egg-info
+[1.483s] running install_scripts
+[1.508s] writing list of installed files to '/home/eddy/ros2_ws/build/scout_navigation2/install.log'
+[1.553s] Invoked command in '/home/eddy/ros2_ws/src/scout_navigation2' returned '0': PYTHONPATH=/home/eddy/ros2_ws/build/scout_navigation2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eddy/ros2_ws/install/scout_navigation2/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(myvenv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/scout_navigation2 build --build-base /home/eddy/ros2_ws/build/scout_navigation2/build install --record /home/eddy/ros2_ws/build/scout_navigation2/install.log --single-version-externally-managed install_data

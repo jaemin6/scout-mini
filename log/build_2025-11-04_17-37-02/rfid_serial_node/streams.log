@@ -1,0 +1,24 @@
+[0.756s] Invoking command in '/home/eddy/ros2_ws/src/rfid_serial_node': PYTHONPATH=/home/eddy/ros2_ws/build/rfid_serial_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eddy/ros2_ws/install/rfid_serial_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rfid_serial_node build --build-base /home/eddy/ros2_ws/build/rfid_serial_node/build install --record /home/eddy/ros2_ws/build/rfid_serial_node/install.log --single-version-externally-managed install_data
+[1.048s] running egg_info
+[1.049s] writing ../../build/rfid_serial_node/rfid_serial_node.egg-info/PKG-INFO
+[1.049s] writing dependency_links to ../../build/rfid_serial_node/rfid_serial_node.egg-info/dependency_links.txt
+[1.049s] writing entry points to ../../build/rfid_serial_node/rfid_serial_node.egg-info/entry_points.txt
+[1.049s] writing requirements to ../../build/rfid_serial_node/rfid_serial_node.egg-info/requires.txt
+[1.049s] writing top-level names to ../../build/rfid_serial_node/rfid_serial_node.egg-info/top_level.txt
+[1.051s] reading manifest file '../../build/rfid_serial_node/rfid_serial_node.egg-info/SOURCES.txt'
+[1.052s] writing manifest file '../../build/rfid_serial_node/rfid_serial_node.egg-info/SOURCES.txt'
+[1.052s] running build
+[1.052s] running build_py
+[1.052s] copying rfid_serial_node/rfid_reader.py -> /home/eddy/ros2_ws/build/rfid_serial_node/build/lib/rfid_serial_node
+[1.053s] running install
+[1.053s] running install_lib
+[1.054s] copying /home/eddy/ros2_ws/build/rfid_serial_node/build/lib/rfid_serial_node/rfid_reader.py -> /home/eddy/ros2_ws/install/rfid_serial_node/lib/python3.10/site-packages/rfid_serial_node
+[1.055s] byte-compiling /home/eddy/ros2_ws/install/rfid_serial_node/lib/python3.10/site-packages/rfid_serial_node/rfid_reader.py to rfid_reader.cpython-310.pyc
+[1.055s] running install_data
+[1.055s] running install_egg_info
+[1.057s] removing '/home/eddy/ros2_ws/install/rfid_serial_node/lib/python3.10/site-packages/rfid_serial_node-0.0.0-py3.10.egg-info' (and everything under it)
+[1.057s] Copying ../../build/rfid_serial_node/rfid_serial_node.egg-info to /home/eddy/ros2_ws/install/rfid_serial_node/lib/python3.10/site-packages/rfid_serial_node-0.0.0-py3.10.egg-info
+[1.058s] running install_scripts
+[1.078s] Installing rfid_reader script to /home/eddy/ros2_ws/install/rfid_serial_node/lib/rfid_serial_node
+[1.079s] writing list of installed files to '/home/eddy/ros2_ws/build/rfid_serial_node/install.log'
+[1.103s] Invoked command in '/home/eddy/ros2_ws/src/rfid_serial_node' returned '0': PYTHONPATH=/home/eddy/ros2_ws/build/rfid_serial_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eddy/ros2_ws/install/rfid_serial_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rfid_serial_node build --build-base /home/eddy/ros2_ws/build/rfid_serial_node/build install --record /home/eddy/ros2_ws/build/rfid_serial_node/install.log --single-version-externally-managed install_data

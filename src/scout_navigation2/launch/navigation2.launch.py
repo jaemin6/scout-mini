@@ -232,7 +232,7 @@ ld.add_action(lifecycle_manager_map)
     load_nodes = GroupAction(
         condition=IfCondition(PythonExpression(['not ', use_composition])),
         actions=[
-            Node(
+            Node(S
                 package='nav2_controller',
                 executable='controller_server',
                 output='screen',

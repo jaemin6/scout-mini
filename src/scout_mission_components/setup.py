@@ -1,4 +1,6 @@
 from setuptools import find_packages, setup
+from glob import glob # glob 임포트 추가
+import os
 
 package_name = 'scout_mission_components'
 
@@ -10,6 +12,7 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+        (os.path.join('share', package_name, 'launch'), glob(os.path.join('launch', '*launch.py'))),
     ],
     install_requires=['setuptools'],
     zip_safe=True,

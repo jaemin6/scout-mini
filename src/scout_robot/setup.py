@@ -13,7 +13,11 @@ setup(
         ('share/' + package_name, ['rooms.yaml']),
         ('share/' + package_name + '/launch', ['launch/scout_main_launch.py']),
     ],
-    install_requires=['setuptools'],
+    install_requires=[
+        'setuptools',
+        # 🌟 액션 인터페이스 패키지 추가 🌟
+        'scout_robot_interfaces',
+    ],
     zip_safe=True,
     maintainer='hoyeon',
     maintainer_email='hoyeon@todo.todo',
@@ -30,6 +34,8 @@ setup(
             'nav2_commander = scout_robot.nav2_commander:main',
             'aruco_detector = scout_robot.aruco:main',
             'qr_detector = scout_robot.qr_detector_node:main',
+            # 🌟 RobotRotator 노드 추가 🌟
+            'robot_rotator = scout_robot.robot_rotator_node:main',
         ],
     },
 )

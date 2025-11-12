@@ -1,0 +1,15 @@
+# Goal (목표)
+# 로봇이 이동해야 할 방의 이름 (문자열)
+string room_name
+---
+# Result (결과)
+# 이동 작업의 최종 성공 여부 (True/False)
+bool success
+# 작업 완료 후 사용자에게 보여줄 메시지 (예: "Room 501 도착 완료")
+string message
+---
+# Feedback (피드백)
+# 현재 로봇이 어떤 명령을 수행 중인지 (예: "경로 계획 중", "이동 중")
+string current_command
+# 목표까지의 진행률 (0.0에서 100.0 사이)
+float32 progress_percentageSS

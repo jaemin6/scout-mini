@@ -1,0 +1,11 @@
+# Goal (목표)
+float32 angle_deg
+string target_command
+---
+# Result (결과)
+bool success
+int32 final_rotation_count
+---
+# Feedback (피드백)
+int32 current_count
+float32 rotated_angle_deg

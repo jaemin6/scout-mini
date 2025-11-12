@@ -12,4 +12,4 @@ string message
 # 현재 로봇이 어떤 명령을 수행 중인지 (예: "경로 계획 중", "이동 중")
 string current_command
 # 목표까지의 진행률 (0.0에서 100.0 사이)
-float32 progress_percentageSS
+float32 progress_percentage

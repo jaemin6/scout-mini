@@ -12,16 +12,16 @@ import math
 from scout_robot_interfaces.action import RotateRobot 
 
 # 🌟 QR Detector에게 재검사 명령을 보낼 토픽 (토픽 유지)
-QR_COMMAND_TOPIC = "/qr_check_command" 
+QR_COMMAND_TOPIC = "/qr_check_command"
 
 # 🌟 Nav2 Commander에게 홈 복귀 명령을 보낼 토픽 (토픽 유지)
-HOME_COMMAND_TOPIC = "/room_command" 
+HOME_COMMAND_TOPIC = "/room_command"
 
 # 🌟 회전 각도 정의 (라디안)
 ROTATE_ANGLE_RAD = math.pi / 4.0 # 45도
 
 # 🌟 최대 회전 횟수
-MAX_ROTATION_COUNT = 8 
+MAX_ROTATION_COUNT = 8
 
 class RobotRotator(Node):
     def __init__(self):
@@ -29,7 +29,7 @@ class RobotRotator(Node):
         self.navigator = BasicNavigator()
         
         # 🌟🌟🌟 회전 횟수 카운터 초기화 🌟🌟🌟
-        self.rotation_count = 0 
+        self.rotation_count = 0
         self._goal_handle = None # 현재 처리 중인 액션 목표 핸들러
 
         # --- Nav2 활성화까지 대기 ---
@@ -67,7 +67,7 @@ class RobotRotator(Node):
     def create_relative_goal_pose(self, angle_rad):
         """base_link 기준으로 상대적인 회전 목표 PoseStamped를 생성합니다."""
         pose = PoseStamped()
-        pose.header.frame_id = "base_link" 
+        pose.header.frame_id = "base_link"
         pose.header.stamp = self.get_clock().now().to_msg()
         pose.pose.position.x = 0.0
         pose.pose.position.y = 0.0
@@ -88,7 +88,7 @@ class RobotRotator(Node):
         
         angle_deg = math.degrees(angle_rad)
         self.get_logger().warn(f"🔄 로봇 회전 명령 전송: {angle_deg:.1f}도 회전 시작... (현재 횟수: {self.rotation_count})")
-        self.navigator.goToPose(goal_pose) 
+        self.navigator.goToPose(goal_pose)
 
         # 이동 완료 대기 및 취소 요청 확인
         while not self.navigator.isTaskComplete():
@@ -101,7 +101,7 @@ class RobotRotator(Node):
             feedback_msg.current_count = self.rotation_count
             goal_handle.publish_feedback(feedback_msg)
             
-            rclpy.spin_once(self, timeout_sec=0.1) 
+            rclpy.spin_once(self, timeout_sec=0.1)
         
         # Nav2 결과 확인
         result = self.navigator.getResult()
@@ -148,4 +148,4 @@ class RobotRotator(Node):
 
         # 2. 🌟🌟🌟 최대 횟수 초과 검사 🌟🌟🌟
         if self.rotation_count > MAX_ROTATION_COUNT:
-            self.get_logger().error(f"🚨🚨🚨 최대 회전 횟수 ({MAX_ROTATION_COUNT}회) 초과! 홈 복귀 명령
+            self.get_logger().error(f"🚨🚨🚨 최대 회전 횟수 ({MAX_ROTATION_COUNT}회) 초과! 홈 복귀 명령")

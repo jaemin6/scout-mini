@@ -10,13 +10,21 @@
   <depend>rclpy</depend>
   <depend>sensor_msgs</depend>
   <depend>cv_bridge</depend>
+  
+  <depend>nav2_simple_commander</depend> 
+  
+  <build_depend>scout_robot_interfaces</build_depend>
+  <exec_depend>scout_robot_interfaces</exec_depend>
+
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
   <test_depend>ament_pep257</test_depend>
   <test_depend>python3-pytest</test_depend>
+  
   <exec_depend>std_msgs</exec_depend>
-  
-  
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>tf_transformations</exec_depend>
+
   <export>
     <build_type>ament_python</build_type>
   </export>

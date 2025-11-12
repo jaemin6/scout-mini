@@ -1,4 +1,0 @@
-Invoking command in '/home/eddy/ros2_ws/build/ugv_sdk': /usr/bin/cmake --build /home/eddy/ros2_ws/build/ugv_sdk -- -j2 -l2
-Invoked command in '/home/eddy/ros2_ws/build/ugv_sdk' returned '0': /usr/bin/cmake --build /home/eddy/ros2_ws/build/ugv_sdk -- -j2 -l2
-Invoking command in '/home/eddy/ros2_ws/build/ugv_sdk': /usr/bin/cmake --install /home/eddy/ros2_ws/build/ugv_sdk
-Invoked command in '/home/eddy/ros2_ws/build/ugv_sdk' returned '0': /usr/bin/cmake --install /home/eddy/ros2_ws/build/ugv_sdk

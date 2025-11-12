@@ -1,9 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.000199] (-) JobUnselected: {'identifier': 'my-test-package'}
-[0.000299] (-) JobUnselected: {'identifier': 'rplidar_ros'}
-[0.000366] (-) JobUnselected: {'identifier': 'scout_base'}
-[0.000452] (-) JobUnselected: {'identifier': 'scout_description'}
-[0.000469] (-) JobUnselected: {'identifier': 'scout_msgs'}
-[0.000482] (-) JobUnselected: {'identifier': 'scout_navigation2'}
-[0.000495] (-) JobUnselected: {'identifier': 'ugv_sdk'}
-[0.000508] (-) EventReactorShutdown: {}

@@ -1,5 +1,0 @@
-  File "/home/eddy/ros2_ws/install/rfid_serial_node/lib/python3.10/site-packages/rfid_serial_node/rfid_reader.py", line 73
-    if __name__ == '__main__":
-                   ^
-SyntaxError: unterminated string literal (detected at line 73)
-

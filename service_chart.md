@@ -1,3 +1,4 @@
+```mermaid
 graph TD
     A[room_command] --> B[room_navigator]
     
@@ -21,3 +22,4 @@ graph TD
     K --> N[amcl_reset_node]
     N --> O[basic_navigator]
     O --> P[go_home]
+    ```

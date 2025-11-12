@@ -56,3 +56,10 @@ __pycache__/
 *.db
 *.sqlite3
 maps/
+
+# 이전에 문제가 되었던 폴더들도 명시적으로 추가
+rfid_serial_node/
+rplidar_ros/
+scout_navigation2/maps/
+scout_robot/
+scout_ros2/

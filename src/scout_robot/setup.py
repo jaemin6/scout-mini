@@ -36,6 +36,7 @@ setup(
             'qr_detector = scout_robot.qr_detector_node:main',
             # 🌟 RobotRotator 노드 추가 🌟
             'robot_rotator = scout_robot.robot_rotator_node:main',
+            'room_client = scout_robot.room_command_client:main',
         ],
     },
 )

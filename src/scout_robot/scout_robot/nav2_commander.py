@@ -9,7 +9,7 @@ from geometry_msgs.msg import PoseStamped
 from tf_transformations import quaternion_from_euler
 import os
 import yaml
-import time # sleep 대신 spin_once의 timeout을 위해 필요하지만, 예시에서는 rclpy.spin_once(self)로 충분합니다.
+import time
 
 # 🌟 액션 메시지 임포트 (사용자 정의 인터페이스 패키지에서)
 from scout_robot_interfaces.action import NavigateRoom 
@@ -33,12 +33,13 @@ class RoomNavigator(Node):
         with open(yaml_path, 'r') as f:
             rooms = yaml.safe_load(f)['rooms']
             
+        # 🚨 수정: 딕셔너리 키에서 'go_' 접두사 제거 🚨
         self.poses = {
-            'go_start': [rooms['start']['x'], rooms['start']['y'], rooms['start']['theta']],
-            'go_room501': [rooms['room501']['x'], rooms['room501']['y'], rooms['room501']['theta']],
-            'go_room502': [rooms['room502']['x'], rooms['room502']['y'], rooms['room502']['theta']],
-            'go_room503': [rooms['room503']['x'], rooms['room503']['y'], rooms['room503']['theta']],
-            'go_home': [rooms['home']['x'], rooms['home']['y'], rooms['home']['theta']],
+            'start': [rooms['start']['x'], rooms['start']['y'], rooms['start']['theta']],
+            'room501': [rooms['room501']['x'], rooms['room501']['y'], rooms['room501']['theta']],
+            'room502': [rooms['room502']['x'], rooms['room502']['y'], rooms['room502']['theta']],
+            'room503': [rooms['room503']['x'], rooms['room503']['y'], rooms['room503']['theta']],
+            'home': [rooms['home']['x'], rooms['home']['y'], rooms['home']['theta']],
         }
         self.start_pose_coords = rooms['start']
 
@@ -49,7 +50,7 @@ class RoomNavigator(Node):
         self.get_logger().info("Nav2 활성화 대기 중...")
         self.navigator.waitUntilNav2Active()
         self.get_logger().info("Nav2 활성화 완료!")
-        
+            
         # 1) 🌟 명령 수신을 액션 서버로 대체 🌟
         self._action_server = rclpy.action.ActionServer(
             self,
@@ -86,6 +87,7 @@ class RoomNavigator(Node):
         pose.pose.orientation.y = qy
         pose.pose.orientation.z = qz
         pose.pose.orientation.w = qw
+        pose.pose.orientation.w = qw
         return pose
 
     def publish_qr_command(self, command: str):
@@ -94,13 +96,14 @@ class RoomNavigator(Node):
         msg.data = command 
         self.qr_command_pub.publish(msg)
         self.get_logger().warn(f"➡️ '{command}' 도착 완료. QR Detector에게 검사 명령 발행 완료.")
-    
+        
     # --- 🌟 액션 서버 콜백 함수 🌟 ---
 
     def goal_callback(self, goal_request):
         """목표 요청 수락/거부 결정"""
-        room_name = goal_request.room_name
+        room_name = goal_request.room_name # 이 값은 이제 "room501"
         
+        # 🚨 수정: room_name이 self.poses에 존재하는지 직접 확인
         if room_name not in self.poses:
             self.get_logger().error(f"알 수 없는 목표 이름: {room_name}")
             return rclpy.action.GoalResponse.REJECT
@@ -120,12 +123,12 @@ class RoomNavigator(Node):
         """목표가 수락된 후 실행될 핸들러 등록"""
         self._goal_handle = goal_handle
         # 비동기적으로 실행 콜백 호출
-        goal_handle.execute()
+        rclpy.get_default_context().call_executor(goal_handle.execute) # execute() 호출 방식 변경
 
     def execute_callback(self, goal_handle):
         """목표 실행 로직 (실제 이동 및 QR 명령 발행)"""
         self.get_logger().info('목표 실행 시작...')
-        command = goal_handle.request.room_name # 예: 'go_room501'
+        command = goal_handle.request.room_name # 예: 'room501' (수정됨)
         
         # 1. 목표 포즈 생성
         try:
@@ -137,9 +140,9 @@ class RoomNavigator(Node):
             result.success = False
             result.message = f"알 수 없는 목표 이름: {command}"
             return result
-        
-        name = command.replace('go_', '') # 이름 (예: room501)
-        check_qr = (command != "go_start") # 'go_start'인 경우만 QR 검사 안함
+            
+        name = command # 이름 (예: room501)
+        check_qr = (command != "start") # 'start'인 경우만 QR 검사 안함 (키가 변경되었으므로 조건도 변경)
 
         self.get_logger().info(f"'{name}'(x:{x:.2f}, y:{y:.2f})로 이동 명령 전송. 출발합니다.")
         self.navigator.goToPose(pose)
@@ -155,17 +158,14 @@ class RoomNavigator(Node):
                 result.message = f"'{command}' 이동 취소됨"
                 return result
 
-            # 🌟 피드백 발행 (Nav2에서 진행 상황을 가져와서 발행)
+            # 🌟 피드백 발행 🌟
             i = 0
             while not self.navigator.isTaskComplete():
                 i += 1
                 if i % 10 == 0:
                     feedback = NavigateRoom.Feedback()
                     feedback.current_command = command
-                    # Nav2의 진행률을 사용할 수 있지만, 간단하게 0에서 100까지 증가하는 예시로 대체
-                    # 실제 Nav2 API를 통해 퍼센트 정보를 얻어야 합니다.
-                    # 여기서는 간단히 0%로 고정하거나 타이머로 진행률을 높일 수 있습니다.
-                    # 현재 Nav2 Simple Commander는 직접적인 진행률 피드백을 제공하지 않아 TaskState를 확인합니다.
+                    # 피드백 발행 (간단히 0%로 고정)
                     feedback.progress_percentage = 0.0 
                     goal_handle.publish_feedback(feedback)
                 
@@ -178,7 +178,10 @@ class RoomNavigator(Node):
         if nav2_result == TaskResult.SUCCEEDED:
             self.get_logger().info(f"✅ '{name}' 도착 완료!")
             if check_qr:
-                self.publish_qr_command(command) 
+                # 🚨 수정: publish_qr_command에 'go_' 접두사를 다시 붙여서 발행해야 합니다.
+                # 토픽 구독자(QR Detector)가 이전 'go_room501' 형식을 기대한다면
+                # 그렇지 않다면 아래 주석 처리된 라인을 사용
+                self.publish_qr_command(f"go_{command}")
             
             result.success = True
             result.message = f"'{command}' 목표 지점에 성공적으로 도착했습니다."

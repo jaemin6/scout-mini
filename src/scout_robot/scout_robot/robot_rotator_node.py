@@ -149,3 +149,60 @@ class RobotRotator(Node):
         # 2. 🌟🌟🌟 최대 횟수 초과 검사 🌟🌟🌟
         if self.rotation_count > MAX_ROTATION_COUNT:
             self.get_logger().error(f"🚨🚨🚨 최대 회전 횟수 ({MAX_ROTATION_COUNT}회) 초과! 홈 복귀 명령")
+          
+            # 2-1. 홈 복귀 명령 발행
+            home_msg = String()
+            home_msg.data = "GO_HOME"
+            self.home_command_pub.publish(home_msg)
+            
+            # 2-2. 액션 결과 설정 및 반환 (최대 횟수 초과 -> 실패 또는 완료 후 종료)
+            result_msg.success = False # 또는 True (성공적으로 회전 프로세스를 종료했다고 간주할 경우)
+            result_msg.message = "MAX_ROTATION_COUNT exceeded. Sending GO_HOME command."
+            goal_handle.succeed() # 목표 성공으로 간주하고 결과 반환
+            return result_msg
+        
+        # 3. 🌟🌟🌟 로봇 회전 실행 및 Nav2 명령 처리 🌟🌟🌟
+        
+        rotation_success = self.rotate_robot(goal_handle, angle_rad)
+        
+        # 4. 회전 결과에 따른 후속 처리
+        
+        if rotation_success:
+            self.get_logger().info("로봇 회전 성공. QR 재검사 명령 발행.")
+            
+            # 4-1. QR 재검사 명령 발행 (다음 액션을 유도)
+            qr_msg = String()
+            qr_msg.data = target_command # 클라이언트가 요청한 명령 (예: "CHECK_QR")
+            self.qr_command_pub.publish(qr_msg)
+
+            # 4-2. 액션 결과 설정 및 반환
+            result_msg.success = True
+            result_msg.message = f"Rotation {self.rotation_count} successful. QR Check Command sent: {target_command}"
+            goal_handle.succeed()
+        
+        elif goal_handle.is_cancel_requested:
+             # 4-3. 액션 취소 처리
+            self.get_logger().warn("액션 취소 요청 수락 및 처리.")
+            result_msg.success = False
+            result_msg.message = "Rotation action cancelled."
+            goal_handle.canceled()
+            
+        else:
+            # 4-4. Nav2 오류로 인한 회전 실패 처리
+            self.get_logger().error("로봇 회전 실패 (Nav2 오류).")
+            result_msg.success = False
+            result_msg.message = "Rotation failed due to Nav2 error."
+            goal_handle.abort() # 목표 실패로 간주하고 결과 반환
+
+        return result_msg
+
+
+def main(args=None):
+    rclpy.init(args=args)
+    robot_rotator = RobotRotator()
+    rclpy.spin(robot_rotator)
+    robot_rotator.destroy_node()
+    rclpy.shutdown()
+
+if __name__ == '__main__':
+    main()

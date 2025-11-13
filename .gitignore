@@ -61,5 +61,5 @@ maps/
 rfid_serial_node/
 rplidar_ros/
 scout_navigation2/maps/
-scout_robot/
+# scout_robot/
 scout_ros2/

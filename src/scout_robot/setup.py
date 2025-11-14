@@ -37,6 +37,7 @@ setup(
             # 🌟 RobotRotator 노드 추가 🌟
             'robot_rotator = scout_robot.robot_rotator_node:main',
             'room_client = scout_robot.room_command_client:main',
+            'amcl_reset = scout_robot.amcl_reset_node:main',
         ],
     },
 )

@@ -3,7 +3,7 @@ from setuptools import find_packages, setup
 package_name = 'scout_robot'
 
 setup(
-    name=package_name,
+    name='scout_robot',
     version='0.0.0',
     packages=find_packages(exclude=['test']),
     data_files=[

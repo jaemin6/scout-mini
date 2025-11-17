@@ -28,12 +28,14 @@ def generate_launch_description():
     )
 
     # 4. QR 코드 인식 노드
-    qr_detector_node = Node(
-        package='scout_robot',
-        executable='qr_detector', # setup.py와 일치
-        name='qr_detector_node',
-        output='screen'
-    )
+    #qr_detector_node = Node(
+     #   package='scout_robot',
+      #  executable='qr_detector', # setup.py와 일치
+       # name='qr_detector_node',
+        #output='screen',
+        #emulate_tty=True,
+        #env={'DISPLAY': os.environ['DISPLAY']}
+    #)
     
     # 5. Topic Publisher 노드 (위치 리셋, setup.py에 먼저 추가해야 함)
     amcl_reset_node = Node(
@@ -47,6 +49,6 @@ def generate_launch_description():
         room_client_node,
         nav2_commander_node,
         robot_rotator_node,
-        qr_detector_node,
+       # qr_detector_node,
         amcl_reset_node # setup.py 추가
     ])

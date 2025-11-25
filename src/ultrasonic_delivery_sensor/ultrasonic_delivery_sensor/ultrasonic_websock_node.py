@@ -158,6 +158,11 @@ class UltrasonicPublisherNode(Node):
                 self.publisher_.publish(msg_delivery)
                 self.get_logger().info(f'✅ Published Delivery Complete Status: "{msg_delivery.data}"')
 
+                msg_command_close = String()
+                msg_command_close.data = "close_servo" 
+                self.command_publisher_.publish(msg_command_close)
+                self.get_logger().info(f'🚪 Published Close Servo Command: "{msg_command_close.data}"')
+
                 # 2. /room_command 토픽에 'go_home' 명령 발행
                 msg_command = String()
                 msg_command.data = "go_home"
